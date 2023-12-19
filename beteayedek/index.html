@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="3YwAZ87-ButUau2GcDVcR5yrgZfj2rkiIj17d62OWLo" />
+    <meta name="description" content="Betea, Çin ve Hindistan'da bitkisel çay üretiminde liderdir. En taze ve lezzetli çayları sunuyoruz.">
+    <meta name="keywords" content="Betea, çay, bitkisel çay, Çin, Hindistan, çay üretimi">
+    <meta name="author" content="Betea Çay Şirketi">
+    <meta name="robots" content="index, follow">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Betea Çay - En Taze ve Lezzetli Bitkisel Çaylar</title>
+    <link rel="icon" href="img/tea4-slider-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+<style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* width */
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #144e1c;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #1b8a2a; 
+  border-radius: 12px;
+  border: 1px solid #00f721;
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("fonts/Poppins-Light.woff");
+    src: url("fonts/Poppins-Light.woff2");
+}
+@font-face {
+    font-family: "Poppins-ExtraBold";
+    src: url("fonts/Poppins-ExtraBold.woff");
+    src: url("fonts/Poppins-ExtraBold.woff2");
+}
+@font-face {
+    font-family: "Poppins-ExtraLight";
+    src: url("fonts/Poppins-ExtraLight.woff");
+    src: url("fonts/Poppins-ExtraLight.woff2");
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("fonts/Poppins-Medium.woff");
+    src: url("fonts/Poppins-Medium.woff2");
+}
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("fonts/Poppins-Regular.woff");
+    src: url("fonts/Poppins-Regular.woff2");
+}
+@font-face {
+    font-family: "Poppins-Thin";
+    src: url("fonts/Poppins-Thin.woff");
+    src: url("fonts/Poppins-Thin.woff2");
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("fonts/Roboto-Bold.woff");
+    src: url("fonts/Roboto-Bold.woff2");
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("fonts/Roboto-Light.woff");
+    src: url("fonts/Roboto-Light.woff2");
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("fonts/Roboto-Regular.woff");
+    src: url("fonts/Roboto-Regular.woff2");
+}
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url("fonts/Roboto-Thin.woff");
+    src: url("fonts/Roboto-Thin.woff2");
+}
+@font-face {
+    font-family: "Lora";
+    src: url("fonts/Lora-VariableFont_wght.woff");
+    src: url("fonts/Lora-VariableFont_wght.woff2");
+}
+::selection{
+    background-color: #144e1c;
+    color: #fff;
+}
+.area1{
+    position: relative;
+    animation: .8s ease-out 0s 1 slideInBottom;
+    height: 100vh;
+    background-color: #144e1c;
+    background-image: url("img/tea4-slider-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@keyframes slideInBottom {
+        0% {
+            transform: rotateY(45deg) translateY(-50%);
+        }
+        100% {
+            transform: rotateY(0) translateY(0);
+        }
+      }
+.area1 .navbar{
+    padding: 30px 10%;
+}
+.area1 .sticky{
+    padding: 10px 10%;
+    background: #18392e;
+}
+.area1 .navbar-brand{   /*  RESMİN KUTUSUNA SIĞMASINI SAĞLIYO   */
+  margin: 0;
+  padding: 0;
+}
+.area1 .navbar-brand img{
+  width: 120px;
+
+}
+.area1 .navbar-collapse{
+  justify-content: end; /* LİSTENİN KAYMASINI BURADAN AYARLIYORSUN */
+}
+
+.area1 .navbar-nav .nav-item a{
+    color: #c2b0c1;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 20px;
+    font-family: Poppins-Regular;
+    transition: 0.5s;
+}
+.area1 .navbar-nav .nav-item a:hover{
+    color: #fff5fe;
+    transition: 0.5s;
+}
+.area1 .navbar .container .kara{
+    color: yellow;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 20px;
+    margin: 0;
+    list-style: none;
+    font-family: Poppins-Regular;
+}
+.area1 .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.area1 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* sidebar */
+.area1 .rpsn .flex-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 5%;
+}
+.area1 .rpsn .flex-container .img{
+    position: relative;
+}
+.area1 .rpsn .flex-container .img img{
+    padding-top: 5px;
+}
+.area1 .rpsn  .btn-check:focus+.btn, .btn:focus {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+.area1 .rpsn  .btn:hover{
+    border-color: transparent;
+}
+.area1 .rpsn  .offcanvas-header {
+    display: flex;
+    align-items: center;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    padding: 30px;
+}
+.area1 .rpsn .btn-close{
+        background: transparent url("img/mark.svg") center/0 auto no-repeat;
+}
+.area1 .rpsn  .btn-close:focus {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+.area1 .rpsn .btn-close:hover{
+    border-color: transparent;
+}
+.area1 .rpsn  svg{
+    fill: #c2b0c1;
+    width: 30px;
+    transition: 0.5s;
+    cursor:pointer;
+}
+.area1 .rpsn .icon-bagg{
+    display:flex;
+  align-items:center;
+  justify-content:center;
+  position: relative;
+}
+.area1 .rpsn .icon-bagg:hover svg, .area1 .rpsn .icon-bagg:hover span{
+    fill: #fff5fe;
+    color: #fff5fe;
+    transition: 0.5s;
+}
+.area1 .rpsn .icon-bagg span{
+    color: #c2b0c1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    cursor:pointer;
+}
+.area1 .rpsn  .sidebar .offcanvas{
+    background-color: #191919;
+    Overflow-y:scroll;
+}
+/* width */
+.area1 .rpsn  .sidebar .offcanvas::-webkit-scrollbar {
+  width: 5px;
+  background: #191919;
+}
+
+/* Track */
+.area1 .rpsn  .sidebar .offcanvas::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.area1 .rpsn  .sidebar .offcanvas::-webkit-scrollbar-thumb {
+  background: #4c4c4c; 
+  border-radius: 10px;
+}
+ .area1  .rpsn .sidebar ul{
+    list-style: none;
+    padding: 20px 0 0 0;
+ }
+ .area1 .rpsn  .sidebar ul li{
+    color: #a6a6a6;
+    padding: 11px 8px 10px 20px;
+    border-top: 1px solid #202020;
+    cursor: pointer;
+    transition: 0.5s;
+ }
+ .area1 .rpsn  .sidebar ul .ilet{
+    color: #f1b567;
+    border-bottom: 1px solid #202020;
+ }
+ .area1 .rpsn  .sidebar ul .ilet:hover{
+    color: #f1b567;
+ }
+ .area1 .rpsn  .sidebar ul li:hover{
+    color: #fff5fe;
+    transition: 0.5s;
+ }
+ .area1 .rpsn .sticky{
+    padding: 5px 5%;        
+    background: #18392e;
+}
+.area1 .bannerlar{
+    z-index: 1;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.area1 .bannerlar .section1 center img{
+    width: 65px;
+}
+.area1 .bannerlar .section2 .text{
+    font-family: Lora;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    color: #fff5fe;
+    letter-spacing: 1px;
+    padding: 30px 0 30px 0;
+    cursor: default;
+}
+.area1 .bannerlar .section3 .textalt{
+    font-family: Poppins-Regular;
+    font-size: 12px;
+    color: #baa9b9;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: default;
+}
+.area2{
+    position: relative;
+    background: url("img/tea4-section-bg1.png");
+}
+.area2 .image img {
+    height: 10vh;
+    position:absolute;
+    top:0 ;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.area2 .content1{
+    padding: 90px 0 60px 0;
+}
+
+.area2 .content1 .estate1 .country1 img{
+    width: 90%;
+    filter: drop-shadow(2px 4px 6px #144e1c9f);
+}
+.area2 .content1 .estate1 .country2 .case1 .pouch{
+    font-family: Lora;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 42px;
+    color: #144e1c;
+    padding-bottom: 0.5rem;
+    cursor:default;
+}
+.area2 .content1 .estate1 .country2 .case2 .pouch{
+    color: #144e1c;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Roboto-Regular;
+    line-height: 25px;
+    padding-left: 40px;
+    padding-bottom: 1rem;
+    cursor:default;
+}
+.area2 .content1 .estate1 .country2 .case3 .pouch .btn{
+    color: #144e1c;
+    border: 2px solid #144e1c;
+    font-size: 15px;
+    font-family: Poppins-Medium;
+    line-height: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 15px 25px;
+    transition: 0.2s;
+    cursor:pointer;
+    border-radius: 0;
+}
+.area2 .content1 .estate1 .country2 .case3 .pouch .btn:hover{
+    background-color: #fff5fe;
+    transition: 0.2s;
+}
+.area2 .content1 .estate2 .country{
+    padding: 60px 40px 40px 40px;
+}
+.area2 .content1 .estate2 .country .case{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.area2 .content1 .estate2 .country .case  p{
+    color: #144e1c;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 300;
+    font-family: Lora;
+    padding-top: 15px;
+}
+.area2 .content1 .estate2 .country .case .pouch1 .pocket1 .vest,
+.area2 .content1 .estate2 .country .case .pouch2 .pocket1 .vest{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    filter: brightness(0.5);
+    transition: all .5s ease-in;
+}
+
+.area2 .content1 .estate2 .country .case .pouch1 .pocket1 .vest span,
+.area2 .content1 .estate2 .country .case .pouch2 .pocket1 .vest span{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in;
+    z-index: 999;
+}
+.area2 .content1 .estate2 .country .case .pouch1 .pocket1 .vest:hover,
+.area2 .content1 .estate2 .country .case .pouch2 .pocket1 .vest:hover{
+    filter: brightness(1);
+    transition: all .5s ease-in;
+}
+.area2 .content1 .estate2 .country .case .pouch1 .pocket1 .vest:hover span,
+.area2 .content1 .estate2 .country .case .pouch2 .pocket1 .vest:hover span{
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+.area2 .content1 .estate2 .country .case .pouch1 .pocket1 .vest img,
+.area2 .content1 .estate2 .country .case .pouch2 .pocket1 .vest img{
+    transition: transform .5s ease;
+}
+.area2 .content1 .estate2 .country .case .pouch1 .pocket1 .vest .backGro:hover,
+.area2 .content1 .estate2 .country .case .pouch2 .pocket1 .vest .backGro:hover{
+    transform: scale(1.2);
+}
+
+
+/*  _________________A_R_E_A - 3 - _C_S_S_ - K_O_D_L_A_R_I______________________________*/
+.area3 .section .content1{
+    margin-bottom: 2rem;
+}
+.area3 .section .content1 .estate h3{
+    text-align: center;
+    font-family: Lora;
+    font-size: 30px;
+    color: #144e1c;
+    line-height: 36px;
+    font-weight: 300;
+}
+.area3 .section .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area3 .section .content2 .estate1{
+    padding: 20px;
+}                                           /* _______________________KOPYALAMA1_______________*/
+.area3 .section .content2 .estate1 .country1  .teaShop{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.area3 .section .content2 .estate1 .country1  .teaShop span{
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-family: Montserrat-Regular;
+    color: #e3ebe4;
+    background-color: #304f52;
+    border: 1px solid #e3ebe4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .5s ease-in;
+    transform: translate(-50% , -50%) translateZ(50px);
+    opacity: 0;
+}
+.area3 .section .content2 .estate1 .country1  .teaShop:hover span{
+    transition: all .5s ease-in;
+    opacity: 1;
+}
+.area3 .section .content2 .estate1 .country2{
+    color: #144e1c;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+.area3 .section .content2 .estate1 .country3{
+    color: #18392e;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+/*____________COPY2__*/
+.area3 .section .content2 .estate2{
+    padding: 20px;
+}   
+.area3 .section .content2 .estate2 .country1  .teaShop{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.area3 .section .content2 .estate2 .country1  .teaShop span{
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-family: Montserrat-Regular;
+    color: #e3ebe4;
+    background-color: #3a393f;
+    border: 1px solid #e3ebe4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .5s ease-in;
+    transform: translate(-50% , -50%) translateZ(50px);
+    opacity: 0;
+}
+.area3 .section .content2 .estate2 .country1  .teaShop:hover span{
+    transition: all .5s ease-in;
+    opacity: 1;
+}
+.area3 .section .content2 .estate2 .country2{
+    color: #144e1c;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+.area3 .section .content2 .estate2 .country3{
+    color: #18392e;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+/* copy3 */
+.area3 .section .content2 .estate3{
+    padding: 20px;
+}   
+.area3 .section .content2 .estate3 .country1  .teaShop{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.area3 .section .content2 .estate3 .country1  .teaShop span{
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-family: Montserrat-Regular;
+    color: #e3ebe4;
+    background-color: #afacc1;
+    border: 1px solid #e3ebe4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .5s ease-in;
+    transform: translate(-50% , -50%) translateZ(50px);
+    opacity: 0;
+}
+.area3 .section .content2 .estate3 .country1  .teaShop:hover span{
+    transition: all .5s ease-in;
+    opacity: 1;
+}
+.area3 .section .content2 .estate3 .country2{
+    color: #144e1c;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+.area3 .section .content2 .estate3 .country3{
+    color: #18392e;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+/* copy4 */
+.area3 .section .content2 .estate4{
+    padding: 20px;
+}   
+.area3 .section .content2 .estate4 .country1  .teaShop{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.area3 .section .content2 .estate4 .country1  .teaShop span{
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-family: Montserrat-Regular;
+    color: #e3ebe4;
+    background-color: #632123;
+    border: 1px solid #e3ebe4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .5s ease-in;
+    transform: translate(-50% , -50%) translateZ(50px);
+    opacity: 0;
+}
+.area3 .section .content2 .estate4 .country1  .teaShop:hover span{
+    transition: all .5s ease-in;
+    opacity: 1;
+}
+.area3 .section .content2 .estate4 .country2{
+    color: #144e1c;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+.area3 .section .content2 .estate4 .country3{
+    color: #18392e;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+/* copy5 */
+.area3 .section .content2 .estate5{
+    padding: 20px;
+}   
+.area3 .section .content2 .estate5 .country1  .teaShop{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.area3 .section .content2 .estate5 .country1  .teaShop span{
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-family: Montserrat-Regular;
+    color: #e3ebe4;
+    background-color: #2c7cb9;
+    border: 1px solid #e3ebe4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .5s ease-in;
+    transform: translate(-50% , -50%) translateZ(50px);
+    opacity: 0;
+}
+.area3 .section .content2 .estate5 .country1  .teaShop:hover span{
+    transition: all .5s ease-in;
+    opacity: 1;
+}
+.area3 .section .content2 .estate5 .country2{
+    color: #144e1c;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+.area3 .section .content2 .estate5 .country3{
+    color: #18392e;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+/* copy6 */
+.area3 .section .content2 .estate6{
+    padding: 20px;
+}   
+.area3 .section .content2 .estate6 .country1  .teaShop{
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.area3 .section .content2 .estate6 .country1  .teaShop span{
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-family: Montserrat-Regular;
+    color: #e3ebe4;
+    background-color: #442a47;
+    border: 1px solid #e3ebe4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .5s ease-in;
+    transform: translate(-50% , -50%) translateZ(50px);
+    opacity: 0;
+}
+.area3 .section .content2 .estate6 .country1  .teaShop:hover span{
+    transition: all .5s ease-in;
+    opacity: 1;
+}
+.area3 .section .content2 .estate6 .country2{
+    color: #144e1c;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+.area3 .section .content2 .estate6 .country3{
+    color: #18392e;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: Lora;
+    margin-bottom: 8px;
+}
+.area3 .section .content3{
+    margin-top: 2rem;
+}
+.area3 .section .content3 .estate{ /*    button     */
+    display: flex;
+    justify-content: center;
+}
+.area3 .section .content3 .estate a{
+    font-size: 18px;
+    font-family: Poppins-Regular;
+    color: #144e1c;
+    line-height: 15px;
+    font-weight: 500;
+    padding: 20px 40px 20px 40px;
+    border: 2px solid #144e1c;
+    border-radius: 0px;
+    text-decoration: none;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+.area3 .section .content3 .estate:hover a{
+    background-color: #144e1c;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+
+}
+.pottop4{
+    height: 2px;
+    width: 100%;
+    background-image: url('img/tea4-sep2.png');
+    background-size: contain;
+}
+.potbot4{
+    height: 2px;
+    width: 100%;
+    background-image: url('img/tea4-sep3.png');
+    background-size: contain;
+}
+.area4{
+    background-color:#f5f7f5;
+    padding: 60px 0 60px 0;
+}
+.area4 .section .content .estate1{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 300;
+    font-family: Lora;
+    color: #144e1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area4 .section .content .estate2 .country .case{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.area4 .section .content .estate2 .country .case p{
+    color: #ac8b69;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    font-family: Poppins-Regular;
+    padding-top: 15px;
+}
+.area5{
+   height: 100%;
+    background-color: #fff;
+}
+.area5 .section .content2{
+   background-image: url('img/tea4-about-pic11.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.area5 .section .content1{
+    display: flex;
+    align-items: center;
+}
+.area5 .section .content1 .kato345{
+    padding: 60px;
+}
+.area5 .section .content1 .kato345 h4{
+    font-family: Lora;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 42px;
+    color: #144e1c;
+}
+.area5 .section .content1 .kato345 p{
+    font-family: Roboto-Light;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #144e1c;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.area5 .section .content1 .kato345 a{
+    text-decoration: none;
+    font-family: Poppins-Regular;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #144e1c;
+    border: 2px solid #144e1c;
+    padding: 15px 35px 15px 35px;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+.area5 .section .content1 .kato345 a:hover{
+    background-color: #144e1c;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+.footer .section .content1{
+    padding: 60px;
+}
+.footer h4{
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #144e1c;
+    text-transform: capitalize;
+}
+.footer .content2 p{
+    font-family: Poppins-Regular;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #144e1c;
+}
+.footer .section .content2 .estate1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .section .content2 .estate2{
+    display: flex;
+    flex-direction: column;
+}
+.footer .content2 a{
+    font-family: Poppins-Regular;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #144e1c;
+    padding-bottom: 10px;
+}
+.footer .content2 a svg{
+    padding-right: 5px;
+}
+.footer .content3{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 60px 0 60px 0;
+
+}
+.footer .content3 a{
+    font-family: Poppins-Regular;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #144e1c;
+}
+.footer .content3 .but svg{
+    border: 1px solid #144e1c;
+    padding: 20px 40px;
+    transition: all 0.5s ease-in-out;
+}
+.footer .content3 .but:hover svg{
+    color: #fff;
+    background-color: #144e1c;
+    transition: all 0.5s ease-in-out;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+
+
+</style>
+</head>
+<body>
+
+
+ 
+<div class="area1" >
+  <nav class="navbar d-none d-lg-block fixed-top navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/tea4.png" alt="img/tea4.png"></a>
+                                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon bg-light"></span>
+                                      </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav" >
+          <li class="nav-item">
+            <a class="nav-link anasayfa" style="color: #fff5fe;" href="#">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mağaza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Detaylar</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">İletişim</a>
+          </li>
+        </ul>
+      </div>
+      
+    <ul class="kara d-none d-lg-block">
+      <li style="color: #f1d3a4; cursor: pointer;">Alışveriş</li>
+    </ul>
+    </nav>
+    <script>
+        window.addEventListener("scroll",function(){
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 80); /* buradaki sayı pixel  */
+        })
+    </script>
+     <div class="rpsn d-block d-lg-none" >
+      <header class="flex-container fixed-top">
+      <div class="img">
+          <img src="img/tea4.png" alt="img/tea4.png">
+      </div><!--IMG-->
+      <div class="sidebar scrollspy-example" data-bs-offset="0" data-bs-spy="scroll" tabindex="0">
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <i class="fa-solid fa-bars text-light"></i>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header" style="background-color: #191919;">
+              <button type="button" class="btn-close btn-transparent" data-bs-dismiss="offcanvas" aria-label="Close">
+                  <i class="fa-solid fa-xmark text-light" style="font-size: 25px;"></i>
+              </button>
+          </div>
+          <div class="content1866">
+              <div class="icon-bagg">        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 483.1 483.1" style="enable-background:new 0 0 483.1 483.1;" xml:space="preserve"><g>
+                  <path d="M434.55,418.7l-27.8-313.3c-0.5-6.2-5.7-10.9-12-10.9h-58.6c-0.1-52.1-42.5-94.5-94.6-94.5s-94.5,42.4-94.6,94.5h-58.6
+                      c-6.2,0-11.4,4.7-12,10.9l-27.8,313.3c0,0.4,0,0.7,0,1.1c0,34.9,32.1,63.3,71.5,63.3h243c39.4,0,71.5-28.4,71.5-63.3
+                      C434.55,419.4,434.55,419.1,434.55,418.7z M241.55,24c38.9,0,70.5,31.6,70.6,70.5h-141.2C171.05,55.6,202.65,24,241.55,24z
+                       M363.05,459h-243c-26,0-47.2-17.3-47.5-38.8l26.8-301.7h47.6v42.1c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h141.2v42.1
+                      c0,6.6,5.4,12,12,12s12-5.4,12-12v-42.1h47.6l26.8,301.8C410.25,441.7,389.05,459,363.05,459z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                  <span>0</span>
+                  </div><!--İCONBAGG--> 
+                  <ul>
+                      <li class="nav-item text-light">Anasayfa</li>
+                      <li class="nav-item">Mağaza</li>
+                      <li class="nav-item">Detaylar</li>
+                      <li class="nav-item">Hakkımızda</li>
+                      <li class="nav-item">İletişim</li>
+                      <li class="nav-item ilet">Alışveriş</li>
+                  </ul>              
+          </div><!--content1866-->
+      </div><!--sidebar-->
+      </header><!--container-->
+  </div>
+  <script>
+      window.addEventListener("scroll",function(){
+          var header = document.querySelector(".flex-container");
+          header.classList.toggle("sticky", window.scrollY > 80); /* buradaki sayı pixel  */
+      })
+  </script>
+  <div class="bannerlar container">
+     <div class="section1 row" data-aos="fade-down" data-aos-delay="180" data-aos-duration="1500">
+        <center><img src="img/tea4-slider-logo.png" alt="img/tea4-slider-logo.png"></center>
+     </div><!--section1-->
+     <div class="section2 row"  data-aos="zoom-in" data-aos-duration="1500">
+        <div class="text col-12">Dünyanın en uzak yerlerinden <br> özel kaliteli çay</div><!--text-->
+     </div><!--section2-->
+     <div class="section3 row" data-aos-delay="180"  data-aos="fade-up" data-aos-duration="1500">
+        <div class="textalt col12">Tüketici odaklı hizmet sunan, insana ve doğaya duyarlı, kaliteli ve güvenilir dünya markası olmak.</div>
+     </div><!--section3-->
+
+  </div><!--content-list-->
+
+  </div><!--AREA1-->
+
+
+
+<div class="area2 container-fluid">
+    <div class="container">
+    <div class="image">
+        <img src="img/tea4-sep1.png" alt="img/tea4-sep1.png" />
+    </div><!--image-->
+    <div class="content1 container-fluid">
+        <div class="estate1 row">
+            <div class="country1 col-lg-9 col-md-12"  data-aos="zoom-in" data-aos-duration="2000">
+                <img src="img/tea4-about-pic3.webp" alt="img/tea4-about-pic3.webp">
+            </div><!--country1-->
+            <div class="country2 pl-2 align-self-center col-lg-3 col-md-12">
+                <div class="case1 mb-3 row">
+                    <div class="pouch col-12" data-aos="fade-left" data-aos-duration="1500">
+                        Dünyanın en uzak yerlerinden özel kaliteli çay
+                    </div><!--pouch-->
+                </div><!--case1-->
+                <div class="case2 row">
+                    <div class="pouch col-12" data-aos="fade-right" data-aos-duration="1500">
+                    Dünyanın bir ucundan bir ucuna geçen çay serüveninde özenle yetiştirilip, düzenli olarak toplanan çaylarımız sizin bu tadlara ulaşmanız için bünyemize topladık.
+                </div><!--pouch-->
+                </div><!--case2-->
+                <div class="case3 justify-content-left row">
+                    <div class="pouch col-12" data-aos="fade-left" data-aos-duration="1500">
+                    <button class="btn ">devam et</button>
+                </div><!--pouch-->
+                </div><!--case3-->
+            </div><!--country2-->
+        </div><!--estate1-->
+        <div class="estate2 row">
+            <div class="country container">
+                <div class="case row">
+                    <div class="pouch1 col-md-5 col-sm-8" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="pocket1 row">
+                            <div class="vest col-12">
+                           <img class="backGro d-block w-100" src="img/tea4-about-pic4.webp" alt="img/tea4-about-pic4.webp">
+                           <!--<span class="layer"></span>--> 
+                           <span><img src="img/tea4-about-icon2.png" alt="img/tea4-about-icon2.png"></span>  
+                          
+                        </div><!--vest-->
+                      </div><!--pocket1-->   
+                          <div class="pocket2 row">   
+                            <div class="vest col-12" data-aos="fade-left" data-aos-duration="2000">
+                                <p>Hindistan'ın ünlü çay uzmanlarından biriyle tarladan bardağa çayın hikayesinin peşine düştük...</p>
+                            </div><!--vest-->
+                        </div><!--pocket2-->
+                    </div><!--pouch1-->
+                    <div class="pouch2 col-md-5 col-sm-8"  data-aos="fade-right" data-aos-duration="2000">
+                        <div class="pocket1 row">
+                            <div class="vest col-12">
+                                <img class="backGro d-block w-100" src="img/tea4-about-pic5.webp" alt="img/tea4-about-pic5.webp">
+                   
+                                <span><img src="img/tea4-about-icon1.png" alt="img/tea4-about-icon1.png"></span>                                 
+                        </div><!--vest-->
+                      </div><!--pocket1-->   
+                          <div class="pocket2 row">   
+                            <div class="vest col-12" data-aos="fade-right" data-aos-duration="2000">
+                                <p>Farklı bitki yapraklarının geleneksel Çin yöntemleri ile işlenip hazırlanması ile oluşan çay türleri...</p>
+                            </div><!--vest-->
+                        </div><!--pocket2-->               
+                    </div><!--pouch2-->
+                </div><!--case-->
+            </div><!--country-->
+        </div><!--estate2-->
+    </div><!--content1-->
+</div><!--container-->
+</div><!--area2-->
+
+
+<div class="area3 container-fluid" style="background-color: #e8ebe9;">
+    <div class="section container" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="content1 row justify-content-center">
+            <div class="estate col-8"  data-aos="fade-up" data-aos-duration="2000"> <h3>Lezzetinizi seçin ve şimdi alışveriş yapın</h3></div><!--estate-->
+        </div><!--content1-->
+        <div class="content2 row justify-content-center">
+            <div class="estate1   col-md-4 col-sm-6" data-aos="fade-left" data-aos-duration="1500">
+                <div class="country1 row justify-content-center">
+                    <div class="teaShop col-12">
+                  <img class="w-100" src="img/tea4-shop-pic22.webp" alt="img/tea4-shop-pic2.webp">
+                   <span>Lorem Tea <br> <strong>25₺</strong></span>     
+                </div> 
+                </div><!--country1-->
+                
+            </div><!--estate1-->
+            <div class="estate2   col-md-4 col-sm-6" data-aos-delay="200" data-aos="fade-left" data-aos-duration="1500">
+                <div class="country1 row justify-content-center">
+                    <div class="teaShop col-12">
+                  <img class="w-100"  src="img/tea4-shop-pic33.webp" alt="img/tea4-shop-pic3.webp">
+                    <span>Lorem Tea <br> <strong>25₺</strong></span>  
+                    </div> 
+                </div><!--country1-->
+                
+            </div><!--estate2-->
+            <div class="estate3   col-md-4 col-sm-6" data-aos-delay="300" data-aos="fade-left" data-aos-duration="1500">
+                <div class="country1 row justify-content-center">
+                    <div class="teaShop col-12">
+                  <img class="w-100"  src="img/tea4-shop-pic44.webp" alt="img/tea4-shop-pic4.webp">
+                    <span>Lorem Tea <br> <strong>25₺</strong></span>  
+                    </div> 
+                </div><!--country1-->
+                
+            </div><!--estate3-->
+            <div class="estate4   col-md-4 col-sm-6" data-aos-delay="400" data-aos="fade-left" data-aos-duration="1500">
+                <div class="country1 row justify-content-center">
+                    <div class="teaShop col-12">
+                  <img class="w-100"  src="img/tea4-shop-pic55.webp" alt="img/tea4-shop-pic5.webp">
+                    <span>Lorem Tea <br> <strong>25₺</strong></span>  
+                    </div> 
+                </div><!--country1-->
+                
+            </div><!--estate4-->
+            <div class="estate5   col-md-4 col-sm-6" data-aos-delay="500" data-aos="fade-left" data-aos-duration="1500">
+                <div class="country1 row justify-content-center">
+                    <div class="teaShop col-12">
+                  <img class="w-100"  src="img/tea4-shop-pic66.webp" alt="img/tea4-shop-pic6.webp">
+                    <span>Lorem Tea <br> <strong>25₺</strong></span>  
+                    </div> 
+                </div><!--country1-->
+                
+            </div><!--estate5-->
+            <div class="estate6   col-md-4 col-sm-6" data-aos-delay="600" data-aos="fade-left" data-aos-duration="1500">
+                <div class="country1 row justify-content-center">
+                    <div class="teaShop col-12">
+                  <img class="w-100"  src="img/tea4-shop-pic77.webp" alt="img/tea4-shop-pic7.webp">
+                    <span>Lorem Tea <br> <strong>25₺</strong></span>  
+                    </div> 
+                </div><!--country1-->
+                
+            </div><!--estate6-->
+        </div><!--content2-->
+        <div class="content3 row justify-content-center" data-aos="flip-up" data-aos-duration="2000">
+             <div class="estate col-lg-8 col-md-4 col-sm-6"><a href="#">+ daha fazla</a></div><!--estate-->
+        </div><!--content3-->
+    </div><!--section-->
+</div><!--area3-->
+
+
+<div class="pottop4"></div>
+    <div class="area4 container-fluid">
+        <div class="section container">
+            <div class="content row justify-content-center">
+                <div class="estate1 col-lg-4 col-md-6-col-sm-12" data-aos="fade-right" data-aos-duration="2000" >Lezzetinizi seçin ve hemen alışveriş yapın</div><!--estate1-->
+                <div class="estate2 col-lg-8 col-md-6 align-self-center">
+                    <div class="country  row justify-content-center">
+                        <div class="case align-self-center  col-lg-3 col-md-6">
+                            <img data-aos="fade-down" data-aos-duration="1000" src="img/tea4-details-icon1.png" alt="img/tea4-details-icon1.png">
+                            <p data-aos="fade-up" data-aos-duration="1000" >kolay ödeme</p>
+                        </div><!--case-->
+                        <div class="case align-self-center  col-lg-3 col-md-6">
+                            <img data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" src="img/tea4-details-icon2.png" alt="img/tea4-details-icon2.png">
+                            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >kargo hizmeti</p>
+                        </div><!--case-->
+                        <div class="case align-self-center  col-lg-3 col-md-6">
+                            <img data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" src="img/tea4-details-icon3.png" alt="img/tea4-details-icon3.png">
+                            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">kolay ödeme</p>
+                        </div><!--case-->
+                        <div class="case align-self-center  col-lg-3 col-md-6">
+                            <img data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400" src="img/tea4-details-icon4.png" alt="img/tea4-details-icon4.png">
+                            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" >kolay ödeme</p>
+                        </div><!--case-->
+                    </div><!--country-->
+                </div><!--estate2-->
+            </div><!--content-->
+        </div><!--section-->
+    </div><!--area4--><div class="potbot4"></div>
+
+    <div class="area5 d-block container-fluid">
+        <div class="section row">
+            <div style="margin-bottom: 30px;" class="content1 col-lg-6 col-md-12">
+                <div class="kato345" data-aos="zoom-in" data-aos-duration="2000">
+                   <h4>Dünyanın en iyi tarlalarından müşterilerimiz için özel olarak seçilmiş en iyi malzemeler</h4>
+                    <p data-aos="fade-right" data-aos-duration="1500">Çay dünyasında farklı türler bulunur: beyaz, yeşil, siyah ve oolong. Her tür, benzersiz tat, aroma ve sağlık faydaları sunar. Kaliteli çay, taze ve kaliteli yapraklardan üretilir, dikkatli işlenir ve doğru demleme yöntemiyle hazırlanır. Yaprakların bütünlüğü, renk, aroma ve tadın dengesi, çayın kalitesini belirler. İyi bir çay keyifli içim deneyimi sağlar ve ruhunuzu ferahlatır.</p>
+                    <a href="#">Daha Fazla</a>
+                </div><!--kato345-->
+            </div><!--content1-->
+            <div class="content2 col-lg-6 col-md-12" data-aos="zoom-in" data-aos-duration="2000"><img style="visibility: hidden;" class="w-100" src="img/tea4-about-pic11.webp" alt="img/tea4-about-pic11.webp"></div><!--content2-->
+        </div><!--section-->
+    </div><!--area5-->
+
+
+<div class="footer container-fluid" style="background-color: #e3ebe4;">
+    <div class="section container">
+        <div class="content1 row"></div><!--content1-->
+        <div class="content2 row">
+            <div class="estate1 col-lg-4 col-sm-12"><img src="img/tea4-footer-logo.png" alt="img/tea4-footer-logo.png"></div><!--estate1-->
+            <div class="estate2 col-lg-4 col-sm-12">
+                <h4>İletişim</h4>
+                <p>Bize ulaşmak için başvuracağınız adımlar</p>
+                <a href="mailto:yoytukkaya@gmail.com"><i class=" fa-solid fa-envelope"></i> yoytukkaya@gmail.com</a> 
+                <a href="phone:+901231231233"><i class="fa-solid fa-mobile-screen-button"></i> +90 123 123 1233</a>
+            </div><!--estate2-->
+            <div class="estate3 col-lg-4 col-sm-12">
+                <h4>konum</h4>
+                <p>Örnek Mahallesi, Örnek Sokak No: 123  Örnek İlçesi, Ankara Türkiye</p>
+            </div><!--estate3-->
+        </div><!--content2-->
+        <div class="content3 row">
+           <a class="col-md-4 col-sm-12" href="#">@2023 - Yasin Betea website DEMO</a>
+           <a class="but col-md-3 col-sm-12" href="#"><i class="fa-solid fa-chevron-up"></i></a>
+        </div><!--content3-->
+    </div><!--section-->
+</div><!--footer-->
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/209153efa7.js" crossorigin="anonymous"></script>
+<script src="tilt.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: true
+    });
+  </script>
+<script>
+    $(document).ready(function(){
+        $('.teaShop').tilt({
+            glare: true,
+    maxGlare: .3
+    })        
+         })
+    </script>  
+
+</body>
+</html>

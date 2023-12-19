@@ -1,0 +1,2548 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Veterinary</title>
+    <link rel="icon" href="veterinary-doc/logo_veterinary.png" type="image/x-icon">
+<style type="text/css">
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url(veterinary-doc/OpenSans-Regular.woff);
+  src: url(veterinary-doc/OpenSans-Regular.woff2);
+}
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url(veterinary-doc/OpenSans-ExtraBold.woff);
+  src: url(veterinary-doc/OpenSans-ExtraBold.woff2);
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url(veterinary-doc/OpenSans-Light.woff);
+  src: url(veterinary-doc/OpenSans-Light.woff2);
+}
+::selection{
+  color: #fff;
+  background-color: #55bce9;
+}
+.gradiant{
+    width: 100%;
+    height: 10px;
+    background: #20bbe9;
+    background: linear-gradient(90deg, #20bbe9 0%, #55bce9 0%, #7370b5 100%);
+}
+.area1 .section .content1 .estate{
+  color: #b2b2b2;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.area1 .section .content1 .estate .country1:hover{color: #507cbe;} 
+.area1 .section .content1 .estate .country2:hover{color: #00abef;} 
+.area1 .section .content1 .estate .country3:hover{color: #d93e2d;}
+.area1 .section .content1 .estate .country4:hover{color: #3371b7;}
+.area1 .section .content1 .estate .country5:hover{color: #e84d88;}
+.area1 .section .content2 .estate, .country1, .country2, .country3 a{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #b2b2b2;
+  text-decoration: none;
+  text-align: center;
+}
+#at86, #at87, #at88{
+  color: #55bce9;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.area3 {
+  position: relative;
+  color: white;
+}.area3 .caro1 .item .section1{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.area3 .caro1 .item .section1 .content1 .estate{
+  font-size: 50px;
+  font-family: OpenSans-Regular;
+  color: #55bce9;
+}
+.area3 .caro1 .item .section1 .content2 .estate{
+  font-size: 60px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  font-weight: bold;
+}
+.area3 .caro1 .item .section1 .content3 .estate .btn{
+  font-size: 16px;
+  padding: 15px;
+  font-family: OpenSans-Regular;
+}
+.area3 .caro1 .item .section2{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.area3 .caro1 .item .section2 .content1 .estate{
+  font-size: 50px;
+  font-family: OpenSans-Regular;
+  color: #55bce9;
+}
+.area3 .caro1 .item .section2 .content2 .estate{
+  font-size: 60px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  font-weight: bold;
+}
+.area3 .caro1 .item .section2 .content3 .estate{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #323232;
+  font-weight: bold;
+}
+.area3 .caro1 .item .section2 .content4 ul{
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area3 .caro1 .item .section2 .content4 ul li{
+  margin: 20px;
+  padding: 20px 30px 20px 30px;
+  border: 1px solid #323232;
+  color: #323232;
+  font-size: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.area3 .caro1 .item .section2 .content4 ul li:hover{
+  border: 1px solid #55bce9;
+  color: #55bce9;
+  transition: 0.2s;
+}
+#kelek{
+  height: 20vh;
+  background-color: #fff;
+}
+@media only screen and (max-width: 1200px) {        /*     MEDIA SCREEN     */
+  .area3 .caro1 .item .section1{
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+
+.area3 .caro1 .item .section1 .content1 .estate{
+  font-size: 30px;
+  font-family: OpenSans-Regular;
+  color: #55bce9;
+}
+.area3 .caro1 .item .section1 .content2 .estate{
+  font-size: 40px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  font-weight: bold;
+}
+.area3 .caro1 .item .section1 .content3 .estate .btn{
+  font-size: 16px;
+  padding: 10px;
+  font-family: OpenSans-Regular;
+}
+.area3 .caro1 .item .section2{
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+.area3 .caro1 .item .section2 .content1 .estate{
+  font-size: 30px;
+  font-family: OpenSans-Regular;
+  color: #55bce9;
+}
+.area3 .caro1 .item .section2 .content2 .estate{
+  font-size: 40px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  font-weight: bold;
+}
+.area3 .caro1 .item .section2 .content4 ul li{
+  font-size: 16px;
+  padding: 5px 10px 5px 10px
+}
+}
+@media only screen and (max-width: 600px) {        /*     MEDIA SCREEN     */
+#kef{max-width: 50%;}
+#navbar_top{position: relative; z-index: 10000;}
+#navbar_top button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px 30px 0 0;
+}
+#kelek{height: 50vh;}
+#navbarNav{margin-left: 70%; width: 100%; z-index: 10000;}
+#navbarNav .nav-item{margin-bottom: 30px;}
+.area4 .section{
+  margin-top: 15%;
+}
+.area3 .caro1 .item .section1 .content1 .estate{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #55bce9;
+}
+.area3 .caro1 .item .section1 .content2 .estate{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  font-weight: bold;
+}
+.area3 .caro1 .item .section1 .content3 .estate .btn{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+}
+.area3 .caro1 .item .section2 .content1 .estate{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #55bce9;
+}
+.area3 .caro1 .item .section2 .content2 .estate{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  font-weight: 700;
+}
+.area3 .caro1 .item .section2 .content3 .estate{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #323232;
+  font-weight: bold;
+}
+.area3 .caro1 .item .section2 .content4 ul li{
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #323232;
+  color: #323232;
+  font-size: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+}                               /*              bitiş                       */
+
+.area4 .section .content1 {
+  background: url(veterinary-doc/teaser01.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.area4{
+  position: relative;
+  margin-top: -10%;
+  z-index: 1;
+}
+.area4 .section .content1 .boiler .estate1 span{
+  color: #323232;
+  font-family: OpenSans-Regular;
+  font-size: 20px;
+  text-align: center;
+}
+.area4 .section .content1 .boiler{
+  padding: 30px;
+}    
+.area4 .section .content1 .boiler .estate1 h2{
+  color: #fff;
+  font-family: OpenSans-Regular;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.area4 .section .content1 .boiler .estate2 p{
+  color: #323232;
+  font-family: OpenSans-Regular;
+  font-size: 16px;
+  text-align: center;
+} 
+.area4 .section .content1 .boiler .estate3 .country p{
+  font-family: OpenSans-Regular;
+  cursor: pointer;
+  font-size: 16px;
+  border:1px solid #323232;
+  color: #323232;
+  text-align: center;
+  padding: 10px;
+  transition: 0.4s;
+}
+.area4 .section .content1 .boiler .estate3 .country p:hover{
+  background-color: #323232;
+  color: #fff;
+  transition: 0.2s;
+}
+.area4 .section .content2 {
+  background: url(veterinary-doc/teaser02.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.area4 .section .content2 .boiler .estate1 span{
+  color: #323232;
+  font-family: OpenSans-Regular;
+  font-size: 20px;
+  text-align: center;
+}
+.area4 .section .content2 .boiler{
+  padding: 30px;
+}    
+.area4 .section .content2 .boiler .estate1 h2{
+  color: #fff;
+  font-family: OpenSans-Regular;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.area4 .section .content2 .boiler .estate2 p{
+  color: #323232;
+  font-family: OpenSans-Regular;
+  font-size: 16px;
+  text-align: center;
+} 
+.area4 .section .content2 .boiler .estate3 .country p{
+  font-family: OpenSans-Regular;
+  cursor: pointer;
+  font-size: 16px;
+  border:1px solid #323232;
+  color: #323232;
+  text-align: center;
+  padding: 10px;
+  transition: 0.4s;
+}
+.area4 .section .content2 .boiler .estate3 .country p:hover{
+  background-color: #323232;
+  color: #fff;
+  transition: 0.2s;
+}
+.area4 .section .content3 {
+  background: url(veterinary-doc/teaser03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.area4 .section .content3 .boiler .estate1 span{
+  color: #323232;
+  font-family: OpenSans-Regular;
+  font-size: 20px;
+  text-align: center;
+}
+.area4 .section .content3 .boiler{
+  padding: 30px;
+}    
+.area4 .section .content3 .boiler .estate1 h2{
+  color: #fff;
+  font-family: OpenSans-Regular;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.area4 .section .content3 .boiler .estate2 p{
+  color: #323232;
+  font-family: OpenSans-Regular;
+  font-size: 16px;
+  text-align: center;
+} 
+.area4 .section .content3 .boiler .estate3 .country p{
+  font-family: OpenSans-Regular;
+  cursor: pointer;
+  font-size: 16px;
+  border:1px solid #323232;
+  color: #323232;
+  text-align: center;
+  padding: 10px;
+  transition: 0.4s;
+}
+.area4 .section .content3 .boiler .estate3 .country p:hover{
+  background-color: #323232;
+  color: #fff;
+  transition: 0.2s;
+}
+.area5 .owl-dots .owl-dot span{
+  background-color: #323232;
+  width: 10px;
+  height: 10px;
+}
+.area5 .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span{
+  background-color: #55bce9;
+}
+.area5{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4% 0 4% 0;
+}
+.area5 .item .tirnak{
+  font-size: 80px;
+  color: #55bce9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area5 .item .yazi{
+  font-family: OpenSans-Regular;
+  font-size: 50px;
+  font-weight: 900;
+  font-style: italic;
+  color: #323232;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+.area5 .item .adam{
+  font-family: OpenSans-Regular;
+  font-size: 28px;
+  font-weight: 700;
+  color: #323232;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+}
+.area5 .item .adam span{
+  color: #55bce9;
+  padding-left: 5px;
+}
+.area6{
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area6 .item{
+  position: relative;
+  margin-top: 20px;
+}
+.area6 .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #7e77b3d2;
+}
+.area6 .item:hover .overlay {
+  opacity: 1;
+}
+.area6 .item .icon80 {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 36%;
+  text-align: center;
+  background-color: #55bce8;
+  padding: 10px 15px;
+  transition: 0.2s ease-out;
+}
+.area6 .item .icon80:hover{
+  background-color: #fff;
+  color: #7e77b3;
+  transition: 0.2s ease-in;
+}
+.area6 .item:hover .icon80{
+  top: 20%;
+  transition: 0.2s ease-in;
+}
+.area6 .item .icon81 {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 36%;
+  text-align: center;
+  background-color: #7e77b3;
+  padding: 10px 15px;
+  transition: 0.4s ease-out;
+}
+.area6 .item .icon81:hover{
+  background-color: #fff;
+  color: #7e77b3;
+  transition: 0.2s ease-in;
+}
+.area6 .item:hover .icon81{
+  top: 20%;
+  transition: 0.3s ease-in;
+}
+.area6 .item .tex1 {
+  color: white;
+  font-family: OpenSans-Regular;
+  font-weight: 500;
+  font-size: 24px;
+  position: absolute;
+  bottom: 20%;
+  left: 28%;
+  text-align: center;
+  transition: 0.2s ease-out;
+}
+.area6 .item .tex2 {
+  color: #55bce8;
+  font-family: OpenSans-Regular;
+  font-weight: 500;
+  font-size: 16px;
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  text-align: center;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.area6 .item .tex2 span:hover{
+  color: #fff;
+  transition: 0.2s;
+} 
+.area6 .owl-nav{margin-top: 0;}
+.area6 .owl-nav .owl-prev span{
+  position: absolute;
+  left: 0;
+  top: 25%;
+  background-color: #55bde9cc;
+  font-size: 24px;
+  width: 5%;
+  color: #fff;
+  height: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.area6 .owl-nav .owl-prev:hover span{
+  transition: 0.2s ease-in;
+  width: 8%;
+}
+.area6 .owl-nav .owl-next span{
+  position: absolute;
+  right: 0;
+  top: 25%;
+  background-color: #7e77b3d2;
+  color: #fff;
+  font-size: 24px;
+  width: 5%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transition: 0.4s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.area6 .owl-nav .owl-next:hover span{
+  transition: 0.2s ease-in;
+  width: 8%;
+}
+.area7{
+  padding: 50px 0 80px 0;
+}
+.area7 .section .yazi span{
+  font-family: OpenSans-Regular;
+  color: #55bce5;
+  font-weight: 700;
+}
+.area7 .section .yazi{
+  font-size: 30px;
+  color: #323232;
+  font-family: OpenSans-Regular;
+}
+.area7 .section .buton{
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #323232;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+.area7 .section .buton:hover{
+  background-color: #323232;
+  color: #fff;
+  transition: 0.2s ease-in;
+}
+.area7md{
+  padding: 30px 0 30px 0;
+  text-align: center;
+}
+.area7md .section .content .yazi span{
+  text-align: center;
+  font-family: OpenSans-Regular;
+  color: #55bce5;
+  font-weight: 700;
+}
+.area7md .section .content .yazi{
+  font-size: 30px;
+  color: #323232;
+  font-family: OpenSans-Regular;
+}
+.area7md .section .content .buton p{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #323232;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.area7md .section .content .buton:hover p{
+  background-color: #323232;
+  color: #fff;
+  transition: 0.2s ease-in;
+}
+.area8 .section .content1 input { display: none; }                /* hide radio buttons */
+.area8 .section .content1 input + label { display: inline-block } /* show labels in line */
+.area8 .section .content1 input ~ .tab { display: none }          /* hide contents */
+/* show contents only for selected tab */
+#tab1:checked ~ .tab.caldron1839,
+#tab2:checked ~ .tab.caldron2839,
+#tab3:checked ~ .tab.caldron3839
+{ display: block; }
+.area8 .section .content1 input + label {             /* box with rounded corner */
+  border: 1px solid rgb(105, 104, 104);
+  border-bottom: none;
+  background-color: #fff;
+  padding: 10px 15px 10px 15px;
+  position: relative;
+  font-family: OpenSans-Regular;
+  cursor: pointer;
+  margin: 0px;
+  transition: 0.4s ease-out;
+}
+.area8 .section .content1 input + label:hover{
+  background: #55bce9;
+  color: #fff;
+  transition: 0.2s ease-in;
+}
+.area8 .section .content1 input:checked + label {     /* white background for selected tab */
+  background: #55bce8;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  font-family: OpenSans-Regular;
+}
+.area8 .section .content1 .tab{
+  padding: 0;
+}
+.area8 .section .content1 .tab img{
+  min-height: 150px;
+}
+.area8 .section .content1 .tab p{
+  font-family: OpenSans-Regular;
+  color: #cecece;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #b2b2b2;
+  padding: 30px;
+  line-height: 30px;
+}
+.area8 .section .content2 .accordion .accordion-item{
+  font-family: OpenSans-Regular;
+  margin: 5px 0 5px 0;
+}
+.area8 .section .content2 .accordion .accordion-item .accordion-header{
+  font-family: OpenSans-Regular;
+  background-color: #7e77b3;
+  margin: 5px 0 5px 0;
+  transition: 0.3s ease-out;
+}
+.area8 .section .content2 .accordion .accordion-item  .accordion-header:hover{
+  background-color: #55bce9;
+  transition: 0.2s ease-in;
+}
+.area8 .section .content2 .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #55bce9;
+}
+.area8 .section .content2 .accordion-button{
+  color: #fff;
+}
+.area8 .section .content2 .accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(veterinary-doc/eksi.png);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+.area8 .section .content2 .accordion-button:not(.collapsed)::after {
+    background-image: url(veterinary-doc/artı.png);
+    transform: rotate(
+180deg);
+}
+.area9{
+  width: 100%;
+  background-image: url('veterinary-doc/featured.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+ .area9 .area9cfg{
+  background-color: #55bde9b9;
+}
+.area9 .area9cfg .content .estate1 .country1 h1{
+  font-size: 50px;
+  font-family: OpenSans-Regular;
+  color: #323232;
+  margin-top: 60px;
+  margin-bottom: 22px;
+  font-weight: 800;
+  text-align: left;
+}
+.area9 .area9cfg .content .estate1 .country1 p{
+  font-size: 28px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  margin-bottom: 28px;
+  font-weight: 500;
+  text-align: left;
+}
+.area9 .area9cfg .content .estate1 .country2 .case1, .case2, .case3, .case4{
+  margin: 15px 0;
+}
+#area9_case1{
+  background-color: #7370b5;
+  color: white;
+  font-size: 25px;
+  padding: 20px 25px;
+  border-radius: 50%;
+  transition:0.4s ease-out;
+}
+.area9 .area9cfg .section .content .estate1 .country2 .case1:hover .pouch .pocket1 #area9_case1{
+  color: #7370b5;
+  background-color: #fff;
+  transition:0.2s ease-in;
+}
+.area9 .area9cfg .section .content .estate1 .country2 .case1 .pouch .pocket2 h3{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+.area9 .area9cfg .section .content .estate1 .country2 .case1 .pouch .pocket2 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: left;
+}
+#area9_case2{
+  background-color: #7370b5;
+  color: white;
+  font-size: 23px;
+  padding: 20px;
+  border-radius: 50%;
+  transition:0.4s ease-out;
+}
+.area9 .area9cfg .content .estate1 .country2 .case2:hover .pouch .pocket1 #area9_case2{
+  color: #7370b5;
+  background-color: #fff;
+  transition:0.2s ease-in;
+}
+.area9 .area9cfg .section .content .estate1 .country2 .case2 .pouch .pocket2 h3{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+.area9 .area9cfg .section .content .estate1 .country2 .case2 .pouch .pocket2 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: left;
+}
+#area9_case3{
+  background-color: #7370b5;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  transition:0.4s ease-out;
+}
+.area9 .area9cfg .content .estate1 .country2 .case3:hover .pouch .pocket1 #area9_case3{
+  color: #7370b5;
+  background-color: #fff;
+  transition:0.2s ease-in;
+}
+.area9 .area9cfg .section .content .estate1 .country2 .case3 .pouch .pocket2 h3{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+.area9 .area9cfg .section .content .estate1 .country2 .case3 .pouch .pocket2 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: left;
+}
+#area9_case4{
+  background-color: #7370b5;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  transition:0.4s ease-out;
+}
+.area9 .area9cfg .content .estate1 .country2 .case4:hover .pouch .pocket1 #area9_case4{
+  color: #7370b5;
+  background-color: #fff;
+  transition:0.2s ease-in;
+}
+.area9 .area9cfg .section .content .estate1 .country2 .case4 .pouch .pocket2 h3{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+.area9 .area9cfg .section .content .estate1 .country2 .case4 .pouch .pocket2 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.area10 .owl-dots .owl-dot span{
+  background-color: #323232;
+  width: 10px;
+  height: 10px;
+}
+.area10 .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span{
+  background-color: #55bce9;
+}
+.area10{
+  margin: 4% 0 4% 0;
+}
+.area10 .item{
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 30px;
+}
+.area10 .item .tirnak{
+  font-size: 80px;
+  color: #55bce9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area10 .item .yazi h3{
+  font-family: OpenSans-Regular;
+  font-size: 20px;
+  font-weight: 900;
+  color: #2a2a2a;
+  text-align: center;
+  padding-top: 30px;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+.area10 .item .yazi h3:hover{color: #55bce9; transition: 0.2s ease-in;}
+.area10 .item .yazi p{
+  font-family: OpenSans-Light;
+  font-size: 16px;
+  color: #55bce9;
+  text-align: center;
+}
+.area10 .item .ada .adam .vessel{
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  font-weight: 700;
+  color: #323232;
+  padding-bottom: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.area10 .item .ada .adam .vessel .col-3:hover{
+  color: #55bce9;
+  transition: 0.2s ease-in;
+}
+.area10layer{
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+.area11{
+  margin: 5% 0 5% 0;
+} 
+.area11 .content .estate1 .country1 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #b2b2b2;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 40px;
+}
+.area11 .content .estate1 .country2{
+  margin-top: 20px;
+}
+.area11 .content .estate1 .country2 .case1, .case2, .case3, .case4, .case5, .case6{
+  margin: 10px 0;
+}
+#area11_case1{
+  background-color: #7370b5;
+  color: white;
+  font-size: 25px;
+  padding: 20px 25px;
+  border-radius: 50%;
+  transition:0.4s ease-out;
+}
+.area11 .section .content .estate1 .country2 .case1:hover .pouch .pocket1 #area11_case1{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #55bcd9;
+  transition:0.2s ease-in;
+}
+.area11 .section .content .estate1 .country2 .case1 .pouch .pocket2 h3{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  color: #111;
+  cursor: pointer;
+  text-align: left;
+}
+.area11 .section .content .estate1 .country2 .case1 .pouch .pocket2 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #b2b2b2;
+  margin-bottom: 15px;
+  text-align: left;
+}
+#area11_case2{
+  background-color: #7370b5;
+  color: white;
+  font-size: 23px;
+  padding: 20px;
+  border-radius: 50%;
+  transition:0.4s ease-out;
+}
+.area11 .content .estate1 .country2 .case2:hover .pouch .pocket1 #area11_case2{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #55bcd9;
+  transition:0.2s ease-in;
+}
+.area11 .section .content .estate1 .country2 .case2 .pouch .pocket2 h3{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  color: #111;
+  cursor: pointer;
+  text-align: left;
+}
+.area11 .section .content .estate1 .country2 .case2 .pouch .pocket2 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #b2b2b2;
+  margin-bottom: 15px;
+  text-align: left;
+}
+#area11_case3{
+  background-color: #7370b5;
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  transition:0.4s ease-out;
+}
+.area11 .content .estate1 .country2 .case3:hover .pouch .pocket1 #area11_case3{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #55bcd9;
+  transition:0.2s ease-in;
+}
+.area11 .section .content .estate1 .country2 .case3 .pouch .pocket2 h3{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  color: #111;
+  cursor: pointer;
+  text-align: left;
+}
+.area11 .section .content .estate1 .country2 .case3 .pouch .pocket2 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #b2b2b2;
+  margin-bottom: 15px;
+  text-align: left;
+}
+#area11_case4{
+  background-color: #7370b5;
+  color: #fff;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  transition:0.4s ease-out;
+}
+.area11 .content .estate1 .country2 .case4:hover .pouch .pocket1 #area11_case4{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #55bcd9;
+  transition:0.2s ease-in;
+}
+.area11 .section .content .estate1 .country2 .case4 .pouch .pocket2 h3{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  color: #111;
+  cursor: pointer;
+  text-align: left;
+}
+.area11 .section .content .estate1 .country2 .case4 .pouch .pocket2 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #b2b2b2;
+  margin-bottom: 15px;
+  text-align: left;
+}
+#area11_case5{
+  background-color: #7370b5;
+  color: #fff;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  transition:0.4s ease-out;
+}
+.area11 .content .estate1 .country2 .case5:hover .pouch .pocket1 #area11_case5{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #55bcd9;
+  transition:0.2s ease-in;
+}
+.area11 .section .content .estate1 .country2 .case5 .pouch .pocket2 h3{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  color: #111;
+  cursor: pointer;
+  text-align: left;
+}
+.area11 .section .content .estate1 .country2 .case5 .pouch .pocket2 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #b2b2b2;
+  margin-bottom: 15px;
+  text-align: left;
+}
+#area11_case6{
+  background-color: #7370b5;
+  color: #fff;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 50%;
+  transition:0.4s ease-out;
+}
+.area11 .content .estate1 .country2 .case6:hover .pouch .pocket1 #area11_case6{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #55bcd9;
+  transition:0.2s ease-in;
+}
+.area11 .section .content .estate1 .country2 .case6 .pouch .pocket2 h3{
+  font-size: 20px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  color: #111;
+  cursor: pointer;
+  text-align: left;
+}
+.area11 .section .content .estate1 .country2 .case6 .pouch .pocket2 p{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  color: #b2b2b2;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.area11 .section .content .estate2 .country1 .case h1{
+  margin-top: 30px;
+  font-size: 50px;
+  font-family: OpenSans-Regular;
+  color: #323232;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.area11 .section .content .estate2 .country1 .case h1 span{
+  color: #55bcd9;
+}
+.area11 .section .content .estate2 .country2 h3{
+  color: #b2b2b2;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-family: OpenSans-Regular;
+  text-align: left;
+}
+.area11 .section .content .estate2 .country2 p{
+  color: #323232;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-family: OpenSans-Regular;
+  border: 1px solid black;
+  text-align: center;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+.area11 .section .content .estate2 .country2 p:hover{
+color: #fff;
+background-color: #323232;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+transition: 0.2s ease-in;
+}
+.content12{
+  width: 100%;
+  background-image: url('veterinary-doc/subscribe.jpg');
+  background-size: cover;
+  cursor: grab;
+  background-attachment: fixed;
+}
+ .content12 .layer12{
+  background-color: rgba(255, 255, 255, 0.719);
+}
+.layer13 .container{
+  padding: 4% 0 4% 0;
+}
+.layer13 .progress{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.layer13 .progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 15px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.layer13 .progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.layer13 .progress .progress-left{
+    left: 0;
+}
+.layer13 .progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 15px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.layer13 .progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.layer13 .progress .progress-right{
+    right: 0;
+}
+.layer13 .progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.layer13 .progress .progress-value{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-family: OpenSans-Regular;
+    font-weight: 700;
+    color: #323232;
+    text-align: center;
+    position: absolute;
+}
+.layer13 .progress.blue .progress-bar{
+    border-color: #26abfd;
+}
+.layer13 .progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.layer13 .progress.yellow .progress-bar{
+    border-color: #fdc426;
+}
+.layer13 .progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.layer13 .progress.pink .progress-bar{
+    border-color: #f83754;
+}
+.layer13 .progress.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.layer13 .progress.green .progress-bar{
+    border-color: #1abc9c;
+}
+.layer13 .progress.green .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(160deg);
+        transform: rotate(160deg);
+    }
+}
+@keyframes loading-3{     /*   2-circular   */ 
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(170deg);
+        transform: rotate(170deg);
+    }
+}
+@keyframes loading-4{ /*   3-circular   */
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(120deg);
+        transform: rotate(120deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+.layer13{
+  width: 100%;
+  background-image: url('veterinary-doc/progress.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+ .layer13 .layerimg{
+  background-color: #7e77b3cb;
+}
+.layer13 center{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  margin-top: 30px;
+}
+.layer14{
+  width: 100%;
+  background-image: url('veterinary-doc/map.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+ .layer14 .layerbg14{
+  background-color: rgba(255, 255, 255, 0.836);
+}
+.layer14 .layerbg14 .container{
+  padding: 5% 0 0 0;
+}
+.layer14 .layerbg14 .container .row1 .col{
+  font-size: 50px;
+  font-family: OpenSans-Regular;
+  color: #323232;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.layer14 .layerbg14 .container .row2 .content1 .pot1 .case{
+  color: #55bce9;
+  font-size: 40px;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+.layer14 .layerbg14 .container .row2 .content1 .pot2 .case p{
+  color: #b2b2b2;
+  text-align: center;
+  line-height: 30px;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+.layer14 .layerbg14 .container .row2 .content1 .pot2 .case p span{
+  font-family: OpenSans-Regular;
+  font-size: 22px;
+  color: #323232;
+  font-weight: 700;
+}
+#cindy{
+  background-image: url('veterinary-doc/progress.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 25vh;
+}
+ #cindybgc{
+  background-color: #55bce8d2;
+}
+.layer14 .layerbg14 .container .row3{
+  padding: 50px;
+  color: #fff;
+  margin-top: 5%;
+}
+.layer14 .layerbg14 .container .row3 .section1 p input{
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-family: OpenSans-Regular;
+}
+.layer14 .layerbg14 .container .row3 .section1 p input::placeholder{
+  color: #fff;
+}
+.layer14 .layerbg14 .container .row3 .section1 p input:focus{
+  outline: none !important;
+  border-color: #fff;
+}
+.layer14 .layerbg14 .container .row3 .section2 .form-control{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  font-family: OpenSans-Regular;
+  height: 80%;
+}
+.layer14 .layerbg14 .container .row3 .section2 .form-control::placeholder{
+  color: #fff;
+}
+.layer14 .layerbg14 .container .row3 .section2 .form-control:focus{
+  outline: none !important;
+  border: 1px solid #fff;
+}
+.layer14 .layerbg14 .container .row3 center{
+  background-color: #323232;
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20%;
+  padding: 15px 0 15px 0;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: 0.3s ease-out;
+}
+.layer14 .layerbg14 .container .row3 center:hover{
+  background-color: #fff;
+  color: #323232;
+  transition: 0.2s ease-in;
+}
+
+.son{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5%;
+  padding-bottom: 10vh;
+}
+.son h1{
+  font-size: 50px;
+  font-family: OpenSans-Regular;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.son p{
+  font-size: 26px;
+  font-family: OpenSans-Regular;
+  font-weight: 500;
+  color: #b2b2b2;
+}
+.son p span{
+  color: #55bcd9;
+  cursor: pointer;
+}
+navbar-lg{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: wrap;
+}
+
+#navbar-mobile{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: wrap;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin: 10px;
+  position: relative;
+
+}
+.area1978 .nbr{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  padding-top: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+.area1978 .nbr .navbar-nav{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: wrap;
+  text-align: center;
+}
+.area1978 .nbr .navbar-nav .nav-item .nav-link{
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: OpenSans-Regular;
+  margin: 0px 15px 0px 15px ;
+  letter-spacing: 1px;
+}
+.area1978 .smart .collapse .navbar-nav{padding: 15px; background-color: #ffffffaf;}
+.area1978 .smart .collapse .navbar-nav .navbar-item {
+  color: #323232;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: OpenSans-Regular;
+  margin: 10px 15px 10px 15px ;
+  letter-spacing: 1px;
+  transition: 0.4s;
+
+}
+.area1978 .smart .collapse .navbar-nav .navbar-item:hover{
+  transition: 0.2s;
+  color: #55bce9;
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+} 
+#zık button {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #55bce9;
+}
+.area2 .navbar-nav{
+margin-left: auto;
+margin-right: 5%;
+}
+
+.yasinbtn1 {
+  font-family: OpenSans-Regular;
+  background-color: #fff;
+  font-weight: 700;
+  color: #323232;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.yasindown1 {
+  position: relative;
+  display: inline-block;
+}
+.yasindown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #55bce9;
+  color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10000;
+  padding: 15px 30px;
+}
+.yasindown-content1 a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s ease-out;
+}
+.yasindown-content1 a:hover {color: #323232; transition: 0.2s ease-in;}
+.yasindown1:hover .yasindown-content1 {display: block;}
+.yasindown1:hover .yasinbtn1 {color: #7e77b3;}
+.navbar .container-fluid .navbar-toggler{
+  background-color: #55bce9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body> 
+
+<div class="gradiant"></div>
+      
+<div class="area1 container-fluid">
+    <div class="section justify-content-around row my-1">
+        <div class="content1  col-lg-3 col-md-8">
+            <div class="estate justify-align-center row">
+                <div class="country1 my-1 align-self-center col"><i class="fab fa-facebook-f"></i></div><!--COUNTRY1-->
+                <div class="country2 my-1 align-self-center col"><i class="fab fa-twitter"></i></div><!--COUNTRY2-->
+                <div class="country3 my-1 align-self-center col"><i class="fab fa-google-plus-g"></i></div><!--COUNTRY3-->
+                <div class="country4 my-1 align-self-center col"><i class="fab fa-linkedin-in"></i></div><!--COUNTRY4-->
+                <div class="country5 my-1 align-self-center col"><i class="fab fa-dribbble"></i></div><!--COUNTRY5-->
+            </div><!--ESTATE"-->
+        </div><!--CONTENT1-->
+        <div class="content2 align-self-center  col-lg-7 col-md-8">
+          <div class="estate justify-align-center row">
+            <div class="country1 my-1 align-self-center col-md-4 col-sm-12"><i id="at86" class="fas fa-map-marker-alt"></i>4321 Mamak, Ankara</div><!--COUNTRY1-->
+            <div class="country2 my-1 align-self-center col-md-4 col-sm-12"><i id="at87" class="fas fa-mobile-alt"></i> 8 (800) 695-2684</div><!--COUNTRY2-->
+            <div class="country3 my-1 align-self-center col-md-4 col-sm-12"><i id="at88" class="far fa-envelope"></i><a href="mailto:yoytukkaya@gmail.com">yoytukkaya@gmail.com</a></div><!--COUNTRY3-->
+          </div><!--ESTATE-->
+        </div><!--CONTENT2-->
+    </div><!--SECTION-->
+</div><!--AREA1-->
+
+<nav id="navbar_top" class="navbar area2 navbar-expand-lg navbar-dark" style="background-color: #fff; box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;">
+  <div class="container-fluid">
+    <a style="margin-left: 5%;" class="navbar-brand" href="#"><img id="kef" src="veterinary-doc/navlog.png" alt="veterinary-doc/navlog.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <div class="yasindown1">
+            <button class="yasinbtn1">Ürünler</button>
+            <div class="yasindown-content1">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 4</a>
+              <a href="#">Link 5</a>
+              <a href="#">Link 6</a>
+              <a href="#" style="border-bottom: none;">Link 7</a>
+            </div>
+        </li>
+        <li class="nav-item">
+          <div class="yasindown1">
+            <button class="yasinbtn1">Hikayemiz</button>
+            <div class="yasindown-content1">
+              <a href="#">Link 1</a>
+              <a href="#" style="border-bottom: none;">Link 2</a>
+            </div>
+        </li>
+        <li class="nav-item">
+          <div class="yasindown1">
+            <button class="yasinbtn1">Hakkımızda</button>
+            <div class="yasindown-content1">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 4</a>
+              <a href="#">Link 5</a>
+              <a href="#" style="border-bottom: none;">Link 7</a>
+            </div>
+        </li>
+        <li class="nav-item">
+          <div class="yasindown1">
+            <button class="yasinbtn1">İletişim</button>
+            <div class="yasindown-content1">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#" style="border-bottom: none;">Link 3</a>
+            </div>
+        </li>
+        <li class="nav-item">
+          <div class="yasindown1">
+            <button class="yasinbtn1">Harita</button>
+            <div class="yasindown-content1">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              <a href="#">Link 4</a>
+              <a href="#" style="border-bottom: none;">Link 5</a>
+            </div>
+         </li>
+          <li class="nav-item">
+            <div class="yasindown1">
+              <button class="yasinbtn1">Mağaza</button>
+              <div class="yasindown-content1">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#" style="border-bottom: none;">Link 3</a>
+              </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 50) {
+        document.getElementById('navbar_top').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        document.getElementById('navbar_top').classList.remove('fixed-top');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
+}); 
+</script>
+
+<div class="area3">
+  <div class="owl-carousel caro1 owl-theme">
+    <div class="item">
+      <img src="veterinary-doc/slide01_veterenary.jpg" style="width:100%; margin-left: auto; margin-right: auto;" alt="slide01_veterenary.jpg">
+      <div class="section1">
+        <div class="content1 row"><div data-aos="flip-left" data-aos-duration="800" class="estate col text-capitalize">sağlığın İçin</div></div>
+        <div data-aos="flip-right"class="content2 row"><div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="500" class="estate col text-uppercase">en İyi arkadaş</div></div>
+        <div data-aos="flip-up" class="content3 row"><div data-aos="flip-up" data-aos-duration="1200" data-aos-delay="1000" class="estate col text-capitalize"><button class="btn btn-sm btn-outline-dark">hizmetleri kontrol et</button></div></div>
+      </div>
+    </div><!--ITEM-->
+    <div class="item">
+      <img src="veterinary-doc/slide02_veterenary.jpg" style="width:100%;" alt="slide02_veterenary.jpg">
+     <div class="section2">
+        <div data-aos="flip-right" data-aos-duration="2500" data-aos-delay="3000" class="content1 row"><div class="estate col text-capitalize">hayvanlarınız İçin</div></div>
+        <div data-aos="flip-left" data-aos-duration="2800" data-aos-delay="3000" class="content2 row"><div class="estate col text-capitalize">en İyi bakım</div></div>
+        <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="3000" class="content3 row"><div class="estate ml-1 col text-capitalize">hizmetlerimize göz atın</div></div>
+        <div class="content4 row"  data-aos="flip-up" data-aos-duration="2000" data-aos-delay="3000">
+          <ul>
+            <li><i class="fas fa-ambulance"></i></li>
+            <li><i class="fas fa-user-md"></i></li>
+            <li><i class="far fa-lightbulb"></i></li>
+            <li><i class="fas fa-medkit"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div><!--ITEM-->
+  </div><!--OWL_CAROUSEL-->
+  </div><!--AREA3-->
+ 
+
+<div class="area4 container">
+  <div class="section row justify-content-center">
+    <div class="content1 align-self-center col-xl-4 col-lg-6 col-sm-12">
+      <div class="boiler container">
+      <div class="estate1 justify-content-center row">
+        <span class="text-uppercase align-self-center">evcil hayvan</span>
+        <h2 class="text-uppercase align-self-center">testler</h2>
+      </div><!--estate1-->
+      <div class="estate2 justify-content-center row">
+        <p class=" align-self-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut emek ve dolore magna aliqua.</p>
+      </div><!--estate2-->
+      <div class="estate3 justify-content-center row">
+        <div class="country align-self-center col-6">
+        <p class="text-capitalize">devamını oku</p>
+      </div><!--COUNTRY-->
+      </div><!--estate3-->
+    </div><!--boiler-->
+    </div><!--content1-->
+    <div class="content2 align-self-center col-xl-4 col-lg-6 col-sm-12">
+      <div class="boiler container">
+      <div class="estate1 justify-content-center row">
+        <span class="text-uppercase align-self-center">dahili</span>
+        <h2 class="text-uppercase align-self-center">ilaç</h2>
+      </div><!--estate1-->
+      <div class="estate2 justify-content-center row">
+        <p class="align-self-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut emek ve dolore magna aliqua.</p>
+      </div><!--estate2-->
+      <div class="estate3 justify-content-center row">
+        <div class="country align-self-center col-6">
+        <p class="text-capitalize align-self-center">kontrol et</p>
+      </div><!--COUNTRY-->
+      </div><!--estate3-->
+    </div><!--boiler-->
+    </div><!--content2-->
+    <div class="content3 align-self-center col-xl-4 col-lg-6 col-sm-12">
+      <div class="boiler container">
+      <div class="estate1 justify-content-center row">
+        <span class="text-uppercase align-self-center">vücut çalışması</span>
+        <h2 class="text-uppercase align-self-center">hizmetler</h2>
+      </div><!--estate1-->
+      <div class="estate2 justify-content-center row">
+        <p class="align-self-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut emek ve dolore magna aliqua.</p>
+      </div><!--estate2-->
+      <div class="estate3 justify-content-center row">
+        <div class="country align-self-center col-6">
+        <p class="text-capitalize align-self-center">hepsini gör</p>
+        </div><!--COUNTRY-->
+      </div><!--estate3-->
+    </div><!--boiler-->
+    </div><!--content3-->
+  </div><!--SECTİON-->
+</div><!--AREA4-->
+
+<div class="area5 owl-carousel owl-theme">
+  <div class="item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+    <div class="tirnak"><i class="fas fa-quote-left"></i></div>
+     <div class="yazi">Veteriner Kliniği - benzersiz yaklaşım <br>evcil hayvanınızın sağlığı. </div>
+     <div class="adam">Jenny Jane, <span> Surgeon</span> </div> 
+  </div>
+  <div class="item"  data-aos="zoom-in" data-aos-duration="800" data-aos-delay="1000">
+    <div class="tirnak"><i class="fas fa-quote-left"></i></div>
+    <div class="yazi">En iyi doktor veterinerdir. <br>Hastasına ne olduğunu soramaz. </div>
+    <div class="adam">Tommy Teagen, <span> Patreon</span> </div> 
+  </div>
+  <div class="item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="1500">
+    <div class="tirnak"><i class="fas fa-quote-left"></i></div>
+    <div class="yazi">Check-up'lar evcil hayvanlar ve sahipleri için stresli olabilir. <br>Yardım edeceğiz! </div>
+    <div class="adam">Jeffren Weagen, <span> Jotame</span> </div> 
+  </div>
+</div>
+
+
+<div class="area6 bg-light owl-carousel owl-theme">
+  <div class="item">
+    <img src="veterinary-doc/01.jpg" alt="veterinary-doc/01.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+  <div class="item">
+    <img src="veterinary-doc/02.jpg" alt="veterinary-doc/02.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+  <div class="item">
+    <img src="veterinary-doc/03.jpg" alt="veterinary-doc/03.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+  <div class="item">
+    <img src="veterinary-doc/04.jpg" alt="veterinary-doc/04.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+  <div class="item">
+    <img src="veterinary-doc/05.jpg" alt="veterinary-doc/05.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+  <div class="item">
+    <img src="veterinary-doc/06.jpg" alt="veterinary-doc/06.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+  <div class="item">
+    <img src="veterinary-doc/07.jpg" alt="veterinary-doc/07.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+  <div class="item">
+    <img src="veterinary-doc/08.jpg" alt="veterinary-doc/08.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+  <div class="item">
+    <img src="veterinary-doc/09.jpg" alt="veterinary-doc/09.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+  <div class="item">
+    <img src="veterinary-doc/14.jpg" alt="veterinary-doc/14.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+  <div class="item">
+    <img src="veterinary-doc/15.jpg" alt="veterinary-doc/15.jpg">
+    <div class="overlay">
+      <a href="#" class="icon icon80" title="User Profile">
+        <i class="fas fa-search"></i>
+      </a>
+      <a href="#" class="icon icon81" title="User Profile">
+        <i class="fas fa-map-marker-alt"></i>
+      </a>
+      <span class="tex1">Yasin Oytukkaya</span>
+      <span class="tex2"><span>Cerrah</span>, <span>Medipol</span></span>
+    </div>
+  </div>
+</div>
+<div class="area7 container-fluid bg-light d-none d-lg-block">
+  <div class="section d-flex container">
+    <div class="yazi flex-fill"><span>Temayı beğendiniz mi?</span> Bu harika temayı satın al!</div>
+    <div class="buton align-self-center flex-fill text-capitalize">satın al</div>
+  </div><!--SECTION-->
+</div><!--AREA7-->
+  <div class="area7md bg-light container-fluid d-block d-lg-none">
+    <div class="section container">
+      <div class="content row">
+        <div class="yazi col-12"><span>Temayı beğendiniz mi?</span> Bu harika temayı satın al!</div>
+        <div class="buton col-12 align-self-center"><p>Satın Al</p></div>
+      </div><!--CONTENT-->
+    </div><!--SECTİON-->
+  </div><!--area7md-->
+
+  <div class="area8 container" style="padding-top: 3%; padding-bottom: 5%;">
+    <div class="section row">
+      <div class="content1 col-lg-6 col-md-12">
+        <h1 style="font-family: OpenSans-Regular; color: #323232; font-size: 40px; margin-bottom: 28px; margin-top: 28px; font-weight: 700;">Avantajlarınız</h1>
+        <input type="radio" name="tabs" id="tab1" checked />
+        <label for="tab1">Kalite</label>
+        <input type="radio" name="tabs" id="tab2" />
+        <label for="tab2">Konfor</label>
+        <input type="radio" name="tabs" id="tab3" />
+        <label for="tab3">Sonuçlar</label>      
+        <div class="tab row caldron1839">
+          <img src="veterinary-doc/144.jpg" class="w-100" alt="veterinary-doc/144.jpg">
+          <p style="margin: 0 12px;">first text ipsum dolor sit amet, consectetur adipisicing elit. Excepturi minus tenetur sunt aspernatur vites, corporis nostrum quibusdam molestias, leyla quia in a natus facilis bela culpa indi quidem illo atque.</p>
+        </div><!--CALDRON1839-->
+        <div class="tab caldron2839">
+          <img src="veterinary-doc/155.jpg" class="w-100" alt="veterinary-doc/144.jpg">
+          <p>second text dolor sit amet, consectetur adipisicing elit. Excepturi minus tenetur sunt neşe vitae, corporis nostrum quibusdam molestias, laudantium quia in a natus facia bitti culpa inventore quidem illo atque.</p>
+        </div><!--CALDRON2839-->
+        <div class="tab caldron3839">
+          <img src="veterinary-doc/166.jpg" class="w-100" alt="veterinary-doc/144.jpg">
+          <p>third text dolor sit amet, konser adipisicing elit. Excepturi minus tenetur sunt aspernatur vitae, sağlık nostrum quibusdam molestias, laudantium quia in a natus facilis beatae çiroz inventore quidem illo atque.</p>
+        </div><!--CALDRON3839-->
+      </div><!--CONTENT1-->
+      <div class="content2 col-lg-6 col-md-12">
+        <h1 style="font-family: OpenSans-Regular; color: #323232; font-size: 40px; margin-bottom: 28px; margin-top: 28px; font-weight: 700;">Bölümlerimiz</h1>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Fizyoterapi
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="boiler row justify-content-center">
+                    <div class="vest1 align-self-center col-sm-3 col-12"><img src="veterinary-doc/recent_post1.jpg" alt="veterinary-doc/recent_post1.jpg"></div><!--VEST1-->
+                    <div class="vest2 align-self-center col-6">	Consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div><!--VEST2-->
+                </div><!--BOİLER-->
+              </div><!--ACORDİON_BODY-->
+            </div><!--COLLAPSE-->
+          </div><!--ACORDİON_ITEM-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Pediatri
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="boiler row justify-content-center">
+                    <div class="vest1 align-self-center col-sm-3 col-12"><img src="veterinary-doc/recent_post2.jpg" alt="veterinary-doc/recent_post2.jpg"></div><!--VEST1-->
+                    <div class="vest2 align-self-center col-sm-6 col-12">	Consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div><!--VEST2-->
+                </div><!--BOİLER-->
+              </div><!--ACORDİON_BODY-->
+            </div><!--COLLAPSE-->
+          </div><!--ACORDİON_ITEM-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Diş Kliniği
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="boiler row justify-content-center">
+                    <div class="vest1 align-self-center col-sm-3 col-12"><img src="veterinary-doc/recent_post1.jpg" alt="veterinary-doc/recent_post1.jpg"></div><!--VEST1-->
+                    <div class="vest2 align-self-center col-sm-6 col-12">	Consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div><!--VEST2-->
+                </div><!--BOİLER-->
+              </div><!--ACORDİON_BODY-->
+            </div><!--COLLAPSE-->
+          </div><!--ACORDİON_ITEM-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Kardiyolog
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="boiler row justify-content-center">
+                    <div class="vest1 align-self-center col-sm-3 col-12"><img src="veterinary-doc/recent_post2.jpg" alt="veterinary-doc/recent_post2.jpg"></div><!--VEST1-->
+                    <div class="vest2 align-self-center col-sm-6 col-12">	Consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div><!--VEST2-->
+                </div><!--BOİLER-->
+              </div><!--ACORDİON_BODY-->
+            </div><!--COLLAPSE-->
+          </div><!--ACORDİON_ITEM-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Acil Bölümü
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="boiler row justify-content-center">
+                  <div class="vest1 align-self-center col-sm-3 col-12"><img src="veterinary-doc/recent_post1.jpg" alt="veterinary-doc/recent_post1.jpg"></div><!--VEST1-->
+                  <div class="vest2 align-self-center col-sm-6 col-12">	Consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div><!--VEST2-->
+              </div><!--BOİLER-->
+              </div><!--ACORDİON_BODY-->
+            </div><!--COLLAPSE-->
+          </div><!--ACORDİON_ITEM-->
+        </div><!--ACORDİON-->
+      </div><!--CONTENT2-->
+    </div><!--SECTİON-->
+</div><!--AREA8-->
+
+
+<div class="area9">
+  <div class="area9cfg">
+  <div class="section container">
+    <div class="content row">
+        <div class="estate1 align-self-center col-md-8 col-sm-12" >
+          <div class="country1 row">
+              <h1 class="text-capitalize">neden bizi seçmelisiniz?</h1>
+              <p>Lorem ipsum eos et accusam et justo duo dolores et ea rebum stet clita.v</p>
+          </div><!--COUNTRY1-->
+          <div class="country2 row">
+              <div class="case1 col-md-6 col-sm-12" data-aos="flip-up">
+                <div class="pouch row justify-content-center">
+                  <div class="pocket1 col-3 align-self-center"><i id="area9_case1" class="far fa-hospital"></i></div><!--POCKET1-->
+                  <div class="pocket2 col-8 align-self-center">
+                    <h3 class="text-capitalize">modern klinik</h3>
+                    <p>Consetetur sadipscing elitr sed diam nonumy.</p>
+                  </div><!--POCKET2-->
+                </div><!--POUCH-->
+              </div><!--CASE1-->
+              <div class="case2 col-md-6 col-sm-12" data-aos="flip-up" data-aos-delay="800">
+                <div class="pouch row justify-content-center">
+                  <div class="pocket1 col-3 align-self-center"><i id="area9_case2" class="fas fa-ambulance"></i></div><!--POCKET1-->
+                  <div class="pocket2 col-8 align-self-center">
+                    <h3 class="text-capitalize">acil durum</h3>
+                    <p>Consetetur sadipscing elitr sed diam nonumy.</p>
+                  </div><!--POCKET2-->
+                </div><!--POUCH-->
+              </div><!--CASE2-->
+              <div class="case3 col-md-6 col-sm-12" data-aos="flip-up" data-aos-delay="200">
+                <div class="pouch row justify-content-center">
+                  <div class="pocket1 col-3 align-self-center"><i id="area9_case3" class="fas fa-user-md"></i></div><!--POCKET1-->
+                  <div class="pocket2 col-8 align-self-center">
+                    <h3 class="text-capitalize">sertifikalı doktorlar</h3>
+                    <p>Consetetur sadipscing elitr sed diam nonumy.</p>
+                  </div><!--POCKET2-->
+                </div><!--POUCH-->
+              </div><!--CASE3-->
+              <div class="case4 col-md-6 col-sm-12"  data-aos="flip-up" data-aos-delay="1000">
+                <div class="pouch row justify-content-center">
+                  <div class="pocket1 col-3 align-self-center"><i id="area9_case4" class="fas fa-medkit"></i></div><!--POCKET1-->
+                  <div class="pocket2 col-8 align-self-center">
+                    <h3 class="text-capitalize">sağlık hizmeti</h3>
+                    <p>Consetetur sadipscing elitr sed diam nonumy.</p>
+                  </div><!--POCKET2-->
+                </div><!--POUCH-->
+              </div><!--CASE4-->
+          </div><!--COUNTRY2-->
+        </div><!--ESTATE1-->
+        <div class="estate2 col-md-4 col-sm-12"  data-aos="zoom-out" data-aos-duration="800" data-aos-delay="500"><img src="veterinary-doc/man.png" class="w-100" alt="veterinary-doc/man.png"></div><!--ESTATE2-->
+    </div><!--CONTENT-->
+  </div><!--SECTİON-->
+</div><!--AREA9CFG-->
+</div><!--AREA9-->
+
+<div class="area10layer">
+  <div class="container">
+    <center><h2 style="font-family: OpenSans-Regular; font-size: 50px; color: #2a2a2a; font-weight: 900;">Kadromuz</h2></center>
+    <div class="area10 owl-carousel owl-theme">
+      <div class="item">
+        <div class="tirnak"><img src="veterinary-doc/001.jpg" alt="veterinary-doc/001.jpg"></div>
+         <div class="yazi">
+          <h3>Jülide Çalıkıran</h3>
+          <p> Hemşire</p></div>
+          <div class="ada row justify-content-center">
+         <div class="adam justify-content-center col-6">
+           <div class="vessel row justify-content-center">
+          <div class="col-3 align-self-center"><i class="fab fa-facebook-f"></i></div>
+          <div class="col-3 align-self-center"><i class="fab fa-twitter"></i></div>
+          <div class="col-3 align-self-center"><i class="fab fa-google-plus-g"></i></div>
+        </div><!--VESSEL-->
+        </div><!--ADAM--> 
+      </div><!--ADA-->
+      </div><!--ITEM-->
+      <div class="item">
+        <div class="tirnak"><img src="veterinary-doc/002.jpg" alt="veterinary-doc/002.jpg"></div>
+         <div class="yazi">
+          <h3>Zeynep Şahbatmaz</h3>
+          <p> Hemşire</p></div>
+          <div class="ada row justify-content-center">
+         <div class="adam justify-content-center col-6">
+          <div class="vessel row justify-content-center">
+            <div class="col-3 align-self-center"><i class="fab fa-facebook-f"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-twitter"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-google-plus-g"></i></div>
+          </div><!--VESSEL-->
+        </div><!--ADAM--> 
+      </div><!--ADA-->
+      </div><!--ITEM--><div class="item">
+        <div class="tirnak"><img src="veterinary-doc/003.jpg" alt="veterinary-doc/003.jpg"></div>
+         <div class="yazi">
+          <h3>Selim Yılmaz</h3>
+          <p> Anestezi</p></div>
+          <div class="ada row justify-content-center">
+         <div class="adam justify-content-center col-6">
+          <div class="vessel row justify-content-center">
+            <div class="col-3 align-self-center"><i class="fab fa-facebook-f"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-twitter"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-google-plus-g"></i></div>
+          </div><!--VESSEL-->
+        </div><!--ADAM--> 
+      </div><!--ADA-->
+      </div><!--ITEM-->
+      <div class="item">
+        <div class="tirnak"><img src="veterinary-doc/005.jpg" alt="veterinary-doc/004.jpg"></div>
+         <div class="yazi">
+          <h3>Demar DeRozan</h3>
+          <p> Fizyoterapist</p></div>
+          <div class="ada row justify-content-center">
+         <div class="adam justify-content-center col-6">
+          <div class="vessel row justify-content-center">
+            <div class="col-3 align-self-center"><i class="fab fa-facebook-f"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-twitter"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-google-plus-g"></i></div>
+          </div><!--VESSEL-->
+        </div><!--ADAM--> 
+      </div><!--ADA-->
+      </div><!--ITEM-->
+      <div class="item">
+        <div class="tirnak"><img src="veterinary-doc/004.jpg" alt="veterinary-doc/005.jpg"></div>
+         <div class="yazi">
+          <h3>Ebru Tatar</h3>
+          <p> Acil Servis</p></div>
+          <div class="ada row justify-content-center">
+         <div class="adam justify-content-center col-6">
+          <div class="vessel row justify-content-center">
+            <div class="col-3 align-self-center"><i class="fab fa-facebook-f"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-twitter"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-google-plus-g"></i></div>
+          </div><!--VESSEL-->
+        </div><!--ADAM--> 
+      </div><!--ADA-->
+      </div><!--ITEM-->
+      <div class="item">
+        <div class="tirnak"><img src="veterinary-doc/006.jpg" alt="veterinary-doc/006.jpg"></div>
+         <div class="yazi">
+          <h3>Ünsal Kemal</h3>
+          <p> Cerrah</p></div>
+          <div class="ada row justify-content-center">
+         <div class="adam justify-content-center col-6">
+          <div class="vessel row justify-content-center">
+            <div class="col-3 align-self-center"><i class="fab fa-facebook-f"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-twitter"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-google-plus-g"></i></div>
+          </div><!--VESSEL-->
+        </div><!--ADAM--> 
+      </div><!--ADA-->
+      </div><!--ITEM-->
+      <div class="item">
+        <div class="tirnak"><img src="veterinary-doc/007.jpg" alt="veterinary-doc/007.jpg"></div>
+         <div class="yazi">
+          <h3>Elif Eylül</h3>
+          <p> Kalp Damar Uzm.</p></div>
+          <div class="ada row justify-content-center">
+         <div class="adam justify-content-center col-6">
+          <div class="vessel row justify-content-center">
+            <div class="col-3 align-self-center"><i class="fab fa-facebook-f"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-twitter"></i></div>
+            <div class="col-3 align-self-center"><i class="fab fa-google-plus-g"></i></div>
+          </div><!--VESSEL-->
+        </div><!--ADAM--> 
+      </div><!--ADA-->
+      </div><!--ITEM-->
+    </div><!--AREA10-->
+  </div><!---CONTAINER-->
+  </div><!--AREA10_LAYER-->
+
+  <div class="area11 container-fluid">
+    <div class="section container">
+      <div class="content row">
+        <div class="estate2 col-lg-4 col-md-12" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+          <div class="country1 row">
+            <div class="case col text-capitalize"><h1>Şu anda  <span>en İyi websitesine</span> sahip olabilirsin!</h1></div>
+          </div><!--COUNTRY1-->
+          <div class="country2 row">
+            <h3>Lorem ipsum dolor sit amet consetetur sadipscing elitr, sediam nonumy.</h3>
+            <p class="col-4 align-self-center text-capitalize">devam et</p>
+          </div><!--COUNTRY2-->
+        </div><!--ESTATE2-->
+          <div class="estate1 align-self-center col-lg-8 col-md-12">
+            <div class="country1 row">
+                <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam justo duo dolores eit ea rebum. Stet clita kasd gubergren, no sea takimata
+                  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr:
+                </p>
+            </div><!--COUNTRY1-->
+            <div class="country2 row">
+                <div class="case1 col-md-6 col-sm-12" data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="300">
+                  <div class="pouch row justify-content-center">
+                    <div class="pocket1 col-3 align-self-center"><i id="area11_case1" class="far fa-hospital"></i></div><!--POCKET1-->
+                    <div class="pocket2 col-8 align-self-center">
+                      <h3 class="text-capitalize">modern klinik</h3>
+                      <p>Consetetur sadipscing elitr sed diam nonumy.</p>
+                    </div><!--POCKET2-->
+                  </div><!--POUCH-->
+                </div><!--CASE1-->
+                <div class="case2 col-md-6 col-sm-12"  data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="500">
+                  <div class="pouch row justify-content-center">
+                    <div class="pocket1 col-3 align-self-center"><i id="area11_case2" class="fas fa-ambulance"></i></div><!--POCKET1-->
+                    <div class="pocket2 col-8 align-self-center">
+                      <h3 class="text-capitalize">acil durum</h3>
+                      <p>Consetetur sadipscing elitr sed diam nonumy.</p>
+                    </div><!--POCKET2-->
+                  </div><!--POUCH-->
+                </div><!--CASE2-->
+                <div class="case3 col-md-6 col-sm-12"  data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="700">
+                  <div class="pouch row justify-content-center">
+                    <div class="pocket1 col-3 align-self-center"><i id="area11_case3" class="fas fa-user-md"></i></div><!--POCKET1-->
+                    <div class="pocket2 col-8 align-self-center">
+                      <h3 class="text-capitalize">sertifikalı doktorlar</h3>
+                      <p>Consetetur sadipscing elitr sed diam nonumy.</p>
+                    </div><!--POCKET2-->
+                  </div><!--POUCH-->
+                </div><!--CASE3-->
+                <div class="case4 col-md-6 col-sm-12"  data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="900">
+                  <div class="pouch row justify-content-center">
+                    <div class="pocket1 col-3 align-self-center"><i id="area11_case4" class="fas fa-medkit"></i></div><!--POCKET1-->
+                    <div class="pocket2 col-8 align-self-center">
+                      <h3 class="text-capitalize">sağlık hizmeti</h3>
+                      <p>Consetetur sadipscing elitr sed diam nonumy.</p>
+                    </div><!--POCKET2-->
+                  </div><!--POUCH-->
+                </div><!--CASE4-->
+                <div class="case5 col-md-6 col-sm-12"  data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="1200">
+                  <div class="pouch row justify-content-center">
+                    <div class="pocket1 col-3 align-self-center"><i id="area11_case5" class="fas fa-medkit"></i></div><!--POCKET1-->
+                    <div class="pocket2 col-8 align-self-center">
+                      <h3 class="text-capitalize">sağlık hizmeti</h3>
+                      <p>Consetetur sadipscing elitr sed diam nonumy.</p>
+                    </div><!--POCKET2-->
+                  </div><!--POUCH-->
+                </div><!--case5-->
+                <div class="case6 col-md-6 col-sm-12" data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="1500">
+                  <div class="pouch row justify-content-center">
+                    <div class="pocket1 col-3 align-self-center"><i id="area11_case6" class="fas fa-medkit"></i></div><!--POCKET1-->
+                    <div class="pocket2 col-8 align-self-center">
+                      <h3 class="text-capitalize">sağlık hizmeti</h3>
+                      <p>Consetetur sadipscing elitr sed diam nonumy.</p>
+                    </div><!--POCKET2-->
+                  </div><!--POUCH-->
+                </div><!--CASE6-->
+            </div><!--COUNTRY2-->
+          </div><!--ESTATE1-->        
+      </div><!--CONTENT-->
+    </div><!--SECTİON-->
+  </div><!--area11-->
+
+  <div class="content12">
+    <div class="layer12">
+      <div class="container">
+  <div class="area12 owl-carousel owl-theme">
+    <div class="item"><center><img style="width: 60%;" src="veterinary-doc/partner1.png" alt="veterinary-doc/partner1.png"></center></div>
+    <div class="item"><center><img style="width: 60%;" src="veterinary-doc/partner2.png" alt="veterinary-doc/partner2.png"></center></div>
+    <div class="item"><center><img style="width: 60%;" src="veterinary-doc/partner3.png" alt="veterinary-doc/partner3.png"></center></div>
+    <div class="item"><center><img style="width: 60%;" src="veterinary-doc/partner4.png" alt="veterinary-doc/partner4.png"></center></div>
+    <div class="item"><center><img style="width: 60%;" src="veterinary-doc/partner5.png" alt="veterinary-doc/partner5.png"></center></div>
+    <div class="item"><center><img style="width: 60%;" src="veterinary-doc/partner6.png" alt="veterinary-doc/partner6.png"></center></div>
+  </div><!--area6-->
+ </div><!--layer--> 
+ </div><!--content12-->
+</div><!--container-->
+
+<!--
+<div class="layer13"> 
+  <div class="layerimg">
+<div class="container">
+  <div class="row justify-content-center">
+      <div class="align-self-center col-md-3 col-sm-6">
+          <div class="progress blue">
+              <span class="progress-left">
+                  <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                  <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value">96%</div>
+          </div>
+          <center>HTML</center>
+      </div>
+      <div class="zımba2 col-md-3 col-sm-6">
+          <div class="progress yellow">
+              <span class="progress-left">
+                  <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                  <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value">98%</div>
+          </div>
+          <center>CSS</center>
+      </div>
+      <div class="zımba3 col-md-3 col-sm-6">
+          <div class="progress pink">
+              <span class="progress-left">
+                  <span class="progress-bar"></span>
+              </span>
+              <span class="progress-right">
+                  <span class="progress-bar"></span>
+              </span>
+              <div class="progress-value">88%</div>
+          </div>
+          <center>BOOTSTRAP</center>
+      </div>
+  </div>
+</div>
+</div>LAYERIMG
+</div>LAYER-->
+
+<div class="layer14">
+  <div class="layerbg14">
+      <div class="container">
+          <div class="row1 row"><div class="col"  data-aos="zoom-out" data-aos-duration="800" data-aos-delay="300">İletişim</div></div><!--ROW1-->
+          <div class="row2 row">
+            <div class="content1 col-md-4 col-sm-12">
+              <div class="pot1 row">
+                <div class="case col-12"><i class="fas fa-phone-alt"></i></div><!--CASE-->
+              </div><!--ROW-->
+              <div class="pot2 row">
+                <div class="case col">
+                  <p> <span>Telefon:</span> +123 456 7891 </p>
+                  <p> <span>Fax:</span>  +123 456 7891 </p>
+                </div><!--CASE-->
+              </div><!--ROW-->
+            </div><!--CONTENT1-->
+            <div class="content1 col-md-4 col-sm-12">
+              <div class="pot1 row">
+                <div class="case col"><i class="fas fa-map-marker-alt"></i></div><!--CASE-->
+              </div><!--ROW-->
+              <div class="pot2 row">
+                <div class="case col">
+                  <p> Mahalleniz <br> Sokak , Apartman No, <br>Şehir, Semt  </p>
+                </div><!--CASE-->
+              </div><!--ROW-->
+            </div><!--CONTENT1-->
+            <div class="content1 col-md-4 col-sm-12">
+              <div class="pot1 row">
+                <div class="case col"><i class="far fa-envelope"></i></div><!--CASE-->
+              </div><!--ROW-->
+              <div class="pot2 row justify-content-center">
+                <div class="case col align-self-center">
+                  <p>info@company.com</p>
+                </div><!--CASE-->
+              </div><!--ROW-->
+            </div><!--CONTENT1-->
+          </div><!--ROW2-->
+          <div id="cindy" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <div id="cindybgc">
+          <div class="row3 row">
+            <div class="section1 col-md-6 col-12">
+              <p><input type="text" placeholder="Adınız"></p>
+              <p><input type="text" placeholder="Email"></p>
+              <p><input type="text" placeholder="Konu"></p>
+            </div><!--SECTION_1-->
+            <div class="section2 col-md-6 col-12">
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="mesaj" rows="3"></textarea>
+            </div><!--SECTION2-->
+            <center>Gönder</center>
+          </div><!--CINDY_BGC-->
+        </div><!--CINDY-->
+      </div><!--ROW3-->
+    </div><!--CONTAINER-->
+  </div><!--LAYERBG14-->
+</div><!--LAYER14-->
+<div id="kelek"></div>
+<div class="son container">
+    <div class="son_row row justify-content-center">
+        <div class="son_item col-12 align-self-center">
+          <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300"> <img src="veterinary-doc/logo_veterinary.png" alt="veterinary-doc/logo_veterinary.png"> </p>
+          <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">Veterinary</h1>
+          <p data-aos="fade-down" data-aos-duration="1500" data-aos-delay="700" class="text-capitalize">copyright 2016. medico by <span>ENOCHTemplates</span> </p>
+        </div><!--SON-ITEM-->
+    </div><!--SON_ROW-->
+</div><!--SON-->
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+
+<!--
+<div class="sm  d-block d-sm-none  bg-primary text-light p-3" style="font-size: 20px; text-align: center; position: fixed; bottom:0; width: 100%; ">XS</div>
+<div class="sm  d-none d-sm-block d-md-none bg-success text-light p-3" style="font-size: 20px; text-align: center; position: fixed; bottom:0; width: 100%; ">SM</div>
+<div class="md  d-none d-md-block d-lg-none bg-warning text-light p-3" style="font-size: 20px; text-align: center; position: fixed; bottom:0; width: 100%; ">MD</div>
+<div class="lg  d-none d-lg-block d-xl-none bg-danger text-light p-3" style="font-size: 20px; text-align: center; position: fixed; bottom:0; width: 100%; ">LG</div>
+<div class="xl  d-none d-xl-block d-xxl-none bg-warning text-light p-3" style="font-size: 20px; text-align: center; position: fixed; bottom:0; width: 100%; ">XL</div>-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-beta1/js/bootstrap.min.js" integrity="sha512-ZvbjbJnytX9Sa03/AcbP/nh9K95tar4R0IAxTS2gh2ChiInefr1r7EpnVClpTWUEN7VarvEsH3quvkY1h0dAFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once:true
+  });
+</script>
+<script>
+  $('.caro1').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:false,
+    autowidth:true,
+    margin:10,
+    center:true,
+    autoplay:true,
+    autoplayTimeout:3500, 
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
+<script>
+  $('.area5').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout:4000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
+
+<script>
+  $('.area6').owlCarousel({
+    loop:true,
+    nav:true,
+    center:true,
+    margin:10,
+    dots:false,
+    responsive:{
+        0:{
+            items:1,
+            center:true
+        },
+        600:{
+            items:2,
+            center:true
+        },
+        1000:{
+            items:4,
+            center:true
+        }
+    }
+});
+</script>
+<script>
+  $('.area10').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:false,
+    autoplay:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+</script>
+<script>
+  $('.area12').owlCarousel({
+    loop:true,
+    nav:false,
+    margin:10,
+    dots:false,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }
+});
+</script>
+
+
+
+
+
+</body>
+    </html>

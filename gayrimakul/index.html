@@ -1,0 +1,1883 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/209153efa7.js" crossorigin="anonymous"></script>
+    <title>Gayrimakul.com</title>
+  <link rel="icon" href="gayrimakul-doc/ban.png" type="image/x-icon">
+<style type="text/css">/*
+#xs{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align:center;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    color: #fff;
+    background-color: red;
+}
+#sm{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align:center;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    color: #fff;
+    background-color: red;
+}
+#md{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align:center;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    color: #fff;
+    background-color: red;
+}
+#lg{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    color: #fff;
+    background-color: red;
+}
+#xl{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align:center;
+    position: fixed;
+    bottom: 0px;
+    left: 50px;
+    color: #fff;
+    background-color: red;
+}
+#xxl{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align:center;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    color: #fff;
+    background-color: red;
+}
+*/
+@font-face{
+  font-family: "Roboto-Regular";
+  src: url(gayrimakul-doc/Roboto-Regular.woff);
+  src: url(gayrimakul-doc/Roboto-Regular.woff2);
+}
+@font-face{
+  font-family: "Roboto-Light";
+  src: url(gayrimakul-doc/Roboto-Light.woff);
+  src: url(gayrimakul-doc/Roboto-Light.woff2);
+}
+@font-face{
+  font-family: "Roboto-Thin";
+  src: url(gayrimakul-doc/Roboto-Thin.woff);
+  src: url(gayrimakul-doc/Roboto-Thin.woff2);
+}
+.area1{
+  box-sizing: border-box;
+}
+
+#head{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1000;
+    padding: 20px 0;
+}
+.area1 header .nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: height .5s ease;
+    padding-right: 10px;
+}
+.area1 header nav .nav-list{
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/*
+
+.nav-link{
+    margin: 0 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+
+#nav-cta{
+    display: inline-block;
+    background-color: #fff;
+    color: #313131;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: background-color .5s ease;
+}
+
+#nav-cta:hover{
+    background-color: #d3d3d3;
+}
+*/  
+.area1 header nav .nav-list li a{
+  display: inline-block;
+  line-height: 50px;
+  font-family:Roboto-Regular;
+  font-weight: 700;
+  color: #152440;
+  font-size: 16px;
+}
+.area1 header nav  #nav-cta{
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 60px;
+  background-color: #e8505b;
+  padding: 0 38px;
+  border-radius: 40px;
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+}
+.area1 header nav  #nav-cta:hover{
+  color: #e8505b;
+  background-color: #fff;
+  border: 1px solid #e8505b;
+  transition: all 0.5s ease 0s;
+}
+
+/*Apply styles after scroll*/
+.area1 .scrolling-active{
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+/*
+.area-1 .scrolling-active .nav{
+    height: 6rem;
+}
+
+.area1.scrolling-active .nav a{
+    color: #313131;
+}
+*/
+
+/*
+.area1{
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.area1 header .nav_links li a{
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  font-size: 16px;
+  color: #152440;
+  text-decoration: none;
+}
+.area1 header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.area1 header .nav_links li{
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+  line-height: 50px;
+  font-family:Roboto-Regular;
+  font-weight: 700;
+  color: #152440;
+  font-size: 3.2vw;
+}
+.area1 header a .btn{
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 60px;
+  background-color: #e8505b;
+  padding: 0 38px;
+  border-radius: 40px;
+  transition: all 0.5s ease 0s;
+}
+.area1 header a .btn:hover{
+  color: #e8505b;
+  background-color: #fff;
+  border: 1px solid #e8505b;
+  transition: all 0.5s ease 0s;
+}*/
+/*                                              A A AAAA A  A A A A A A A  AA        A                                                                                  */
+.area1-md{
+  box-sizing: border-box;
+  margin-bottom: 15%;
+}
+#heat{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1000;
+}/*
+.area1-md header .nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: height .5s ease;
+    padding-right: 20px;
+}*/
+.area1-md header nav .navbar-nav{
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #fff;
+}
+.area1-md nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+.area1-md nav .btn{
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 60px;
+  background-color: #e8505b;
+  padding: 0 18px;
+  border-radius: 40px;
+  transition: all 0.5s ease 0s;
+}
+.area1-md nav .btn:hover{
+  color: #e8505b;
+  background-color: #fff;
+  border: 1px solid #e8505b;
+  transition: all 0.5s ease 0s;
+}
+
+.area1-md nav .navbar-toggler{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: all .5s ease-in-out;
+  border: none;
+  text-decoration: none;
+  
+}
+.area1-md nav .navbar-toggler span{
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #152440;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out; 
+}
+.area1-md nav .navbar-toggler span::before,.area1-md nav .navbar-toggler span::after{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #152440;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;  
+  outline: none;
+}
+.area1-md nav .navbar-toggler span::before{
+  transform: translateY(-12px);
+  margin-left: -20px;
+
+}
+.area1-md nav .navbar-toggler span::after{
+  transform: translateY(12px);
+  margin-left: -20px;
+}
+/* animasyonu */
+.area1-md .navbar-toggler.open span{
+transform: translateX(-50px);
+background: transparent;
+box-shadow: none;
+}
+.area1-md .navbar-toggler.open span::before{
+  transform: rotate(45deg) translate(35px , -35px);
+}
+.area1-md .navbar-toggler.open span::after{
+  transform: rotate(-45deg) translate(35px , 35px);
+}
+.area1-md nav .collapse .navbar-nav{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.342);
+}
+
+.area1-md .scrolling-active{
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+}
+.area2{
+   background-image: url(gayrimakul-doc/emlak1.jpg);
+   background-size: cover;
+   background-position:center;
+   background-repeat: no-repeat;
+ } 
+ .area2 .section .content{
+ padding: 10vh 0 28vh 0;
+ width: 90%;
+ }
+.area2 .section .content .estate1 .country{
+  font-size: 18px;
+  font-family: Roboto-Regular;
+  color: #e8505b;
+  padding-left: 30px;
+}
+.area2 .section .content .estate2 .country{
+  font-size: 55px;
+  font-family: Roboto-Thin;
+  padding: 20px 0px 40px 30px;
+  color: #152440;
+  line-height: 9vh;
+}
+
+.area2 .section .content .estate2 .country span{
+  font-size: 55px;
+  font-family: Roboto-Regular;
+  font-weight: bold;
+}
+
+.area2 .section .content .estate3 .country .case1 .pouch1{
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  font-weight: bold;
+  color: #152440;
+  padding: 20px 38px;
+
+}
+.area2 .section .content .estate3 .country .case1 .pouch2{
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px 38px;
+  background-color: #e8505b;
+  cursor: pointer;
+}
+.area2 .section .content .estate3 .country .case2 {
+  box-shadow: 0 16px 32px 0 rgb(21 36 64 / 20%);
+  position: relative;
+  width: 80%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 30px 30px 30px;
+}
+.area2 .section .content .estate3 .country .case2 .pouch1 .pocket1 .bıno{
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  font-weight: bold;
+  color: #152440;
+  margin: 0 0 14px;
+  padding: 20px 38px 0;
+}
+.area2 .section .content .estate3 .country .case2 .pouch2 .pocket1 .bıno{
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  font-weight: bold;
+  color: #152440;
+  margin: 0 0 14px;
+  padding: 20px 38px 0;
+}
+.area2 .section .content .estate3 .country .case2 .pouch3 .pocket1 .bıno{
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  font-weight: bold;
+  color: #152440;
+  margin: 0 0 14px;
+  padding: 20px 18px 0;
+}
+.area2 .section .content .estate3 .country .case2 .pouch4{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.area2 .section .content .estate3 .country .case2 .pouch4 .pocket{
+  margin-top: 30px;
+}
+.area2 .section .content .estate3 .country .case2 .pouch4 .pocket i{
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0 14px;
+  padding: 18px 18px 0;
+}
+.area3 .section .content1 h3{
+  font-family: Roboto-Regular;
+  font-size: 18px;
+  font-weight: 600;
+  color: #e8505b;
+  letter-spacing: 1px;
+}
+.area3 .section .content1 p span{
+  font-family: Roboto-Regular;
+  font-size: 80px;
+  color: #152440;
+  font-weight: bold;
+}
+.area3 .section .content1 p {
+  font-family: Roboto-Thin;
+  font-size: 80px;
+  color: #152440;
+}
+.area3 .section .content2 .estate1 .ankara {
+  padding: 10px;
+}
+.area3 .section .content2 .estate1 .ankara .country{
+  background-image: url(gayrimakul-doc/ankara.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20vh 0 20vh 0;
+  cursor:pointer;
+  transition: .5s ease-in-out ;
+}
+.area3 .section .content2 .estate1 .ankara .country:hover{
+  filter: drop-shadow(2px 4px 6px black);
+  transition: .5s ease-in-out ;
+  border-radius: 20px;
+}
+
+.area3 .section .content2 .estate1 .ankara .country p{ 
+  position: relative;
+  left: 30px;
+  top: 100px;
+  font-family: Roboto-Regular;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 3px #000;
+}
+.area3 .section .content2 .estate1 .ankara .country span{
+  position: relative;
+  left: 30px;
+  top: 100px;
+  font-family: Roboto-Light;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+}
+.area3 .section .content2 .estate1 .izmir {
+  padding: 10px;
+}
+.area3 .section .content2 .estate1 .izmir .country{
+  background-image: url(gayrimakul-doc/izmir.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20vh 0 20vh 0; 
+  cursor: pointer;
+  transition: .5s ease-in-out ;
+}
+.area3 .section .content2 .estate1 .izmir .country:hover{
+  filter: drop-shadow(2px 4px 6px black);
+  transition: .5s ease-in-out ;
+  border-radius: 20px;
+}
+.area3 .section .content2 .estate1 .izmir .country{
+  padding: 20vh 0 20vh 0;
+}
+
+.area3 .section .content2 .estate1 .izmir .country p{ 
+  position: relative;
+  left: 30px;
+  top: 100px;
+  font-family: Roboto-Regular;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 3px #000;
+}
+.area3 .section .content2 .estate1 .izmir .country span{
+  position: relative;
+  left: 30px;
+  top: 100px;
+  font-family: Roboto-Light;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+}
+.area3 .section .content2 .estate2{
+padding: 10px;
+transition: .5s ease-in-out ;
+}
+.area3 .section .content2 .estate2:hover,
+.area3 .section .content2 .estate2 .istanbul:hover{
+  filter: drop-shadow(2px 4px 6px black);
+  transition: .5s ease-in-out ;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.area3 .section .content2 .estate2 .istanbul{
+  background-image: url(gayrimakul-doc/istanbul.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.area3 .section .content2 .estate2 .istanbul .country{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 40vh 0 41vh 0;
+  position: relative;
+  transition: .5s ease-in-out ;
+  cursor: pointer;
+}
+
+
+.area3 .section .content2 .estate2 .istanbul .country .kutu{
+  position: absolute;
+  top: 20%;
+  background-color: #e8505b;
+  width: 50%;
+  font-size: 14px;
+  color: #fff;
+  padding: 15px 33px 15px 33px;
+  border-radius: 30px 0 0 30px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.area3 .section .content2 .estate2 .istanbul  .text{
+  position: relative;
+  bottom: 60px;
+  left: 30px;
+  font-family: Roboto-Regular;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 3px #000;
+}
+.area3 .section .content2 .estate2 .istanbul  span{
+  position: relative;
+  bottom: 60px;
+  left: 30px;
+  font-family: Roboto-Light;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+}
+.area3 .section .content2 .estate3 .antalya{
+  padding: 10px;
+}
+.area3 .section .content2 .estate3 .antalya .country{
+  padding: 20vh 0 20vh 0;
+  background-image: url(gayrimakul-doc/antalya.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: .5s ease-in-out ;
+  cursor:pointer;
+}
+.area3 .section .content2 .estate3 .antalya .country:hover{
+  filter: drop-shadow(2px 4px 6px black);
+  transition: .5s ease-in-out ;
+  border-radius: 20px;
+}
+.area3 .section .content2 .estate3 .antalya .country p{ 
+  position: relative;
+  left: 30px;
+  top: 100px;
+  font-family: Roboto-Regular;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 3px #000;
+}
+.area3 .section .content2 .estate3 .antalya .country span{
+  position: relative;
+  left: 30px;
+  top: 100px;
+  font-family: Roboto-Light;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+}
+.area3 .section .content2 .estate3 .bursa{
+  padding: 10px;
+}
+.area3 .section .content2 .estate3 .bursa .country{
+  background-image: url(gayrimakul-doc/bursa.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 20vh 0 20vh 0;
+  transition: .5s ease-in-out ;
+  cursor:pointer;
+}
+.area3 .section .content2 .estate3 .bursa .country:hover{
+  filter: drop-shadow(2px 4px 6px black);
+  transition: .5s ease-in-out ;
+  border-radius: 20px;
+}
+.area3 .section .content2 .estate3 .bursa .country p{ 
+  position: relative;
+  left: 30px;
+  top: 100px;
+  font-family: Roboto-Regular;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 3px #000;
+}
+.area3 .section .content2 .estate3 .bursa .country span{
+  position: relative;
+  left: 30px;
+  top: 100px;
+  font-family: Roboto-Light;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 2px #000;
+}
+.area4 h3{
+  text-align: center;
+  font-size: 18px;
+  font-family: Roboto-Regular;
+  color: #e8505b;
+  font-weight: 700;
+  padding: 60px 0 6px;
+}
+.area4 .anabas{
+  font-size: 80px;
+  color: #152440;
+  font-family: Roboto-Thin;
+  text-align: center;
+}
+.area4 .anabas span{
+  font-family: Roboto-Regular;
+  font-weight: 700;
+}
+.area4 .wrapper{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ 
+}
+.area4 .wrapper .carousel{
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+.area4.carousel .card{
+  margin: 20px 0;
+  box-shadow: 0 4px 15px rgba;  
+}
+.area4 .wrapper .carousel .card-1 .section2 .content{
+  padding: 30px 0 10px 30px;
+}
+.area4 .wrapper .carousel .card-1 .section2 .content span{
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #152440;
+}
+.area4 .wrapper .carousel .card-1 .section3 .content .text1{
+  font-size: 24px;
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.area4 .wrapper .carousel .card-1 .section3 .content .text2{
+  font-size: 18px;
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.area4 .wrapper .carousel .card-1 .section3 .content .cizgi{
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.116);
+}
+.area4 .wrapper .carousel .card-1 .section4 .content1{
+  font-size: 14px;
+  font-weight: 700;
+  color: #152440; 
+  padding: 0px 0 15px 40px;
+}
+.area4 .wrapper .carousel .card-1 .section4 .content2 span{
+  font-size: 14px;
+  color: #152440; 
+  padding: 0 10px 0 10px ;
+  text-align: center;
+}
+.area4 .wrapper .carousel .card-1 .section4 .content3{
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #152440; 
+}
+/*                                                                        */
+.area4 .wrapper .carousel .card-2 .section2 .content{
+  padding: 30px 0 10px 30px;
+}
+.area4 .wrapper .carousel .card-2 .section2 .content span{
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #152440;
+}
+.area4 .wrapper .carousel .card-2 .section3 .content .text1{
+  font-size: 24px;
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.area4 .wrapper .carousel .card-2 .section3 .content .text2{
+  font-size: 18px;
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.area4 .wrapper .carousel .card-2 .section3 .content .cizgi{
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.116);
+}
+.area4 .wrapper .carousel .card-2 .section4 .content1{
+  font-size: 14px;
+  font-weight: 700;
+  color: #152440; 
+  padding: 0px 0 15px 40px;
+}
+.area4 .wrapper .carousel .card-2 .section4 .content2 span{
+  font-size: 14px;
+  color: #152440; 
+  padding: 0 10px 0 10px ;
+  text-align: center;
+}
+.area4 .wrapper .carousel .card-2 .section4 .content3{
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #152440; 
+}
+.area4 .wrapper .carousel .card-3 .section2 .content{
+  padding: 30px 0 10px 30px;
+}
+.area4 .wrapper .carousel .card-3 .section2 .content span{
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #152440;
+}
+.area4 .wrapper .carousel .card-3 .section3 .content .text1{
+  font-size: 24px;
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.area4 .wrapper .carousel .card-3 .section3 .content .text2{
+  font-size: 18px;
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.area4 .wrapper .carousel .card-3 .section3 .content .cizgi{
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.116);
+}
+.area4 .wrapper .carousel .card-3 .section4 .content1{
+  font-size: 14px;
+  font-weight: 700;
+  color: #152440; 
+  padding: 0px 0 15px 40px;
+}
+.area4 .wrapper .carousel .card-3 .section4 .content2 span{
+  font-size: 14px;
+  color: #152440; 
+  padding: 0 10px 0 10px ;
+  text-align: center;
+}
+.area4 .wrapper .carousel .card-3 .section4 .content3{
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #152440; 
+}
+.area4 .wrapper .carousel .card-4 .section2 .content{
+  padding: 30px 0 10px 30px;
+}
+.area4 .wrapper .carousel .card-4 .section2 .content span{
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #152440;
+}
+.area4 .wrapper .carousel .card-4 .section3 .content .text1{
+  font-size: 24px;
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.area4 .wrapper .carousel .card-4 .section3 .content .text2{
+  font-size: 18px;
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.area4 .wrapper .carousel .card-4 .section3 .content .cizgi{
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.116);
+}
+.area4 .wrapper .carousel .card-4 .section4 .content1{
+  font-size: 14px;
+  font-weight: 700;
+  color: #152440; 
+  padding: 0px 0 15px 40px;
+}
+.area4 .wrapper .carousel .card-4 .section4 .content2 span{
+  font-size: 14px;
+  color: #152440; 
+  padding: 0 10px 0 10px ;
+  text-align: center;
+}
+.area4 .wrapper .carousel .card-4 .section4 .content3{
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #152440; 
+}
+.area4 .wrapper .carousel .card-5 .section2 .content{
+  padding: 30px 0 10px 30px;
+}
+.area4 .wrapper .carousel .card-5 .section2 .content span{
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: #152440;
+}
+.area4 .wrapper .carousel .card-5 .section3 .content .text1{
+  font-size: 24px;
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.area4 .wrapper .carousel .card-5 .section3 .content .text2{
+  font-size: 18px;
+  font-family: Roboto-Regular;
+  font-weight: 700;
+  font-weight: 700;
+  padding-left: 40px;
+}
+.area4 .wrapper .carousel .card-5 .section3 .content .cizgi{
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.116);
+}
+.area4 .wrapper .carousel .card-5 .section4 .content1{
+  font-size: 14px;
+  font-weight: 700;
+  color: #152440; 
+  padding: 0px 0 15px 40px;
+}
+.area4 .wrapper .carousel .card-5 .section4 .content2 span{
+  font-size: 14px;
+  color: #152440; 
+  padding: 0 10px 0 10px ;
+  text-align: center;
+}
+.area4 .wrapper .carousel .card-5 .section4 .content3{
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #152440; 
+}
+.area5{
+  padding: 50px 100px 100px 100px;
+}
+
+.area5 .section .content .estate1 .country1 .case h3{
+font-size: 30px;
+font-family: Roboto-Thin;
+color: #fff;  
+}
+.area5 .section .content .estate1 .country1 .case h3 span{
+font-family: Roboto-Regular;
+font-weight: 700;
+color: #fff;
+}
+.area5 .section .content .estate1 .country1 .case p{
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  color: #fff;
+  padding: 15px 0 20px 0;
+}
+.area5 .section .content .estate1 .country2 .case1 i{
+  font-size: 16px;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.192);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: .2s ease-in;
+  cursor: pointer;
+}
+.area5 .section .content .estate1 .country2 .case1 i:hover{
+  background-color: #fff;
+  color: #e8505b;
+  transition: .2s ease-in;
+}
+.area5 .section .content .estate1 .country2 .case2 .pouch1 .pocket{
+  font-size: 20px;
+  font-family: Roboto-Regular;
+  font-weight: 600;
+  color: #fff;
+}
+.area5 .section .content .estate1 .country2 .case2 .pouch2 .pocket{
+  font-size: 13px;
+  font-family: Roboto-Regular;
+  color: #fff;
+}
+.area5 .section .content .estate2 .country1 .case .textup{
+  font-size: 18px;
+  font-family: Roboto-Regular;
+  font-weight: 600;
+  color: #e8505b;
+}
+.area5 .section .content .estate2 .country1 .case h3{
+  font-family: Roboto-Thin;
+  color: #152440;
+  font-size: 36px;
+  padding: 10px 0 10px 0;
+}
+.area5 .section .content .estate2 .country1 .case h3 span{
+  font-family: Roboto-Regular;
+  font-weight: 700;
+}
+.area5 .section .content .estate2 .country2 .case .pouch1 .boiler input{
+  background-color: rgba(128, 128, 128, 0.116);
+  font-family: Roboto-Light;
+   width: 93%;
+  padding: 15px 10px 15px 30px;
+  font-size: 14px;
+  border: none;
+}
+.area5 .section .content .estate2 .country2 .case .pouch1 .boiler input:focus{
+  outline:2px solid #e8505b;
+  color: #e8505b;
+}
+.area5 .section .content .estate2 .country2 .case .pouch1 .boiler span i{
+  color: #e8505b;
+  position: relative;
+  right: 30px;
+}
+.area5 .section .content .estate2 .country2 .case .pouch2 .boiler input{
+  background-color: rgba(128, 128, 128, 0.116);
+  font-family: Roboto-Light;
+   width: 93%;
+  padding: 15px 10px 15px 30px;
+  font-size: 14px;
+  border: none;
+  margin: 10px 0 10px 0;
+}
+.area5 .section .content .estate2 .country2 .case .pouch2 .boiler input:focus{
+  outline:2px solid #e8505b;
+  color: #e8505b;
+}
+.area5 .section .content .estate2 .country2 .case .pouch2 .boiler span i{
+  color: #e8505b;
+  position: relative;
+  right: 30px;
+ 
+}
+.area5 .section .content .estate2 .country2 .case .pouch3 .boiler input{
+  background-color: rgba(128, 128, 128, 0.116);
+  font-family: Roboto-Light;
+   width: 93%;
+  padding: 15px 10px 15px 30px;
+  font-size: 14px;
+  border: none;
+}
+.area5 .section .content .estate2 .country2 .case .pouch3 .boiler input:focus{
+  outline:2px solid #e8505b;
+  color: #e8505b;
+}
+.area5 .section .content .estate2 .country2 .case .pouch3 .boiler span i{
+  color: #e8505b;
+  position: relative;
+  right: 30px;
+}
+.area5 .section .content .estate2 .country3 {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area5 .section .content .estate2 .country3 .case{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area5 .section .content .estate2 .country3 .case .btn{
+  font-size: 14px;
+  font-family: Roboto-Regular;
+  background-color: #e8505b;
+  color: #fff;
+  padding: 15px 30px 15px 30px;
+  transition: .2s ease-in;
+}
+.area5 .section .content .estate2 .country3 .case .btn:hover{
+  background-color: #fff;
+  color: #e8505b;
+  border: 2px solid #e8505b;
+  transition: .2s ease-in;
+}
+.area5 .section .content .estate2 .country4 .case{
+  padding-top: 10px;
+  font-size: 10px;
+  color: #152440;
+  text-align: center;
+}
+.area5 .section .content .estate3{
+padding: 15px 0 15px 40px;
+}
+.area5 .section .content .estate3 h4{
+  font-family: Roboto-Thin;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0 10px 20px;
+}
+.area5 .section .content .estate3 h4 span{
+  font-family: Roboto-Regular;
+  font-weight: 700;
+}
+.area5 .section .content .estate3 ul{
+  list-style: none;
+  color: #fff;
+  font-family: Roboto-Regular;
+  font-weight: 600;
+  font-size: 15px;
+}
+.area5 .section .content .estate3 ul li{
+  padding: 15px 0 15px 0;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.area5 .section .content .estate3 ul li:hover{
+  margin-left: 10px;
+  transition: .2s ease-in;
+}
+
+/* AREA5 MD  */
+.area5md{
+  padding: 50px 100px 100px 100px;
+}
+
+.area5md .section .content .estate1 .country1 .case h3{
+font-size: 30px;
+font-family: Roboto-Thin;
+color: #fff;  
+}
+.area5md .section .content .estate1 .country1 .case h3 span{
+font-family: Roboto-Regular;
+font-weight: 700;
+color: #fff;
+}
+.area5md .section .content .estate1 .country1 .case p{
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  color: #fff;
+  padding: 15px 0 20px 0;
+}
+.area5md .section .content .estate1 .country2 .case1 i{
+  font-size: 16px;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.192);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: .2s ease-in;
+  cursor: pointer;
+}
+.area5md .section .content .estate1 .country2 .case1 i:hover{
+  background-color: #fff;
+  color: #e8505b;
+  transition: .2s ease-in;
+}
+.area5md .section .content .estate1 .country2 .case2 .pouch1 .pocket{
+  font-size: 20px;
+  font-family: Roboto-Regular;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 30px;
+}
+.area5md .section .content .estate1 .country2 .case2 .pouch2 .pocket{
+  font-size: 13px;
+  font-family: Roboto-Regular;
+  color: #fff;
+  padding-left: 30px;
+}
+.area5md .section .content .estate2 .country1 .case .textup{
+  font-size: 18px;
+  font-family: Roboto-Regular;
+  font-weight: 600;
+  color: #e8505b;
+}
+.area5md .section .content .estate2 .country1 .case h3{
+  font-family: Roboto-Thin;
+  color: #152440;
+  font-size: 36px;
+  padding: 10px 0 10px 0;
+}
+.area5md .section .content .estate2 .country1 .case h3 span{
+  font-family: Roboto-Regular;
+  font-weight: 700;
+}
+.area5md .section .content .estate2 .country2 .case .pouch1 .boiler input{
+  background-color: rgba(128, 128, 128, 0.116);
+  font-family: Roboto-Light;
+   width: 94%;
+  padding: 15px 10px 15px 30px;
+  font-size: 14px;
+  border: none;
+}
+.area5md .section .content .estate2 .country2 .case .pouch1 .boiler input:focus{
+  outline:2px solid #e8505b;
+  color: #e8505b;
+}
+.area5md .section .content .estate2 .country2 .case .pouch1 .boiler span i{
+  color: #e8505b;
+  position: relative;
+  right: 40px;
+}
+.area5md .section .content .estate2 .country2 .case .pouch2 .boiler input{
+  background-color: rgba(128, 128, 128, 0.116);
+  font-family: Roboto-Light;
+   width: 94%;
+  padding: 15px 10px 15px 30px;
+  font-size: 14px;
+  border: none;
+  margin: 10px 0 10px 0;
+}
+.area5md .section .content .estate2 .country2 .case .pouch2 .boiler input:focus{
+  outline:2px solid #e8505b;
+  color: #e8505b;
+}
+.area5md .section .content .estate2 .country2 .case .pouch2 .boiler span i{
+  color: #e8505b;
+  position: relative;
+  right: 40px;
+ 
+}
+.area5md .section .content .estate2 .country2 .case .pouch3 .boiler input{
+  background-color: rgba(128, 128, 128, 0.116);
+  font-family: Roboto-Light;
+   width: 94%;
+  padding: 15px 10px 15px 30px;
+  font-size: 14px;
+  border: none;
+}
+.area5md .section .content .estate2 .country2 .case .pouch3 .boiler input:focus{
+  outline:2px solid #e8505b;
+  color: #e8505b;
+}
+.area5md .section .content .estate2 .country2 .case .pouch3 .boiler span i{
+  color: #e8505b;
+  position: relative;
+  right: 40px;
+}
+.area5md .section .content .estate2 .country3 {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area5md .section .content .estate2 .country3 .case{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area5md .section .content .estate2 .country3 .case .btn{
+  font-size: 14px;
+  font-family: Roboto-Regular;
+  background-color: #e8505b;
+  color: #fff;
+  padding: 15px 30px 15px 30px;
+  transition: .2s ease-in;
+}
+.area5md .section .content .estate2 .country3 .case .btn:hover{
+  background-color: #fff;
+  color: #e8505b;
+  border: 2px solid #e8505b;
+  transition: .2s ease-in;
+}
+.area5md .section .content .estate2 .country4 .case{
+  padding-top: 10px;
+  font-size: 10px;
+  color: #152440;
+  text-align: center;
+}
+.area5md .section .content .estate3{
+padding: 15px 0 15px 40px;
+}
+.area5md .section .content .estate3 h4{
+  font-family: Roboto-Thin;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0 10px 20px;
+}
+.area5md .section .content .estate3 h4 span{
+  font-family: Roboto-Regular;
+  font-weight: 700;
+}
+.area5md .section .content .estate3 ul{
+  list-style: none;
+  color: #fff;
+  font-family: Roboto-Regular;
+  font-weight: 600;
+  font-size: 15px;
+}
+.area5md .section .content .estate3 ul li{
+  padding: 15px 0 15px 0;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.area5md .section .content .estate3 ul li:hover{
+  margin-left: 10px;
+  transition: .2s ease-in;
+}
+
+.area6 .section .content .pouch{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 80px;
+}
+
+#myBtn {
+        position: fixed;
+        bottom: 10%;        
+        right: 30px;      
+        max-width: 60px;
+        width: 100%;
+        font-size: 25px;
+        border-color: rgba(85, 85, 85, 0.2);
+        color: #fff;
+        background-color: #e8505b;
+        border-radius: 4px;
+        padding: 10px; 
+        border: none;              
+        display: inline-block;
+        text-decoration: none;
+    }
+
+      @keyframes glowing {
+        0% {
+          background-color: #ac121c;
+          box-shadow: 0 0 5px #eb1726;
+        }
+        50% {
+          background-color: #e8505a70;
+          box-shadow: 0 0 20px #e8505a70;
+        }
+        100% {
+          background-color: #fc0011c0;
+          box-shadow: 0 0 5px #fc0011c0;
+        }
+      }
+      #myBtn {
+        animation: glowing 2000ms infinite;
+        z-index: 9;
+      }
+</style>
+</head>
+<body>
+  <!--
+  <div id="xs" class="d-block d-sm-none">XS</div>
+  <div id="sm" class="d-none d-sm-block d-md-none">SM</div>
+  <div id="md" class="d-none d-md-block d-lg-none">MD</div>
+  <div id="lg" class="d-none d-lg-block d-xl-none">LG</div>
+  <div id="xl" class="d-none d-xl-block d-xxl-none">XL</div>
+  <div id="xxl" class="d-none d-xxl-block">XXL</div>
+-->
+
+  <button id="myBtn"><a href="#top"><i class="fas fa-angle-double-up" style="color: #fff;"></i></a></button>
+
+
+
+  <div class="area1 d-none d-lg-block" style="padding-bottom: 8%;">
+    <header id="head">
+          <nav class="nav">
+              <a href="#" class="logo"> <img src="gayrimakul-doc/logo.svg" style="height: 80px; margin-right: auto; cursor: pointer;" alt="gayrimakul-doc/logo.svg"></a>
+              <ul class="nav-list">
+                  <li><a href="index.html" class="nav-link text-uppercase">anasayfa</a></li>
+                  <li><a href="#" class="nav-link text-uppercase">İlanlar</a></li>
+                  <li><a href="#" class="nav-link text-uppercase">hakkımızda</a></li>
+                  <li><a href="#" class="nav-link text-uppercase">sss</a></li>
+                  <li><a href="#" class="nav-link text-uppercase">İletişim</a></li>
+              </ul>
+              <a href="#" class="text-uppercase mx-1" id="nav-cta">İlanınızı yayınlayınız</a>
+          </nav>   
+  </header>
+  </div><!--AREA1-->
+  
+  
+  
+  <script>
+      window.addEventListener('scroll', function () {
+          let header = document.querySelector('#head');
+          let windowPosition = window.scrollY > 0;
+          header.classList.toggle('scrolling-active', windowPosition);
+      })
+  </script>
+
+<!--
+<div class="area1 d-none d-lg-block pt-2 " >
+  <header style="padding: 20px 0;">
+    <img src="gayrimakul-doc/logo.svg" style="height: 80px; margin-right: auto; cursor: pointer;" alt="gayrimakul-doc/logo.svg">
+    <nav>
+      <ul class="nav_links" style="list-style: none;">
+        <li><a class="text-uppercase" href="#">anasayfa</a></li>
+        <li><a class="text-uppercase" href="#">İlanlar</a></li>
+        <li><a class="text-uppercase" href="#">hakkımızda</a></li>
+        <li><a class="text-uppercase" href="#">sss</a></li>
+        <li><a class="text-uppercase" href="#">İletişim</a></li>
+      </ul>
+    </nav>
+    <a class="text-uppercase mx-1" href="#"><button class="btn text-uppercase"> İlanınızı yayınlayınız </button></a>
+  </header>
+</div>AREA1-->
+    
+
+<div class="area1-md d-lg-none d-lg-md">  
+  <header id="heat">
+<nav class="navbar navbar-expand-lg ">
+  <img style="height: 12vw; margin-right: auto; cursor: pointer;" src="gayrimakul-doc/logo.svg" alt="gayrimakul-doc/logo.svg">
+  <button class="btn text-uppercase" style="margin-right: 10px;">İlanınızı yayınlayın</button>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" style="margin-top: 10%;">
+        <li class="nav-item"><a class="nav-link text-uppercase" style="text-decoration: none; color: #152440; font-size: 16px; font-weight: bold; font-family: Roboto-Regular; padding: 20px 0px 20px 40px;" href="#">anasayfa</a> </li>
+        <li class="nav-item"><a class="nav-link text-uppercase" style="text-decoration: none; color: #152440; font-size: 16px; font-weight: bold; font-family: Roboto-Regular; padding: 20px 0px 20px 40px;" href="#">İlanlar</a> </li>
+        <li class="nav-item"><a class="nav-link text-uppercase" style="text-decoration: none; color: #152440; font-size: 16px; font-weight: bold; font-family: Roboto-Regular; padding: 20px 0px 20px 40px;" href="#">hakkımızda</a> </li>
+        <li class="nav-item"><a class="nav-link text-uppercase" style="text-decoration: none; color: #152440; font-size: 16px; font-weight: bold; font-family: Roboto-Regular; padding: 20px 0px 20px 40px;" href="#">sss</a> </li>
+        <li class="nav-item"><a class="nav-link text-uppercase" style="text-decoration: none; color: #152440; font-size: 16px; font-weight: bold; font-family: Roboto-Regular; padding: 20px 0px 20px 40px;" href="#">İletişim</a> </li>
+      </ul>
+    </div>   
+</nav>
+</header>
+</div><!--AREA1-MD-->
+<script type="text/javascript">
+  const menuBtn = document.querySelector('.navbar-toggler');
+  let menuOpen = false;
+  menuBtn.addEventListener('click',()=>{
+    if(!menuOpen){
+      menuBtn.classList.add('open');
+      menuOpen = true;
+    }else{
+      menuBtn.classList.remove('open');
+      menuOpen = false;
+    }
+  });
+</script>
+<script>
+  window.addEventListener('scroll', function () {
+      let header = document.querySelector('#heat');
+      let windowPosition = window.scrollY > 0;
+      header.classList.toggle('scrolling-active', windowPosition);
+  })
+</script>
+    
+
+
+
+<div class="area2 bg-light">
+  <div class="section container-fluid">
+    <div class="content container">
+      <div class="estate1 row">
+        <div class="country col-12">Gayrimenkul almanın en <strong>makul</strong> yolu</div><!--COUNTRY-->
+      </div><!--ESTATE1-->
+      <div class="estate2 row">
+        <div class="country col-12">
+          <span>Bankaların</span> satmakta olduğu <br> <span>gayrimenkulleri</span> tek bir <br> <span>platformda</span> sizlere <span>sunuyoruz.</span>        </div><!--COUNTRY-->
+      </div><!--ESTATE2-->
+      <div class="estate3 row">
+        <div class="country">
+          <div class="case1 row">
+            <div class="pouch1 col-3 text-capitalize" style="background-color: #fff; box-shadow: 0 16px 32px 0 rgb(21 36 64 / 20%);">hızlı arama</div><!--POUCH1-->
+            <div class="pouch2 col-3 text-capitalize"> <i class="fas fa-external-link-alt"></i> detaylı arama </div><!--POUCH2-->
+          </div><!--CASE1-->
+          <div class="case2 row">
+              <div class="pouch1 col-lg-4 col-sm-12" style="background-color: #fff; padding: 10px 20px 30px 20px;">
+                <div class="pocket1 row">
+                  <div class="bıno col-12" >
+                  <i class="fas fa-map-marker-alt" style="color: #e8505b;"></i> İl 
+                </div><!--BINO-->
+                </div><!--POCKET1-->
+                <div class="pocket2 row">
+                  <select class="form-select" style="width: 80%; margin-left: auto; margin-right: auto; padding: 10px; font-family: Roboto-Regular; font-size: 14px;" id="inputGroupSelect01">
+                    <option selected>Hepsi</option>
+                    <option value="1">Ankara</option>
+                    <option value="2">İstanbul</option>
+                    <option value="3">Samsun</option>
+                    <option value="3">...</option>
+                  </select>
+                </div><!--POCKET2-->
+              </div><!--POUCH1-->
+              <div class="pouch2 col-lg-4 col-sm-12" style="background-color: #fff; padding: 10px 20px 30px 20px;">
+                <div class="pocket1 row">
+                  <div class="bıno col-12">
+                    <i class="fas fa-map-marker-alt" style="color: #e8505b;"></i> İlçe 
+                  </div><!--BINO-->
+                </div><!--POCKET1-->
+                <div class="pocket2 row">
+                  <select class="form-select" style="width: 80%; margin-left: auto; margin-right: auto; padding: 10px; font-family: Roboto-Regular; font-size: 14px;" id="inputGroupSelect02">                    
+                    <option selected>Hepsi</option>
+                  </select>
+                </div><!--POCKET2-->
+              </div><!--POUCH2-->
+              <div class="pouch3 col-lg-3 col-sm-12" style="background-color: #fff; padding: 10px 20px 30px 20px;">
+                <div class="pocket1 row">
+                  <div class="bıno col-12">
+                    <i class="fas fa-arrow-down" style="color: #e8505b;"></i> Gayrimenkul Türü 
+                  </div><!--BINO-->
+                </div><!--POCKET1-->
+                <div class="pocket2 row">
+                  <select class="form-select" style="width: 80%; margin-left: auto; margin-right: auto; padding: 10px; font-family: Roboto-Regular; font-size: 14px;" id="inputGroupSelect03">
+                    <option selected>Hepsi</option>
+                  </select>
+                </div><!--POCKET2-->
+              </div><!--POUCH3-->
+              <div class="pouch4 col-1">
+                <div class="pocket" style="background-color: #e8505b; cursor: pointer;">
+                  <i class="fas fa-search"></i>
+                </div><!--POCKET-->
+              </div><!--POUCH4-->
+          </div><!--CASE2-->
+        </div><!--COUNTRY-->
+      </div><!--ESTATE3-->
+    </div><!--CONTENT-->
+  </div><!--SECTİON-->
+</div><!--AREA2-->
+
+<div class="area3 container-fluid" style="padding: 15vh 0 15vh 0;">
+  <div class="section container">
+    <div class="content1 row">
+      <h3 class="text-uppercase">en makul, en cazip ilanları</h3>
+      <p class="text-capitalize"><span>Hemen <br></span> keşfedin</p>
+    </div><!--CONTENT1-->
+    <div class="content2 row">
+      <div class="estate1 col-lg-4">
+        <div class="ankara row">
+          <div class="country">
+          <p>Ankara</p>  <span>186 Gayrimenkul</span>
+        </div><!--country-->
+        </div><!--ANKARA-->
+        <div class="izmir row">
+          <div class="country">
+          <p>İzmir</p>  <span>43 Gayrimenkul</span>
+        </div><!--country-->
+        </div><!--İZMİR-->
+      </div><!--ESTATE1-->
+      <div class="estate2 col-lg-4">
+        <div class="istanbul">
+          <div class="country">
+          <p class="kutu text-capitalize">en çok aranan</p>
+        </div><!--country-->
+        <p class="text">İstanbul</p>  <span>101 Gayrimenkul</span>
+        </div><!--İSTANBUL-->
+      </div><!--ESTATE2-->
+      <div class="estate3 col-lg-4">
+        <div class="antalya row">
+          <div class="country">
+            <p>Antalya</p>  <span>15 Gayrimenkul</span>
+          </div><!--country-->
+        </div><!--ANTALYA-->
+        <div class="bursa row">
+          <div class="country">
+            <p>Bursa</p>  <span>34 Gayrimenkul</span>
+          </div><!--country-->
+        </div><!--BURSA-->
+      </div><!--ESTATE3-->
+    </div><!--estate2-->
+  </div>
+</div><!--AREA3-->
+
+
+
+<div class="area4 container-fluid bg-light" style="padding-bottom: 200px; padding-top: 50px;">
+  <h3 class="text-uppercase">öne çıkan ilanlar</h3>
+  <div class="anabas text-uppercase"><span>son</span> eklenenler</div><!--ANABAS-->
+<div class="wrapper" style="padding-top: 40px;">
+  <div class="carousel carouselarea4 owl-carousel">
+    <div class="card card-1" style="cursor: pointer;">
+      <div class="section1 row" style="cursor: pointer;">
+        <div class="content1 col-12">
+          <img src="gayrimakul-doc/73067_2.jpeg" alt="gayrimakul-doc/73067_2.jpeg">
+        </div><!--CONTENT1-->
+      </div><!--SECTİON1-->
+      <div class="section2 row">
+        <div class="content col-12">
+          <i class="fas fa-map-marker-alt" style="color: #e8505b; padding-left: 10px; padding-right: 5px; font-size: 14px;"></i> <span class="text-capitalize">ankara / çankaya / arçin caddesi</span>
+        </div><!--CONTENT-->
+      </div><!--SECTİON2-->
+      <div class="section3 row">
+        <div class="content col-12">
+          <div class="text1 text-capitalize"> satılık konut 3956</div>
+          <p class="text2">770.000 ₺</p><p class="cizgi"></p>
+        </div><!--CONTENT-->
+      </div><!--SECTİON3-->
+      <div class="section4 row" >
+        <div class="content1 col-4 "><i style="color: #e8505b;" class="fas fa-university"></i> <span>Denizbank</span></div><!--CONTENT1-->
+        <div class="content2 col-4 "> |<span> 05.07.2021 </span>|</div><!--CONTENT2-->
+        <div class="content3 col-3 ">95 m²</div><!--CONTENT3-->
+      </div><!--SECTİON4-->
+    </div><!--CARD1-->
+    <div class="card card-2" style="cursor: pointer;">
+      <div class="section1 row">
+        <div class="content1 col-12">
+          <img src="gayrimakul-doc/73070_2.jpeg" alt="gayrimakul-doc/73070_2.jpeg">
+        </div><!--CONTENT1-->
+      </div><!--SECTİON1-->
+      <div class="section2 row">
+        <div class="content col-12">
+          <i class="fas fa-map-marker-alt" style="color: #e8505b; padding-left: 10px; padding-right: 5px; font-size: 14px;"></i> <span class="text-capitalize">aydın / efeler / yukarıkayacık</span>
+        </div><!--CONTENT-->
+      </div><!--SECTİON2-->
+      <div class="section3 row">
+        <div class="content col-12">
+          <div class="text1 text-capitalize">satılık tarla 3955</div>
+          <p class="text2">170.000 ₺</p><p class="cizgi"></p>
+        </div><!--CONTENT-->
+      </div><!--SECTİON3-->
+      <div class="section4 row" >
+        <div class="content1 col-4 "><i style="color: #e8505b;" class="fas fa-university"></i> <span>Denizbank</span></div><!--CONTENT1-->
+        <div class="content2 col-4 "> |<span> 05.07.2021 </span>|</div><!--CONTENT2-->
+        <div class="content3 col-3 ">9.487 m²</div><!--CONTENT3-->
+      </div><!--SECTİON4-->
+    </div><!--CARD2-->
+    <div class="card card-3" style="cursor: pointer;">
+      <div class="section1 row">
+        <div class="content1 col-12">
+          <img src="gayrimakul-doc/73072_2.jpeg" alt="gayrimakul-doc/73072_2.jpeg">
+        </div><!--CONTENT1-->
+      </div><!--SECTİON1-->
+      <div class="section2 row">
+        <div class="content col-12">
+          <i class="fas fa-map-marker-alt" style="color: #e8505b; padding-left: 10px; padding-right: 5px; font-size: 14px;"></i> <span class="text-capitalize">kayseri / kocasinan / mimarsinan</span>
+        </div><!--CONTENT-->
+      </div><!--SECTİON2-->
+      <div class="section3 row">
+        <div class="content col-12">
+          <div class="text1 text-uppercase">satılık konut 3957</div>
+          <p class="text2">210.000 ₺</p><p class="cizgi"></p>
+        </div><!--CONTENT-->
+      </div><!--SECTİON3-->
+      <div class="section4 row" >
+        <div class="content1 col-4 "><i style="color: #e8505b;" class="fas fa-university"></i> <span>Denizbank</span></div><!--CONTENT1-->
+        <div class="content2 col-4 "> |<span> 05.07.2021 </span>|</div><!--CONTENT2-->
+        <div class="content3 col-3 ">78 m²</div><!--CONTENT3-->
+      </div><!--SECTİON4-->
+    </div><!--CARD3-->
+    <div class="card card-4" style="cursor: pointer;">
+      <div class="section1 row">
+        <div class="content1 col-12">
+          <img src="gayrimakul-doc/77.jpg" alt="gayrimakul-doc/77.jpg">
+        </div><!--CONTENT1-->
+      </div><!--SECTİON1-->
+      <div class="section2 row">
+        <div class="content col-12">
+          <i class="fas fa-map-marker-alt" style="color: #e8505b; padding-left: 10px; padding-right: 5px; font-size: 14px;"></i> <span class="text-capitalize">giresun / gümüşçay / eynesil</span>
+        </div><!--CONTENT-->
+      </div><!--SECTİON2-->
+      <div class="section3 row">
+        <div class="content col-12">
+          <div class="text1 text-uppercase">satılık arsa 3987</div>
+          <p class="text2">130.000 ₺</p><p class="cizgi"></p>
+        </div><!--CONTENT-->
+      </div><!--SECTİON3-->
+      <div class="section4 row" >
+        <div class="content1 col-4 "><i style="color: #e8505b;" class="fas fa-university"></i> <span>Yapı Kredi</span></div><!--CONTENT1-->
+        <div class="content2 col-4 "> |<span> 05.07.2021 </span>|</div><!--CONTENT2-->
+        <div class="content3 col-3 ">548 m²</div><!--CONTENT3-->
+      </div><!--SECTİON4-->
+    </div><!--CARD4-->
+    <div class="card card-5" style="cursor: pointer;">
+      <div class="section1 row">
+        <div class="content1 col-12">
+          <img src="gayrimakul-doc/no-img.jpg" alt="gayrimakul-doc/no-img.jpg">
+        </div><!--CONTENT1-->
+      </div><!--SECTİON1-->
+      <div class="section2 row">
+        <div class="content col-12">
+          <i class="fas fa-map-marker-alt" style="color: #e8505b; padding-left: 10px; padding-right: 5px; font-size: 14px;"></i> <span class="text-capitalize">amasya / gümüşhacıköy / saray</span>
+        </div><!--CONTENT-->
+      </div><!--SECTİON2-->
+      <div class="section3 row">
+        <div class="content col-12">
+          <div class="text1 text-uppercase">satılık dükkan & mağaza</div>
+          <p class="text2">260.000 ₺</p><p class="cizgi"></p>
+        </div><!--CONTENT-->
+      </div><!--SECTİON3-->
+      <div class="section4 row" >
+        <div class="content1 col-4 "><i style="color: #e8505b;" class="fas fa-university"></i> <span>Halkbank</span></div><!--CONTENT1-->
+        <div class="content2 col-4 "> |<span> 05.07.2021 </span>|</div><!--CONTENT2-->
+        <div class="content3 col-3 ">159 m²</div><!--CONTENT3-->
+      </div><!--SECTİON4-->
+    </div><!--CARD5-->
+  </div><!--CAROUSEL-->
+</div><!--WRAPPER-->
+</div>
+<script>
+  $(".carouselarea4").owlCarousel({
+    margin:10,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverpause:true,
+    responsive: {
+      0:{
+        items:1,
+        nav:false
+      },
+      1000:{
+        items:2,
+        nav:false
+      },
+      1200:{
+        items:3,
+        nav: false
+      }
+    }
+  });
+</script>
+
+
+<div class="area5 container-fluid d-none d-xl-block" style="background-color: #e8505b;">
+  <div class="section container">
+    <div class="content row ">
+      <div class="estate1 col-lg-4 " style="padding: 30px">
+        <div class="country1 row">
+          <div class="case col-12 ">
+          <h3 class="text-capitalize"><span>Hızlı</span> İletişim</h3>
+          <p>Sizde gayrimenkullerinizin bu platformda yayınlanmasını isterseniz bizimle iletişime geçin.</p>
+        </div><!--CASE--> 
+        </div><!--COUNTRY1-->
+        <div class="country2 row">
+          <div class="case1 col-3"><i class="far fa-envelope"></i></div><!--CASE1-->
+          <div class="case2 col-3">
+            <div class="pouch1 row">
+              <div class="pocket col-12">Eposta</div><!--POCKET-->
+            </div><!--POUCH1-->
+            <div class="pouch2 row">
+              <div class="pocket col-12">info@gayrimakul.com</div><!--POCKET-->
+            </div><!--POUCH2-->
+          </div><!--CASE2-->
+        </div><!--COUNTRY2-->
+      </div><!--ESTATE1-->
+      <div class="estate2 col-lg-4" style="background-color: #fff; margin-top: -10%; padding: 50px 60px 50px 60px; border-top: 20px solid #e8505b;">
+        <div class="country1 row">
+          <div class="case col-12">
+            <span class="textup text-uppercase">yeni gayrimenkuller için</span>
+            <h3><span>Takip</span> Edin</h4>
+          </div><!--CASE-->
+        </div><!--COUNTRY1-->
+        <div class="country2 row py-3">
+          <div class="case col-12">
+            <div class="pouch1 row">
+                <div class="boiler col-12">
+                <input type="text" placeholder="Adınız Soyadınız"><span><i class="far fa-user"></i></span>
+            </div><!--BOİLER-->
+            </div><!--POUCH1-->
+            <div class="pouch2 row">
+              <div class="boiler col-12">
+              <input type="text" placeholder="E-Posta Adresiniz"><span><i class="far fa-envelope"></i></span>
+            </div><!--BOİLER-->
+            </div><!--POUCH2-->
+            <div class="pouch3 row">
+              <div class="boiler col-12">
+              <input type="text" placeholder="Telefon Numaranız"><span><i class="fas fa-phone"></i></span>
+            </div><!--BOİLER-->
+            </div><!--POUCH3-->
+          </div><!--CASE-->
+        </div><!--COUNTRY2-->
+        <div class="country3 row">
+          <div class="case col-6">
+              <button class="btn text-capitalize">takip edin</button>
+          </div><!--CASE-->
+        </div><!--COUNTRY3-->
+        <div class="country4 row">
+          <div class="case col-12">
+            Bu site reCAPTCHA tarafından korunmaktadır. <br> Google Gizlilik Politikası ve Hizmet Şartları geçerlidir.
+          </div><!--CASE-->
+        </div><!--COUNTRY4-->
+      </div><!--ESTATE2-->
+      <div class="estate3 col-lg-4">
+        <h4><span>Daha</span> Fazla</h4>
+        <ul>
+          <li class="text-capitalize">Hakkımızda</li>
+          <li class="text-capitalize">sıkça sorulan sorular</li>
+          <li class="text-capitalize">İletişim</li>
+        </ul>
+      </div><!--ESTATE3-->
+    </div><!--CONTENT-->
+  </div><!--SECTİON-->
+</div><!--AREA5-->
+
+
+
+<!--MD BOZULUYOR 12-6-6 -->
+<div class="area5md container-fluid d-xl-none d-xl-lg" style="background-color: #e8505b;">
+  <div class="section container">
+    <div class="content row ">
+      <div class="estate1 col-md-6 col-sm" style="padding: 30px">
+        <div class="country1 row">
+          <div class="case col-12 ">
+          <h3 class="text-capitalize"><span>Hızlı</span> İletişim</h3>
+          <p>Sizde gayrimenkullerinizin bu platformda yayınlanmasını isterseniz bizimle iletişime geçin.</p>
+        </div><!--CASE--> 
+        </div><!--COUNTRY1-->
+        <div class="country2 row">
+          <div class="case1 col-3"><i class="far fa-envelope"></i></div><!--CASE1-->
+          <div class="case2 col-3">
+            <div class="pouch1 row">
+              <div class="pocket col">Eposta</div><!--POCKET-->
+            </div><!--POUCH1-->
+            <div class="pouch2 row">
+              <div class="pocket col">info@gayrimakul.com</div><!--POCKET-->
+            </div><!--POUCH2-->
+          </div><!--CASE2-->
+        </div><!--COUNTRY2-->
+      </div><!--ESTATE1-->
+      <div class="estate2 col-12 order-first" style="background-color: #fff; margin-top: -20%; padding: 50px 60px 50px 60px; border-top: 20px solid #e8505b;">
+        <div class="country1 row">
+          <div class="case col-12">
+            <span class="textup text-uppercase">yeni gayrimenkuller için</span>
+            <h3><span>Takip</span> Edin</h4>
+          </div><!--CASE-->
+        </div><!--COUNTRY1-->
+        <div class="country2 row py-3">
+          <div class="case col-12">
+            <div class="pouch1 row">
+                <div class="boiler col-12">
+                <input type="text" placeholder="Adınız Soyadınız"> <span><i class="far fa-user"></i></span>
+            </div><!--BOİLER-->
+            </div><!--POUCH1-->
+            <div class="pouch2 row">
+              <div class="boiler col-12">
+              <input type="text" placeholder="E-Posta Adresiniz"><span><i class="far fa-envelope"></i></span>
+            </div><!--BOİLER-->
+            </div><!--POUCH2-->
+            <div class="pouch3 row">
+              <div class="boiler col-12">
+              <input type="text" placeholder="Telefon Numaranız"><span><i class="fas fa-phone"></i></span>
+            </div><!--BOİLER-->
+            </div><!--POUCH3-->
+          </div><!--CASE-->
+        </div><!--COUNTRY2-->
+        <div class="country3 row">
+          <div class="case col-6">
+              <button class="btn text-capitalize">takip edin</button>
+          </div><!--CASE-->
+        </div><!--COUNTRY3-->
+        <div class="country4 row">
+          <div class="case col-12">
+            Bu site reCAPTCHA tarafından korunmaktadır. <br> Google Gizlilik Politikası ve Hizmet Şartları geçerlidir.
+          </div><!--CASE-->
+        </div><!--COUNTRY4-->
+      </div><!--ESTATE2-->
+      <div class="estate3 col-md-6 col-sm">
+        <h4><span>Daha</span> Fazla</h4>
+        <ul>
+          <li class="text-capitalize">Hakkımızda</li>
+          <li class="text-capitalize">sıkça sorulan sorular</li>
+          <li class="text-capitalize">İletişim</li>
+        </ul>
+      </div><!--ESTATE3-->
+    </div><!--CONTENT-->
+  </div><!--SECTİON-->
+</div><!--AREA5-->
+
+
+<div class="area6 container-fluid" style="background-color: #da4651;">
+  <div class="section container">
+      <div class="content row">
+          <div class="pouch col-12">
+              Gayrimakul - 2021
+          </div><!--POUCH-->
+      </div><!--CONTENT-->
+  </div><!--SECTION-->
+</div><!--AREA6-->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+    </html>

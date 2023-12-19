@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Enoch Studio</title>
+    <link rel="icon" href="logo-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ddae29ec1f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style type="text/css">
+@font-face {
+  font-family: Gravity-Light;
+  src: url("enoch-fonts/Gravity-Light.woff");
+  src: url("enoch-fonts/Gravity-Light.woff2");
+}
+@font-face {
+  font-family: Gravity-Regular;
+  src: url("enoch-fonts/Gravity-Regular.woff");
+  src: url("enoch-fonts/Gravity-Regular.woff2");
+}
+@font-face {
+  font-family: OpenSans-Extrabold;
+  src: url("enoch-fonts/OpenSans-Extrabold.woff");
+  src: url("enoch-fonts/OpenSans-Extrabold.woff2");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("enoch-fonts/Roboto-Bold.woff");
+  src: url("enoch-fonts/Roboto-Bold.woff2");
+}
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url("enoch-fonts/OpenSans-Regular.woff");
+  src: url("enoch-fonts/OpenSans-Regular.woff2");
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("enoch-fonts/Roboto-Regular.woff");
+  src: url("enoch-fonts/Roboto-Regular.woff2");
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+#carouselExampleControls{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -610px;
+  z-index: -3;
+  background: black;
+}
+.area-1  .area-11 .starter-transparent-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 100vh;
+  z-index: 1;
+}
+ .about{
+   background-color: #1ba098;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+ .about .row .adam img{
+  width: 300px;
+  height: 450px;
+  display: block;
+}
+.about .row .text-section {
+  max-width: 600px;
+  color:white;
+}
+.about .row .text-section .header-section{
+  font-size: 54px;
+  font-family: Roboto-Bold;
+  font-weight: bold;
+  line-height: 70px;
+  border-left: 10px solid white;
+}
+.about .row .text-section .header-section span{
+  margin-left: 20px;
+}
+.about .row .text-section .bottom-section{
+  position: relative;
+  top: 5px;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-family: Roboto-Regular;
+  font-weight: bold;
+}
+.about .kutu{
+  position: relative;
+  top:220px;
+  right: -90px;
+  width: 110px;
+  height: 110px;
+  background-color: #051622;
+}
+.area-misyon{
+  width: 70%;
+}
+.area-misyon .misyon .row .header{
+  letter-spacing: 3px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  width: 50%;
+  font-family: Roboto-Bold;
+}
+.area-misyon .misyon .row .middle-text{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Roboto-Bold;
+  line-height: 40px;
+}
+.area-misyon .misyon .row .end-text{
+  margin-bottom: 20px;
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: OpenSans-Regular;
+}
+/* 4.KISIM CONTENT 4 */
+.area-kesik .container .a-side{
+position: relative;
+top: 80px;
+}
+.area-kesik .container .a-side .row .top-photo img{
+display: block;
+width:320px;
+height: 217px;
+margin-left: auto;
+margin-right: auto;
+}
+.area-kesik .b-side{
+position: relative;
+top: 50px;
+}
+.area-kesik .b-side .row .card-front .card{
+margin-left: auto;
+margin-right: auto;
+display: block;
+padding: 30px;
+width: 287px;
+height:401px;
+background-color: #1ba098;
+}
+.area-kesik .b-side .row .card-front .card .card-body .card-title{
+padding-top: 15px;
+font-size: 24px;
+color:white;
+font-family: Roboto-Bold;
+}
+.area-kesik .b-side .row .card-front .card .card-body .card-text{
+font-size: 16px;
+color: white;
+padding-top: 20px;
+font-family: OpenSans-Regular;
+}
+.area-kesik .b-side .row .photo img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 304px;
+height: 350px;
+}
+.area-kesik .c-side{
+z-index: 500;
+position: relative;
+top:-250px;
+text-align: center;
+}
+.area-kesik .c-side .row .card-grid .card{
+background-color: #051622;
+margin-left: auto;
+margin-right: auto;
+display: block;
+justify-content: center;
+width: 320px;
+height: 500px;
+}
+.area-kesik .c-side .row .card-grid .card img{
+margin-top: 40%;
+width: 120px;
+height: 120px;
+}
+.area-kesik .c-side .row .card-grid .card  .card-text{
+font-size: 54px;
+font-weight: bold;
+color: white;
+font-family: Roboto-Bold;
+}
+.area-kesik .d-side{
+z-index: 50;
+position: relative;
+top: -430px;
+}
+.area-kesik .d-side .row .start-photo img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 290px;
+height: 350px;
+}
+.area-kesik .d-side .row .ceo{
+text-align: center;
+}
+.area-kesik .d-side .row .ceo .text{
+text-align: center;
+padding-bottom: 5px;
+font-size: 16px;
+font-weight: 500;
+position: relative;
+top: 250px;
+border-bottom: 3px solid black;
+font-family: OpenSans-Regular;
+}
+.area-kesik .d-side .row .ceo i{
+padding-left: 5px;
+padding-right: 5px;
+position: relative;
+top: 270px;
+font-size: 35px;
+cursor: pointer;
+transition: 0.5s;
+}
+.area-kesik .d-side .row .ceo i:hover{
+transition: 0.5s;
+color: #1ba098;
+}
+.area-kesik .d-side .row  .end-card .card{
+margin-right: auto;
+margin-left: auto;
+width: 304px;
+height: 402px;
+position: relative;
+top: -50px;
+}
+.area-kesik .d-side .row  .end-card .card-title{
+text-align: left;
+padding-top: 45px;
+padding-left:40px;
+font-size: 24px;
+font-family: Roboto-Bold;
+}
+.area-kesik .d-side .row  .end-card .card-text{
+text-align: left;
+padding-top: 35px;
+padding-left:40px;
+font-size: 16px;
+width: 240px;
+font-family: OpenSans-Regular;
+}
+
+.ceo-head{
+  height: 80vh;
+  background-image: url("enoch-images/jumbo.jpeg");
+  background-repeat: no-repeat;
+  background-attachment:  fixed ;
+  background-size: cover;
+  color:white;
+}
+.ceo-head .ceo{
+  position: relative;
+  padding: 100px 0px 100px 0px;
+}
+.ceo-head .ceo .row{
+  margin: 20% 0px 0px 0px;
+}
+.ceo-head .ceo .row .top h4{
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: Roboto-Bold;
+}
+.ceo-head .ceo .row .top p{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: OpenSans-Regular;
+}
+.ceo-head .ceo .row .middle{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: OpenSans-Regular;
+}
+
+.ceo-head .ceo .row .bottom h1{
+  margin-top: -10px;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Roboto-Bold;
+}
+.container-fluid .social-box{
+  padding: 60px;
+}
+.container-fluid .social-box .row .photo img{
+  max-width: 23vw;
+  position: relative;
+  margin-right: -10px;
+}
+.container-fluid .social-box .row .follow{
+  font-weight: bold;
+  color:black;
+  font-size: 40px;
+}
+.container-fluid .social-box .row .icon i{
+  cursor: pointer;
+  transition: 0.5s;
+}
+.container-fluid .social-box .row .icon i:hover{
+  color:#1ba098;
+  transition: 0.5s;
+}
+
+.zone1 .section1{
+  padding: 100px 0px 100px 0px;
+}
+.zone1 .section1 img{
+  width: 100%;
+  height: 100%;
+}
+.zone1 .section1 .content2{
+  margin: 30px 0px 30px 0px;
+}
+.zone1 .section1 .content2 .estate1{
+  margin: 20px 0px 20px 0px;
+  padding: 60px 30px 60px 30px;
+  background-color: white;
+  color: black;
+}
+.zone1 .section1 .content2 .estate1 h1{
+  margin: 20px 0px 120px 0px;
+  font-size: 50px;
+  font-family: OpenSans-Extrabold;
+}
+.zone1 .section1 .content2 .estate1 p{
+  font-size: 24px;
+  font-family: OpenSans-Regular;
+  margin: 30px 0px;
+}
+.zone1 .section1 .content2 .estate3{
+  margin: 100px 0px 100px 0px;
+  padding: 60px 30px 60px 30px;
+  background-color: #1ba098;
+} 
+.zone1 .section1 .content2 .estate3 img{
+  width: 30%;
+  height: auto;
+}
+.zone1 .section1 .content2 .estate3 p{
+  color: white;
+  font-family: Gravity-Light;
+  font-size: 36px;
+  padding: 100px 0px 0px 0px;
+}
+.enalt .section1{
+  padding: 60px 0px 60px 0px;
+}
+.enalt .section1 .content1 img{
+  width: 100%;
+  height: auto;
+  margin: 20px 0px 20px 0px;
+}
+.enalt .section1 .content1 .estate2{
+  padding: 50px;
+  font-size: 24px;
+  font-family: Roboto-Regular;
+  color: #fff;
+  background-color: #1ba098;
+  margin: 20px 0px 20px 0px;
+}
+.enalt .section1 .content1 .estate3 img{
+  width: 100%;
+  height: 92%;
+}
+.hot{
+  background-image: url("enoch-images/harman.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+.hot .container{
+  padding: 120px 0px 120px 0px;
+}
+.hot .container .row .yaz{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hot .container .row .yaz h1{
+  font-family: Roboto-Regular;
+  font-size: 92px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 5px 5px red,-5px -5px blue;
+}
+.kegri .section1 img{
+  width: 100%;
+  height: auto;
+}
+.kegri .section1 .content1 .estate2{
+  padding: 60px;
+  box-sizing:border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #051622;
+}
+.kegri .section1 .content1 .estate2 img{
+  width: 50%;
+}
+.kegri .section1 .content1 .estate2 h1{
+  font-family: Roboto-Bold;
+  font-size: 62px;
+  padding: 20px 0px 0px 0px;
+  color:#fff;
+}
+.kegri .section1 .content2{
+  margin: 30px 0px 30px 0px;
+}
+.kegri .section1 .content2 .estate1{
+  background-color: #1ba098;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  color: white;
+  padding: 70px 0px 70px 0px;
+}
+.kegri .section1 .content2 .estate1 h1{
+  font-family: Roboto-Bold;
+  font-size: 25px;
+  text-align: left;
+  padding: 30px 0px 30px 0px;
+}
+.kegri .section1 .content2 .estate1 p{
+  font-family: OpenSans-Regular;
+  font-size: 16px;
+  text-align: left;
+  padding: 0px 30px 0px 30px;
+}
+.kegri .section1 .content2 .estate3{
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  padding: 70px 0px 70px 0px;
+}
+.kegri .section1 .content2 .estate3 h1{
+  font-family: Roboto-Bold;
+  font-size: 25px;
+  text-align: left;
+  padding: 30px 0px 30px 0px;
+  color:black
+}
+.kegri .section1 .content2 .estate3 p{
+  font-family: OpenSans-Regular;
+  font-size: 16px;
+  text-align: left;
+  padding: 0px 30px 0px 30px;
+  color:black
+}
+.kegri .section1 .content3 .estate1{
+  padding: 70px 0px 70px 0px;
+}
+.kegri .section1 .content3 .estate1 .row1 .case1{
+  padding: 30px 60px 30px 60px;
+  color: #051622;
+  font-family: OpenSans-Regular;
+  font-size: 16px; 
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.kegri .section1 .content3 .estate1 .row1 .case1 p{
+  margin: 10px 0px;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+}
+.kegri .section1 .content3 .estate1 .row2 .case1 i{
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: wrap;
+  color: #051622;
+  font-family: OpenSans-Regular;
+  font-size: 30px; 
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.kegri .section1 .content3 .estate1 .row2 .case1 i:hover{
+  color: #1ba098;
+  transition: 0.3s;
+}
+.kegri .section1 .content3 .estate2 img{
+  width: 100%;
+  height: 100%;
+}
+.kegri  .content4 .col{
+  z-index: -1;
+}
+.kegri  .content4 p{
+  margin-top: -90%;
+  width: 100%;
+  height: 120vh;
+  background-color: #deb992;
+}
+    </style>
+    <body>
+
+      <!-- MAIN GORSEL -->
+  <div class="container-fluid area-1 d-none d-md-block" style="height:100vh;">
+      <div class="area-11">
+        <img  class="starter-transparent-image img-fluid " src="enoch-images/pic-1.png" alt="main-photo">
+                      <!-- CAROUSEL -->
+    <div class="container" style="width:50%;">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="logo-1.png" style="max-width: 350px;" class="d-block w-100 img-fluid mx-auto" alt="logo1.png">
+              </div>
+          <div class="carousel-item">
+            <img src="logo-2.png" style="max-width: 350px;" class="d-block w-100 img-fluid mx-auto" alt="logo2.png">
+              </div>
+          <div class="carousel-item">
+            <img src="logo-3.png" style="max-width: 350px;" class="d-block w-100 img-fluid mx-auto" alt="logo3.png">
+              </div>
+          <div class="carousel-item">
+            <img src="logo-4.png" style="max-width: 350px;" class="d-block w-100 img-fluid mx-auto" alt="logo4.png">
+              </div>
+          <div class="carousel-item">
+            <img src="logo-5.png" style="max-width: 350px;" class="d-block w-100 img-fluid mx-auto" alt="logo5.png">
+              </div>
+
+      </div>
+       </div>
+        <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a> -->
+</div>
+  </div>
+    </div>
+                                                  <!--SM KISMI-->
+<div class="container-fluid hot d-block d-md-none">
+  <div class="container">
+    <div class="row">
+      <div class="col yaz">
+          <H1>ENOCH STUDİO</H1>
+      </div>
+    </div>
+  </div><!--CONTAİNER-->
+</div><!--HOT-->                                                 
+          <!-- STUDİO HAKKINDA -->
+
+  <div class="about p-5 ">
+    <div class="row p-5 ">
+      <div class="col-md adam ">
+        <img class="mx-auto" src="enoch-images/pic-2.jpeg" alt="">
+        </div>
+        <div class="col-md text-section">
+          <h3 class="header-section"><span>stüdyo </span> <br> <span>hakkında</span></h3>
+          <span class="bottom-section">
+            Taktiksel işbirliği ve fikir paylaşımından önce etkili eylem öğelerini hızla teşvik edin. Kablosuz fırsatlar aracılığıyla monoton bir şekilde pazar odaklı entelektüel sermayeyi devreye alın. İşlevselleştirilmiş test prosedürleri için aşamalı olarak ağ performansına dayalı hizmetler.
+          </span>
+          </div>
+    </div>
+        <div class="kutu d-sm-none d-xs-none d-md-none d-lg-block"></div>
+  </div>
+
+          <!-- MISYONUMUZ -->
+        <div class="container-fluid area-misyon p-5">
+          <div class="container misyon p-5">
+            <div class="row">
+              <h3 class="header">İŞ STRATEJİSİ</h3>
+              <p class="middle-text">Üst düzey genel bakışlar için sağlam bir özet sağlamak üzere çevik çerçevelerden yararlanın.</p>
+              <p class="end-text">Proaktif hakimiyeti sağlamak için masaya kazan-kazan hayatta kalma stratejileri getirin. Günün sonunda, ileriye doğru, X neslinden gelişen yeni bir normal, modern bir bulut çözümüne doğru yol alıyor. Gerçek zamanlı olarak kullanıcı tarafından oluşturulan içerik, denizaşırı kullanım için birden fazla temas noktasına sahip olacaktır.</p>
+            </div>
+          </div>
+        </div>
+          <!-- KARTLAR -->
+<div class="container area-kesik d-none d-lg-block d-xl-block d-xxl-block" style="height:150vh;">
+  <div class="container mt-5">
+     <div class="container a-side">
+       <div class="row justify-content-center">
+         <div class="col-md-4 top-photo ">
+          <img src="enoch-images/multi-pic-1.jpg" alt="">
+            </div><!--top-photo-->
+              </div><!--row-->
+                </div><!--a-side-->
+                  </div><!--mt-5-->
+<div class="container b-side">
+      <div class="row justify-content-between ">
+        <div class="col-md-4 card-front">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">Daha İyi Yaşamlar Oluşturun</h1>
+                <p class="card-text"> Mimariye desteklediği ve etkilediği hayatlar perspektifinden bakar, her zaman bireyin ve daha geniş toplumun ihtiyaçlarını dikkate alan homojen çözümler tasarlarız.</p>
+              </div><!--card-body-->
+                </div><!--card-->
+                 </div><!--card-front-->
+<div class="col-md-4 photo">
+     <img src="enoch-images/multi-pic-3.jpg" alt="ev">
+   </div><!--photo-->
+          </div><!--row-->
+        </div><!--b-side-->
+<div class="container c-side">
+   <div class="row justify-content-center">
+      <div class="col-md-4 card-grid">
+        <div class="card">
+          <img src="enoch-images/multi-pic-2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">ENOCH</p>
+              </div><!--card-body-->
+                </div><!--card--->
+                  </div><!--card-grid-->
+                    </div><!--row-->
+                      </div><!--c-side-->
+<div class="container d-side">                                                    <!--SADECE SÜTUNLAR YUKARI ÇEKİLECEK-->
+        <div class="row ">
+          <div class="col-md-4 start-photo">
+            <img src="enoch-images/multi-pic-4.jpg"  alt="ev">
+          </div><!--start-photo-->
+<div class="col-md-4 ceo">
+    <span class="text">muratsavas.agency@site.com</span> <br>
+      <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram-square"></i>
+            <i class="fa fa-linkedin-square"></i>
+              <i class="fa fa-google-plus-square"></i>
+            </div><!--ceo-->
+<div class="col-md-4 end-card">
+  <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">Bize Ulaşın</h1>
+          <p class="card-text">Mimariye desteklediği ve etkilediği hayatlar perspektifinden bakar, her zaman bireyin ve daha geniş toplumun ihtiyaçlarını dikkate alan homojen çözümler tasarlarız.</p>
+                  </div>  <!--card-body-->
+                </div> <!--card-->
+              </div> <!--col-->
+            </div> <!--row-->
+          </div><!--d-side-->
+                        </div>
+                                                                  <!--LG VE ALTI-->
+<div class="kegri container-fluid d-lg-none d-xl-none d-xxl-none">
+  <div class="container section1">
+    <div class="row justify-content-start content1">
+      <div class="estate1 col-md-6"><img src="enoch-images/end-22.jpg" alt="end-22.jpg"></div><!--CONTENT1-->
+      <div class="estate2 col-md-6">
+        <img src="enoch-images/multi-pic-2.png" alt="multi-pic-2.png">
+        <h1>ENOCH</h1>
+      </div><!--ESTATE2-->
+    </div><!--CONTENT1-->
+    <div class="row content2">
+      <div class="estate1 col-md-6">
+        <h1>Daha İyi Yaşamlar Yaratın</h1>
+        <p>Mimariye desteklediği ve etkilediği hayatların perspektifinden bakar, her zaman bireyin ve daha geniş toplumun ihtiyaçlarını dikkate alan homojen çözümler tasarlarız.</p>
+      </div><!--CONTENT1-->      
+      <div class="estate3 col-md-6">
+        <h1>Bize Ulaşın</h1>
+        <p>Mimariye desteklediği ve etkilediği hayatların perspektifinden bakar, her zaman bireyin ve daha geniş toplumun ihtiyaçlarını dikkate alan homojen çözümler tasarlarız.</p>
+      </div><!--CONTENT3-->
+      <div class="estate2 col-md-12"><img src="enoch-images/multi-pic-4.jpg" alt="multi-pic-4.jpg"></div><!--CONTENT2-->
+    </div><!--CONTENT2-->
+    <div class="row justify-content-end content3">
+      <div class="estate1 col-md-6">
+        <div class="row row1">
+       <div class="col case1">muratsavas.agency@site.com <p></p></div>
+      </div><!--ROW1-->
+        <div class="row row2">
+          <div class="col case1">
+          <i class="fab fa-twitter-square" title="twitter"></i>
+            <i class="fab fa-facebook-square" title="facebook"></i>
+              <i class="fab fa-instagram-square" title="instagram"></i>
+                <i class="fa fa-linkedin-square" title="linkedin"></i>
+                  <i class="fa fa-google-plus-square" title="gmail"></i>
+            </div><!--CASE2-->
+            </div><!--ROW2-->
+      </div><!--CONTENT1-->
+      <div class="estate2 col-md-6"><img src="enoch-images/multi-pic-3.jpg" alt="multi-pic-3.jpg"></div><!--CONTENT2-->
+    </div><!--CONTENT3-->
+  </div><!--SECTİON1-->
+  <div class="row content4"><div class="col"><p></p></div></div><!--CONTENT4-->
+</div><!--KEGRİ-->                                                                  
+          <!-- CEO -->
+        <div class="container-fluid ceo-head">
+          <div class="container bg-transparent ceo">
+           <div class="row align-items-center">
+              <div class="col-md-4 align-self-center mt-2 mb-2 top">
+                <h4>MARKA YÖNETİMİ</h4>
+                <p>Hedeflere ulaşmak için paydaşlarla uyumlu stratejiler oluşturur ve uygularız. </p>
+              </div>
+              <div class="col-md-4 align-self-center mt-2 mb-2 middle">
+                Yüzlerce teknoloji şirketinde bilenen yenilikçi, sermaye açısından verimli modelimiz sahada test edilmiştir ve oldukça basit bir şekilde çalışır.
+              </div>
+              <div class="col-md-4 align-self-center mt-2 mb-2 bottom">
+                <h1>Murat Savaş</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- HAKKIMIZDA -->
+<div class="zone1 container-fluid" style="background-color: #deb992;">
+  <div class="section1 container">
+        <div class="content1 row justify-content-start">
+          <div class="col-lg-4 estate1"><img src="enoch-images/ab-1.jpg" alt="ab-1.jpg"></div><!--ESTATE1-->
+        </div><!--CONTENT1-->
+        <div class="content2 row">
+          <div class="col-xl-4 col-lg-6 align-self-center estate1">
+            <h1>Hakkımızda</h1>
+            <p>Liderleri, işlerini ve markalarını harekete geçmeye katalize eden ortak bir amaç ve stratejik hikaye etrafında sıralıyoruz.</p>
+          </div><!--ESTATE1-->
+          <div class="col-xl-4 col-lg-6 estate2"><img src="enoch-images/adam1.jpg" alt="ab-22.jpg"></div><!--ESTATE2-->
+          <div class="col-xl-4 col-lg-12 estate3">
+            <img src="enoch-images/comma.png" alt="comma.png">
+            <p>Ekip çalışması, ortak bir vizyona doğru birlikte çalışma yeteneğidir.</p>
+          </div><!--ESTATE3-->
+        </div><!--CONTENT2-->
+        <div class="content1 row justify-content-end">
+          <div class="col-lg-4 estate1"><img src="enoch-images/ab-3.jpg" alt="ab-3.jpg"></div><!--ESTATE1-->
+        </div><!--CONTENT3-->
+  </div><!--SECTİON1-->
+</div><!--ZONE1-->
+          <!-- SOCİAL MEDİAS -->
+<div class="container-fluid">
+  <div class="container social-box">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 align-self-center col-md-12 photo"> <img src="enoch-images/follow.png"  alt="se"> </div>
+      <div class="col-lg-4 align-self-center col-md-12 follow my-5">Bizi Takip Et</div>
+      <div class="col-lg-4 align-self-center col-md-12 icon">
+        <i style="font-size:45px;" class="fa fa-twitter mr-3"></i>
+          <i style="font-size:45px;" class="fa fa-instagram mx-3"></i>
+            <i style="font-size:45px;" class="fa fa-linkedin mx-3"></i>
+              <i style="font-size:40px;" class="fa fa-google mx-3"></i>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid enalt" style="background-color: #051622;">
+  <div class="container section1">
+    <div class="row justify-content-center content1">
+      <div class="col-lg-4 col-md-6 estate1"><img src="ads.jpg" alt="ads.jpg"></div>
+      <div class="col-lg-4 col-md-12 estate2">Halk kötü tasarıma iyi tasarımdan daha aşinadır. Aslında, kötü tasarımı tercih etmeye koşullanmıştır, çünkü birlikte yaşadığı budur. Yeni tehdit edici, eski güven verici hale gelir.</div>
+      <div class="col-lg-3 col-md-6 estate3"><img src="enoch-images/end-2.jpg" alt="end-2.jpg"></div>
+    </div><!--CONTENT1-->
+  </div><!--SECTİON1-->
+</div><!--ENALT-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+    </html>

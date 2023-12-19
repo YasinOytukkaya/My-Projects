@@ -1,0 +1,3815 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>BOOKWORM</title>
+    <link rel="icon" href="title.png" type="image/x-icon">
+<style type="text/css">
+::selection{
+  background-color: #F75454;
+  color: #fff;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #eae8e4; 
+  border-radius: 10px;
+}
+
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(bookworm-fonts/Inter-Regular.woff);
+  src: url(bookworm-fonts/Inter-Regular.woff2);
+}
+@font-face {
+  font-family: "Inter-Thin";
+  src: url(bookworm-fonts/Inter-Thin.woff);
+  src: url(bookworm-fonts/Inter-Thin.woff2);
+}
+.area1{
+  font-family: Inter-Regular;
+  font-size: 13px;
+}
+.area1 .content .estate2 .country .case5:after{
+  content: '3';
+  background-color: black;
+  position: absolute;
+  font-size: 10px;
+  width: 13px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+.area1 .content .estate1 .country .case1,.area1 .content .estate1 .country .case2,.area1 .content .estate2 .country .case1,.area1 .content .estate2 .country .case2,
+.area1 .content .estate2 .country .case3,.area1 .content .estate2 .country .case4,.area1 .content .estate2 .country .case5{
+  transition: 0.2s;
+}
+.area1 .content .estate1 .country .case1:hover,.area1 .content .estate1 .country .case2:hover,.area1 .content .estate2 .country .case1:hover,.area1 .content .estate2 .country .case2:hover,
+.area1 .content .estate2 .country .case3:hover,.area1 .content .estate2 .country .case4:hover,.area1 .content .estate2 .country .case5:hover{
+  color: #F75454;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.navbar{
+  border-top: 1px solid #eae8e4;
+  border-bottom: 1px solid #eae8e4;
+  margin-top: 10px;
+}
+
+.navbar .section{
+    position: relative;
+    height: 60px;
+}
+
+.navbar .section .content1{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.navbar .section .content1  .barlis{
+  position: relative;
+}
+.navbar .section .content1  .navbar-list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.navbar .section .content1 .barlis .navbar-list .nav-item{
+    list-style: none;
+    display: flex;
+    padding: 20px 0;
+}
+
+
+.navbar .section .content1 .yasinbtn1 {
+  font-family: Inter-Regular;
+  background-color: transparent;
+  font-weight: 700;
+  color: #323232;
+  padding:0 15px 0 15px;
+  font-size: 16px;
+  border: none;
+}
+.navbar .section .content1 .yasindown1 {
+  position: relative;
+  display: inline-block;
+}
+.navbar .section .content1 .yasindown-content1 {
+  display: none;
+  position: absolute;
+ /* top: 50px; */
+  background-color: #fff;
+  color: black;
+  min-width: 160px;
+  border: 1px solid #323232;
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+  z-index: 10000;
+  padding: 15px 30px;
+}
+.navbar .section .content1 .barlis .navbar-list .nav-item .yasindown1 .yasindown-content1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.2s ease-out;
+}
+.navbar .section .content1 .barlis .navbar-list .nav-item .yasindown1 .yasindown-content1 a:hover {
+  color: #323232; 
+  transition: 0.2s ease-in;
+  padding: 12px 0 12px 32px;
+}
+.navbar .section .content1 .barlis .navbar-list .nav-item .yasindown1:hover .yasindown-content1 {
+  display: block;
+}
+.navbar .section .content1 .nav-item:hover .yasindown1 .yasinbtn1 {color: #F75454;}
+
+.navbar .section .content1 .barimg{
+ padding:0 10px 0 10px ;
+}
+
+/*                              S İ D E B A R - - K O D L A R I */
+.navbar .side .btn:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar .offcanvas-header{
+  border-bottom: 1px solid #eae8e4;
+  padding-right: 20px;
+}
+
+.navbar .offcanvas-body .catego .case {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 14px 0;
+  transition: 0.2s ease-in;
+}
+.navbar .offcanvas-body .catego .case:hover{
+  background-color: #eae8e4;
+  transition: 0.2s ease-in;  
+}
+.navbar .offcanvas-body .catego .case .text{
+  font-size: 18px;
+  font-family: Inter-Regular;
+  color: #161619;
+  font-weight: 400;
+}
+.navbar .offcanvas-body .catego .case .icon{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+/* width */
+.navbar .offcanvas-body::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+.navbar .offcanvas-body::-webkit-scrollbar-thumb {
+  background: #eae8e4; 
+  border-radius: 10px;
+}
+.navbar .offcanvas-body .yardim {
+  padding: 14px 0 14px 0;
+}
+.navbar .offcanvas-body .yardim .sectionya{
+  border-bottom: 1px solid #eae8e4;
+  border-top: 1px solid #eae8e4;
+  padding: 15px 0 15px 0;
+}
+.navbar .offcanvas-body .yardim .sectionya p{
+  font-size: 18px;
+  font-family: Inter-Regular;
+  color: #161619;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.navbar .offcanvas-body .yardim .sectionya p:hover{
+  color: #F75454;
+  transition: 0.2s ease-in;
+}
+.navbar .offcanvas-body .odeme{
+  padding: 15px 0 15px 0;
+}
+.navbar .offcanvas-body .odeme .rowe3{
+  padding: 30px 0;
+}
+.navbar .offcanvas-body .odeme .rowe3 .cole1,
+.navbar .offcanvas-body .odeme .rowe3 .cole2,
+.navbar .offcanvas-body .odeme .rowe3 .cole3,
+.navbar .offcanvas-body .odeme .rowe3 .cole4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    font-size: 18px;
+}
+
+.navbar .offcanvas-body .odeme .rowe3 .cole1:hover,
+.navbar .offcanvas-body .odeme .rowe3 .cole2:hover,
+.navbar .offcanvas-body .odeme .rowe3 .cole3:hover,
+.navbar .offcanvas-body .odeme .rowe3 .cole4:hover{
+  color: #F75454;
+  transition: 0.2s ease-in;
+}
+.form-control{
+  background-color: #eae8e4;
+  color: #323232;
+}
+.form-control:hover{
+    background-color: #eae8e4;
+  color: #323232;
+}
+.form-control:focus {
+    border-color: #eae8e4;
+    box-shadow: none;
+    background-color: #eae8e4;
+}
+
+/*__________________________SLİDER_____________________________________*/
+.area3{
+  background-image: url('1920x588/img1.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+  padding: 100px 0 ;
+}
+.area3 .basCaro{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 0 60px 0;
+}
+.basCaro .owl-nav  {
+  visibility: hidden;
+}
+.area3 .basCaro .owl-dots{
+  position: absolute;
+  bottom: 0;
+   left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.area3 .basCaro .item .row{
+  display: flex;
+  align-items: center;
+}
+.area3 .basCaro .item .row .case1 {
+  padding: 30px 0 ;
+}
+.area3 .basCaro .item .row .case1 .vest1 .sack p{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Inter-Regular;
+  color: #beb4b4;
+}
+.area3 .basCaro .item .row .case1 .vest2 .sack h2{
+  font-size: 55px;
+  font-family: Inter-Regular;
+  font-weight: 500;
+  color: #161619;
+}
+.area3 .basCaro .item .row .case1 .vest2 .sack h2 span{
+  font-family: Inter-Regular;
+  font-weight: 700;
+}
+
+.area3 .basCaro .item .row .case1 .vest3 .sack a{
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Inter-Regular;
+  background-color: #161619;
+  padding: 15px 30px;
+  color: #eae8e4;
+}
+.area3 .basCaro .item .row .case2{
+  padding: 30px 0;
+}
+.area3 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #000000;
+}
+.basCaro .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    background: #fff;
+    display: block;
+    transition: opacity .2s ease;
+    border: 2px solid #161619;
+    border-radius: 30px;
+}
+.area3 .owl-carousel .owl-dots.disabled, .area3 .owl-carousel .owl-nav.disabled {
+    display: none;
+}
+
+/*________________________________AREA4____________________________________________*/
+
+.area4 .layarea4{
+  margin: 100px 0 60px 0;
+}
+.area4 .section1{
+  padding: 15px 0 ;
+     display: flex;
+    justify-content: space-between;
+}
+.area4 .section1 .estate1{
+  text-align: left; 
+  font-family: Inter-Regular;
+  padding: 0;
+}
+.area4 .section1 .estate2{
+  cursor:pointer;
+   text-align: right; 
+   font-family: Inter-Regular; 
+   font-size: 15px; 
+   font-weight: 700;
+   color: rgba(0, 0, 0, 0.767); 
+   transition:0.5s ease-in;
+   padding: 0;
+}
+.area4 .section1 .estate2:hover{
+  color: #f75454;
+  transition:0.5s ease-in;
+}
+.area4 .section2{
+    display: flex;
+    justify-content: space-between;
+}
+/* card1 */
+.area4 .section2 .card1{
+  background-color: #faf1ff; 
+  border-radius: 0; 
+  cursor:pointer;
+  padding: 30px;
+  transition: 0.4s ease-in-out;
+}
+.area4 .section2 .card1:hover{
+  border: 1px solid #161619;
+  transition: 0.4s ease-in-out;
+}
+.area4 .section2 .card1 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.area4 .section2 .card1 .content .estate2 .country{
+  font-family: Inter-Regular;
+   font-size: 15px; 
+   font-weight: 700;
+   text-align: center;
+   height: 50px;
+   display: flex;
+   align-items: center;
+}
+.area4 .section2 .card1 .content .estate3 .country{
+  font-family: Inter-Regular; 
+  font-size: 13px;
+  transition: 0.4s ease-in;
+}
+.area4 .section2 .card1 .content .estate3:hover{
+  color: #f02f17;
+  transition: 0.4s ease-in;
+}
+/* card2 */
+.area4 .section2 .card2{
+  background-color: #faf1ff; 
+  border-radius: 0; 
+  cursor:pointer;
+  padding: 30px;
+  transition: 0.4s ease-in-out;
+}
+.area4 .section2 .card2:hover{
+  border: 1px solid #161619;
+  transition: 0.4s ease-in-out;
+}
+.area4 .section2 .card2 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.area4 .section2 .card2 .content .estate2 .country{
+  font-family: Inter-Regular;
+   font-size: 15px; 
+   font-weight: 700;
+   text-align: center;
+   height: 50px;
+   display: flex;
+   align-items: center;
+}
+.area4 .section2 .card2 .content .estate3 .country{
+  font-family: Inter-Regular; 
+  font-size: 13px;
+  transition: 0.4s ease-in;
+}
+.area4 .section2 .card2 .content .estate3:hover{
+  color: #f02f17;
+  transition: 0.4s ease-in;
+}
+/* card3 */
+.area4 .section2 .card3{
+  background-color: #faf1ff; 
+  border-radius: 0; 
+  cursor:pointer;
+  padding: 30px;
+  transition: 0.4s ease-in-out;
+}
+.area4 .section2 .card3:hover{
+  border: 1px solid #161619;
+  transition: 0.4s ease-in-out;
+}
+.area4 .section2 .card3 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.area4 .section2 .card3 .content .estate2 .country{
+  font-family: Inter-Regular;
+   font-size: 15px; 
+   font-weight: 700;
+   text-align: center;
+   height: 50px;
+   display: flex;
+   align-items: center;
+}
+.area4 .section2 .card3 .content .estate3 .country{
+  font-family: Inter-Regular; 
+  font-size: 13px;
+  transition: 0.4s ease-in;
+}
+.area4 .section2 .card3 .content .estate3:hover{
+  color: #f02f17;
+  transition: 0.4s ease-in;
+}
+/* card4 */
+.area4 .section2 .card4{
+  background-color: #faf1ff; 
+  border-radius: 0; 
+  cursor:pointer;
+  padding: 30px;
+  transition: 0.4s ease-in-out;
+}
+.area4 .section2 .card4:hover{
+  border: 1px solid #161619;
+  transition: 0.4s ease-in-out;
+}
+.area4 .section2 .card4 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.area4 .section2 .card4 .content .estate2 .country{
+  font-family: Inter-Regular;
+   font-size: 15px; 
+   font-weight: 700;
+   text-align: center;
+   height: 50px;
+   display: flex;
+   align-items: center;
+}
+.area4 .section2 .card4 .content .estate3 .country{
+  font-family: Inter-Regular; 
+  font-size: 13px;
+  transition: 0.4s ease-in;
+}
+.area4 .section2 .card4 .content .estate3:hover{
+  color: #f02f17;
+  transition: 0.4s ease-in;
+}
+/* card5 */
+.area4 .section2 .card5{
+  background-color: #faf1ff; 
+  border-radius: 0; 
+  cursor:pointer;
+  padding: 30px;
+  transition: 0.4s ease-in-out;
+}
+.area4 .section2 .card5:hover{
+  border: 1px solid #161619;
+  transition: 0.4s ease-in-out;
+}
+.area4 .section2 .card5 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.area4 .section2 .card5 .content .estate2 .country{
+  font-family: Inter-Regular;
+   font-size: 15px; 
+   font-weight: 700;
+   text-align: center;
+   height: 50px;
+   display: flex;
+   align-items: center;
+}
+.area4 .section2 .card5 .content .estate3 .country{
+  font-family: Inter-Regular; 
+  font-size: 13px;
+  transition: 0.4s ease-in;
+}
+.area4 .section2 .card5 .content .estate3:hover{
+  color: #f02f17;
+  transition: 0.4s ease-in;
+}
+.area4 .section2 .card .content .estate2{
+   /* height: 150px;*/
+    padding: 15px 0px 15px 0;
+}
+/*______________________________________AREA5___________________________________*/
+.area5{
+  margin: 120px 0 60px 0;
+  padding: 0;
+}
+.area5 .boiler1 .vest1{
+cursor: default; 
+font-family: Inter-Regular;
+padding: 0;
+}
+.area5 .boiler1 .vest2{
+  font-family: Inter-Regular;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.767);
+  text-align: right;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  padding: 0;
+}
+.area5 .boiler1 .vest2:hover{
+  color: #f75454;
+  transition: 0.5s ease-in;
+}
+.area5 .section4 .item .card{
+  padding: 10px;
+  border-radius: 0;
+}
+.area5 .section4 .item .card:hover{
+  border: 1px solid black;
+}
+.area5 .section4 .item .card .card-body{
+  z-index: 1;
+  background-color: #fff;
+  transition: 0.3s;
+  position: relative;
+  top: 0px;
+}
+.area5 .section4 .item .card:hover .card-body{
+  position: relative;
+  top: -60px;
+  transition: 0.3s;
+}
+.area5 .section4 .item .card .card-body .content1{
+  font-size: 12px;
+  font-weight: 500;
+  color:#f75454;
+  font-family: Inter-Regular;
+  padding-bottom: 10px;
+}
+.area5 .section4 .item .card .card-body .content2{
+  font-size: 14px;
+  color:#111;
+  font-family: Inter-Regular;
+  height: 70px;
+}
+.area5 .section4 .item .card .card-body .content3{
+  font-family: Inter-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
+.area5 .section4 .item .card .card-body .content3:hover{
+  color: #F75454;
+}
+.area5 .section4 .item .card .card-body .content4{
+  font-family: Inter-Regular;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+.area5 .section4 .item .card .card-foot{
+  padding: 10px 15px 10px 15px;
+  position: relative;
+  margin-top: -50px;
+}
+.area5 .section4 .item .card .card-foot .content .estate1{
+  font-family: Inter-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.area5 .section4 .item .card .card-foot .content .estate1 span{  
+  display: block;
+  position: absolute;
+  background-color: black;
+  left: 10px;
+  bottom: 0px;
+  width: 40%;
+  height: 1px;
+  transform: scalex(0);
+  transform-origin: left;
+  transition: transform 0.2s;
+  transition-delay: 0.2s;
+}
+.area5 .section4 .item .card .card-foot .content .estate1:hover span{
+  transform: scaleY(1);
+  transform-origin: left;
+  transition: transform 0.4s;
+  transition-delay: 0.15s;
+}
+.area5 .section4 .item .card .card-foot .content .estate2 .vest .country1:hover svg:before{
+  content: '';
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.area5 .section4 .item .card .card-foot .content .estate2 .vest .country1:hover svg{
+  color: #f75454;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.area5 .section4 .item .card .card-foot .content .estate2 .vest .country2:hover svg{
+  color: #f75454;
+  transition: 0.2s;
+  cursor: pointer;
+}
+#kndj{color: red;}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+.area5 .owl-nav .owl-prev span{
+    width: 40px;
+    height: 50px;
+    font-size: 35px;
+    border: 1px solid #beb4b4;
+    color: #beb4b4;
+    position: absolute;
+    left: -3%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.5s ease-in;
+}
+.area5 .owl-nav .owl-prev span:hover{
+  background-color: #000000;
+  color: #faf1ff;
+}
+.area5 .owl-nav .owl-next span{
+    width: 40px;
+    height: 50px;
+    font-size: 35px;
+    border: 1px solid #beb4b4;
+    color: #beb4b4;
+    position: absolute;
+    right: -6%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.5s ease-in;
+}
+.area5 .owl-nav .owl-next span:hover{
+  background-color: #000000;
+  color: #faf1ff;
+}
+/*____________________________AREA6__________________________________*/
+.area6 .layarea6{
+  padding: 0;
+  margin-bottom: 70px;
+}
+.area6 .section1 .content h2{
+  font-family: Inter-Regular;
+  font-size: 30px;
+  color: #161619;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.area6 .section2 .pocket .pouch .vest1{
+  font-size: 18px;
+  font-family: Inter-Regular;
+  font-weight: 500;
+  color: #161619;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  cursor: pointer;
+}
+.area6 .section2 .pocket .pouch .vest1 span{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 2px;
+  background-color:#161619;
+}
+.area6 .section2 .pocket .pouch .vest2{
+  font-size: 18px;
+  font-family: Inter-Regular;
+  font-weight: 500;
+  color: #7c6e65;
+  text-align: center;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.area6 .card{
+  padding: 10px;
+  border-radius: 0;
+  cursor: pointer;
+}
+.area6 .card:hover{
+  border: 1px solid black;
+}
+.area6 .card .card-body{
+  z-index: 1;
+  background-color: #fff;
+  transition: 0.3s;
+  position: relative;
+  top: 0px;
+}
+.area6 .card:hover .card-body{
+  position: relative;
+  top: -60px;
+  transition: 0.3s;
+}
+.area6 .card .card-body .content1{
+  font-size: 12px;
+  font-weight: 500;
+  color:#f75454;
+  font-family: Inter-Regular;
+  padding-bottom: 10px;
+}
+.area6 .card .card-body .content2{
+  font-size: 14px;
+  color:#111;
+  font-family: Inter-Regular;
+  height: 70px;
+}
+.area6 .card .card-body .content3{
+  font-family: Inter-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
+.area6 .card .card-body .content3:hover{
+    color: #F75454;
+}
+.area6 .card .card-body .content4{
+  font-family: Inter-Regular;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+.area6 .card .card-foot{
+  padding: 10px 15px 10px 15px;
+  position: relative;
+  margin-top: -50px;
+}
+.area6 .card .card-foot .content .estate1{
+  font-family: Inter-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.area6 .card .card-foot .content .estate1 span{  
+  display: block;
+  position: absolute;
+  background-color: black;
+  left: 10px;
+  bottom: 0px;
+  width: 40%;
+  height: 1px;
+  transform: scalex(0);
+  transform-origin: left;
+  transition: transform 0.2s;
+  transition-delay: 0.2s;
+}
+.area6 .card .card-foot .content .estate1:hover span{
+  transform: scaleY(1);
+  transform-origin: left;
+  transition: transform 0.4s;
+  transition-delay: 0.15s;
+}
+.area6 .card .card-foot .content .estate2 .vest .country1:hover svg:before{
+  content: '';
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.area6 .card .card-foot .content .estate2 .vest .country1:hover svg{
+  color: #f75454;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.area6 .card .card-foot .content .estate2 .vest .country2:hover svg{
+  color: #f75454;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.area6 .vrest{
+    padding: 0;
+}
+/*______________________________________area7___________________________________*/
+.area7{
+  padding: 0;
+  background-color: #fff6f6;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.area7 .boiler1 .vest1{
+cursor: default;
+font-family: Inter-Regular;
+padding: 0;
+}
+.area7 .boiler1 .vest2{
+  font-family: Inter-Regular;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.767);
+  text-align: right;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  padding: 0;
+}
+.area7 .boiler1 .vest2:hover{
+  color: #f75454;
+  transition: 0.5s ease-in;
+}
+
+#kndj{color: red;}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+.area7 .owl-nav .owl-prev span{
+    width: 40px;
+    height: 50px;
+    font-size: 35px;
+    border: 1px solid #beb4b4;
+    color: #beb4b4;
+    position: absolute;
+    left: -3%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.5s ease-in;
+}
+.area7 .owl-nav .owl-prev span:hover{
+  background-color: #000000;
+  color: #faf1ff;
+}
+.area7 .owl-nav .owl-next span{
+    width: 40px;
+    height: 50px;
+    font-size: 35px;
+    border: 1px solid #beb4b4;
+    color: #beb4b4;
+    position: absolute;
+    right: -6%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.5s ease-in;
+}
+.area7 .owl-nav .owl-next span:hover{
+  background-color: #000000;
+  color: #faf1ff;
+}
+.area7 .item{
+   padding: 30px;    
+    border: 1px solid #eae8e4;
+    background: #fff;
+}
+.area7 .item:hover{
+    border-color: #beb4b4;
+}
+.area7 .item .content .article1{
+    padding: 5px ;
+}
+.area7 .item .content .article2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.area7 .item .content .article2 .sack1 .sack1_alt1{
+    font-size: 12px;
+    font-family: Inter-Regular;
+    color: #F75454;
+    margin-bottom: 4px;
+}
+.area7 .item .content .article2 .sack1 .sack1_alt2{
+    font-size: 18px;
+    font-family: Inter-Regular;
+    color: #161619;
+    margin-bottom: 8px;
+    height: 60px;
+}
+.area7 .item .content .article2 .sack2 .sack2_alt1{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #7c6e65;
+    margin-bottom: 4px;
+}
+.area7 .item .content .article2 .sack2 .sack2_alt1:hover{
+    color: #F75454;
+}
+.area7 .item .content .article2 .sack2 .sack2_alt2{
+    font-size: 18px;
+    font-family: Inter-Regular;
+    color: #161619;
+}
+.area7 .item .content .article2 .sack2 .sack2_alt2 span{
+    font-size: 12px;
+    color: #7c6e65;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.area7 .item .content .article2 .sack3 .sackyap1 .sack-alt{
+    font-size: 16px;
+    font-family: Inter-Regular;
+    margin: 16px 0;
+}
+.area7 .item .content .article2 .sack3 .sackyap1 .sack-alt h5{
+    font-size: 18px;
+    font-family: Inter-Regular;
+    color: #161619;
+    font-weight: 700;
+}
+.area7 .item .content .article2 .sack3 .sackyap2 {
+    margin-bottom: 12px;
+}
+.area7 .item .content .article2 .sack3 .sackyap2 .vessel1 strong{
+    font-size: 18px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-align: center;
+    margin-right: 10px;
+}
+.area7 .item .content .article2 .sack3 .sackyap2 .vessel1 {
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.area7 .item .content .article2 .sack3 .sackyap2 .vessel2 strong{
+    font-size: 18px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-align: center;
+    margin-right: 10px;
+}
+.area7 .item .content .article2 .sack3 .sackyap2 .vessel2 {
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.area7 .item .content .article2 .sack3 .sackyap2 .vessel3 strong{
+    font-size: 18px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-align: center;
+    margin-right: 10px;
+}
+.area7 .item .content .article2 .sack3 .sackyap2 .vessel3 {
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.area7 .item .content .article2 .sack3 .sackyap2 .vessel4 strong{
+    font-size: 18px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-align: center;
+    margin-right: 10px;
+}
+.area7 .item .content .article2 .sack3 .sackyap2 .vessel4 {
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.area7 .item .content .article2 .sack4 .sack4-alt1{
+    margin-bottom: 14px;
+}
+.area7 .item .content .article2 .sack4 .sack4-alt1 .pouch1{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #161619;
+}
+.area7 .item .content .article2 .sack4 .sack4-alt1 .pouch2{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-align: right;
+}
+.area7 .item .content .article2 .sack4 .sack4-alt2 .progress{
+    background-color: #fce5e5;
+    border-radius: 5px;
+} 
+.area7 .item .content .article2 .sack4 .sack4-alt2 .progress-bar{
+    background-color: #f75454;
+} 
+
+.area7 .owl-theme .owl-dots .owl-dot.active span, .area7 .owl-theme .owl-dots .owl-dot:hover span {
+    background: #000000;
+}
+.area7 .owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    background: #fff;
+    display: block;
+    transition: opacity .2s ease;
+    border: 2px solid #161619;
+    border-radius: 30px;
+}
+/*____________________________area8__________________________________*/
+.area8{
+  margin-top: 60px;
+} 
+.area8 .layarea8{
+  padding: 0;
+  margin-bottom: 70px;
+}
+.area8 .section2 .pocket1{
+    font-size: 30px;
+    font-family: Inter-Regular;
+    color: #161619;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+.area8 .section2 .pocket .pouch .vest1{
+  font-size: 16px;
+  font-family: Inter-Regular;
+  font-weight: 500;
+  color: #161619;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  cursor: pointer;
+}
+.area8 .section2 .pocket .pouch .vest1 span{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 2px;
+  background-color:#161619;
+}
+.area8 .section2 .pocket .pouch .vest2{
+  font-size: 16px;
+  font-family: Inter-Regular;
+  font-weight: 500;
+  color: #7c6e65;
+  text-align: right;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.area8 .card{
+  padding: 10px;
+  border-radius: 0;
+  cursor: pointer;
+}
+.area8 .card:hover{
+  border: 1px solid black;
+}
+.area8 .card .card-body{
+  z-index: 1;
+  background-color: #fff;
+  transition: 0.3s;
+  position: relative;
+  top: 0px;
+}
+.area8 .card:hover .card-body{
+  position: relative;
+  top: -60px;
+  transition: 0.3s;
+}
+.area8 .card .card-body .content1{
+  font-size: 12px;
+  font-weight: 500;
+  color:#f75454;
+  font-family: Inter-Regular;
+  padding-bottom: 10px;
+}
+.area8 .card .card-body .content2{
+  font-size: 14px;
+  color:#111;
+  font-family: Inter-Regular;
+  height: 70px;
+}
+.area8 .card .card-body .content3{
+  font-family: Inter-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
+.area8 .card .card-body .content3:hover{
+    color: #F75454;
+}
+.area8 .card .card-body .content4{
+  font-family: Inter-Regular;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+.area8 .card .card-foot{
+  padding: 10px 15px 10px 15px;
+  position: relative;
+  margin-top: -50px;
+}
+.area8 .card .card-foot .content .estate1{
+  font-family: Inter-Regular;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.area8 .card .card-foot .content .estate1 span{  
+  display: block;
+  position: absolute;
+  background-color: black;
+  left: 10px;
+  bottom: 0px;
+  width: 40%;
+  height: 1px;
+  transform: scalex(0);
+  transform-origin: left;
+  transition: transform 0.2s;
+  transition-delay: 0.2s;
+}
+.area8 .card .card-foot .content .estate1:hover span{
+  transform: scaleY(1);
+  transform-origin: left;
+  transition: transform 0.4s;
+  transition-delay: 0.15s;
+}
+.area8 .card .card-foot .content .estate2 .vest .country1:hover svg:before{
+  content: '';
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.area8 .card .card-foot .content .estate2 .vest .country1:hover svg{
+  color: #f75454;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.area8 .card .card-foot .content .estate2 .vest .country2:hover svg{
+  color: #f75454;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.area8 .vrest{
+    padding: 0;
+}
+.area8 .layarea8 .section3 .gratop{
+    display: flex;
+    justify-content: center;
+    background-color: #fff6f6;
+    border: 1px solid #eae8e4;
+}
+.area8 .layarea8 .section3 .gratop-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+.area8 .layarea8 .section3 .gratop-content img{
+    margin-bottom: 30px;
+}
+.area8 .layarea8 .section3 .gratop-content .fhn1{
+    font-size: 40px;
+    font-family: Inter-Regular;
+    color: #161619;
+    margin-bottom: 4px;
+}
+.area8 .layarea8 .section3 .gratop-content .fhn2{
+    font-size: 50px;
+    color: #f75454;
+    font-family: Inter-Regular;
+    margin-bottom: 16px;
+}
+.area8 .layarea8 .section3 .gratop-content .fhn3{
+    font-size: 30px;
+    font-family: Inter-Thin;
+    color: #beb4b4;
+    margin-bottom: 32px;
+}
+.area8 .layarea8 .section3 .gratop-content .btn{
+    font-size: 16px;
+    background-color: #f75454;
+    color: #fff;
+    font-family: Inter-Regular;
+    text-decoration: none;
+    /*padding: 12px 48px;*/
+    border-radius: 0;
+}
+/*______________________________________area9___________________________________*/
+.area9{
+  margin: 80px 0 60px 0;
+  padding: 0;
+}
+.area9 .boiler1 .vest1{
+cursor: default;
+font-family: Inter-Regular;
+padding: 0;
+}
+.area9 .boiler1 .vest2{
+  font-family: Inter-Regular;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.767);
+  text-align: right;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  padding: 0;
+}
+.area9 .boiler1 .vest2:hover{
+  color: #f75454;
+  transition: 0.5s ease-in;
+}
+
+
+
+.area9 .owl-nav .owl-prev span{
+    width: 40px;
+    height: 50px;
+    font-size: 35px;
+    border: 1px solid #beb4b4;
+    color: #beb4b4;
+    position: absolute;
+    left: -3%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.5s ease-in;
+}
+.area9 .owl-nav .owl-prev span:hover{
+  background-color: #000000;
+  color: #faf1ff;
+}
+.area9 .owl-nav .owl-next span{
+    width: 40px;
+    height: 50px;
+    font-size: 35px;
+    border: 1px solid #beb4b4;
+    color: #beb4b4;
+    position: absolute;
+    right: -6%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.5s ease-in;
+}
+.area9 .owl-nav .owl-next span:hover{
+  background-color: #000000;
+  color: #faf1ff;
+}
+.area9 .item{
+   padding: 30px;    
+    border: 1px solid #eae8e4;
+    background: #fff;
+}
+.area9 .item:hover{
+    border-color: #beb4b4;
+}
+.area9 .item .content .article1{
+    padding: 0;
+}
+
+.area9 .item .content .article2 .sack1 .sack1_alt1{
+    font-size: 12px;
+    font-family: Inter-Regular;
+    color: #F75454;
+    margin-bottom: 4px;
+}
+.area9 .item .content .article2 .sack1 .sack1_alt2{
+    font-size: 18px;
+    font-family: Inter-Regular;
+    color: #161619;
+    margin-bottom: 8px;
+    height: 60px;
+}
+.area9 .item .content .article2 .sack2 .sack2_alt1{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #7c6e65;
+    margin-bottom: 4px;
+    margin-top: 20px;
+}
+.area9 .item .content .article2 .sack2 .sack2_alt1:hover{
+    color: #F75454;
+}
+.area9 .item .content .article2 .sack2 .sack2_alt2{
+    font-size: 18px;
+    font-family: Inter-Regular;
+    color: #161619;
+}
+.area9 .item .content .article2 .sack2 .sack2_alt2 span{
+    font-size: 12px;
+    color: #7c6e65;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.area9 .item .content .article2 .sack4 .sack4-alt1{
+    margin-bottom: 14px;
+}
+.area9 .item .content .article2 .sack4 .sack4-alt1 .pouch1{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #161619;
+}
+.area9 .item .content .article2 .sack4 .sack4-alt1 .pouch2{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-align: right;
+}
+.area9 .item .content .article2 .sack4 .sack4-alt2 .progress{
+    background-color: #fce5e5;
+    border-radius: 5px;
+} 
+.area9 .item .content .article2 .sack4 .sack4-alt2 .progress-bar{
+    background-color: #f75454;
+} 
+
+.area9 .owl-theme .owl-dots .owl-dot.active span, .area9 .owl-theme .owl-dots .owl-dot:hover span {
+    background: #000000;
+}
+.area9 .owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    background: #fff;
+    display: block;
+    transition: opacity .2s ease;
+    border: 2px solid #161619;
+    border-radius: 30px;
+}
+
+.area9 .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 40px;
+}
+
+
+
+/*______________________________________area10___________________________________*/
+.area10{
+  margin: 80px 0 60px 0;
+  padding: 0;
+}
+.area10 .boiler1 .vest1{
+cursor: default;
+font-family: Inter-Regular;
+padding: 0;
+font-weight: 700;
+}
+.area10 .boiler1 .vest2{
+  font-family: Inter-Regular;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.767);
+  text-align: right;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+  padding: 0;
+}
+.area10 .boiler1 .vest2:hover{
+  color: #f75454;
+  transition: 0.5s ease-in;
+}
+
+
+
+.area10 .owl-nav .owl-prev span{
+    width: 40px;
+    height: 50px;
+    font-size: 35px;
+    border: 1px solid #beb4b4;
+    color: #beb4b4;
+    position: absolute;
+    left: -3%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.5s ease-in;
+}
+.area10 .owl-nav .owl-prev span:hover{
+  background-color: #000000;
+  color: #faf1ff;
+}
+.area10 .owl-nav .owl-next span{
+    width: 40px;
+    height: 50px;
+    font-size: 35px;
+    border: 1px solid #beb4b4;
+    color: #beb4b4;
+    position: absolute;
+    right: -6%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: 0.5s ease-in;
+}
+.area10 .owl-nav .owl-next span:hover{
+  background-color: #000000;
+  color: #faf1ff;
+}
+.area10 .item{
+   padding: 30px;    
+    background: #fff;
+}
+.area10 .item:hover{
+    border-color: #beb4b4;
+}
+.area10 .item .content .article1{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area10 .layera10 .boiler2 .section10 .item .content .article1 img{
+    border-radius: 50%;
+    width: 60%;
+}
+.area10 .layera10 .boiler2 .section10 .item .content:hover .article1 img{
+  border: 3px solid #f75454;
+  
+}
+.area10 .layera10 .boiler2 .section10 .item .content .article2{
+    font-size: 16px;
+    font-family: Inter-Regular;
+    color: #161619;
+    text-transform: capitalize;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    line-height: 35px;
+} 
+.area10 .layera10 .boiler2 .section10 .item .content:hover .article2{
+  color: #F75454;
+}
+.area10 .layera10 .boiler2 .section10 .item .content .article3{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #7c6e65;
+    text-transform: capitalize;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.area10 .owl-theme .owl-dots .owl-dot.active span, .area10 .owl-theme .owl-dots .owl-dot:hover span {
+    background: #000000;
+}
+.area10 .owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    background: #fff;
+    display: block;
+    transition: opacity .2s ease;
+    border: 2px solid #161619;
+    border-radius: 30px;
+}
+
+.area10 .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 40px;
+}
+.area10 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+/*___________________________________________AREA11______________________________________*/
+.area11{
+    border-top: 1px solid #eae8e4;
+    border-bottom: 1px solid #eae8e4;
+}
+.area11 .layarea11{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.area11 .layarea11 .section .content1{
+    padding: 0;
+}
+.area11 .layarea11 .section .content1 ul{
+    padding-left: 0;
+}
+.area11 .layarea11 .section .content1 ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.area11 .layarea11 .section .content1 ul .adres{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #19110b;
+}
+.area11 .layarea11 .section .content1 ul .mailtel{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #19110b;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    text-decoration: none;
+}
+.area11 .layarea11 .section .content1 ul .mailtel a{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #19110b;
+    text-decoration: none;
+}
+.area11 .layarea11 .section .content1 ul .mailtel a:hover{
+    color: #F75454;
+}
+.area11 .layarea11 .section .content1 ul .social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.area11 .layarea11 .section .content1 ul .social svg{
+    font-size: 18px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+.area11 .layarea11 .section .content1 ul .social svg:hover{
+    color: #F75454;
+    transition: 0.5s ease-out;
+}
+.area11 .layarea11 .section .content2 ul li{
+    list-style: none;
+    cursor: pointer;
+    margin: 10px;
+}
+.area11 .layarea11 .section .content2 ul .baslik{
+    font-size: 18px;
+    font-family: Inter-Regular;
+    font-weight: 700;
+}
+.area11 .layarea11 .section .content2 ul .alt{
+    font-size: 14px;
+    font-family: Inter-Regular;
+    color: #19110b;
+    transition:0.2s ease-in;
+}
+.area11 .layarea11 .section .content2 ul .alt:hover{
+    color: #F75454;
+    transition:0.2s ease-in;
+    padding-left: 5px;
+}
+/*___________________________AREA12_______________________________________*/
+.area12 .section{
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.area12 .section .estate .content1{
+  font-family: Inter-Regular;
+  font-size: 16px;
+  color: #161619;
+}
+.area12 .imaz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.area12 .imaz img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+  .area11 .layarea11{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .area7 .item .content .article2 .sack4 .sack4-alt1 .pouch2{
+    text-align: left;
+  }
+  .area7 .item .content .article2 .sack2 .sack2_alt1 {
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.full{
+  height: 100vh;
+  background-color: #323232;
+}
+@media only screen and (max-width: 1200px) {
+  .area5 .owl-nav .owl-next span, .area5 .owl-nav .owl-prev span{
+    visibility: hidden;
+  }
+  .area7 .owl-nav .owl-next span, .area7 .owl-nav .owl-prev span{
+    visibility: hidden;
+  }
+  .area9 .owl-nav .owl-next span, .area9 .owl-nav .owl-prev span{
+    visibility: hidden;
+  }
+   .area10 .owl-nav .owl-next span, .area10 .owl-nav .owl-prev span{
+    visibility: hidden;
+  }
+}
+</style>
+</head>
+<body> 
+  <div class="terimsinyor">
+
+<div class="area1 d-none d-xl-block container">
+  <div class="content mt-2 row justify-content-between">
+    <div class="estate1 col-md-4">                                                  <!--SOL BÖLÜM-->
+      <div class="country row">
+        <div class="case1 col-6">
+          <svg style="width:16px;height:16px;" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M11,18H13V16H11V18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6Z" />
+        </svg> Yardım edebilir miyiz?
+        </div><!--CASE1-->
+        <div class="case2 col-6">
+          <svg style="width:15px;height:15px;" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19.1,8.7C20.9,10.5 20.9,13.3 19.1,15.2L20.1,16.2C22.6,13.9 22.6,10.1 20.1,7.7L19.1,8.7M18,9.8L17,10.8C17.5,11.5 17.5,12.4 17,13.1L18,14.1C19.2,12.9 19.2,11.1 18,9.8M14,1H4A2,2 0 0,0 2,3V21A2,2 0 0,0 4,23H14A2,2 0 0,0 16,21V3A2,2 0 0,0 14,1M14,20H4V4H14V20Z" />
+        </svg> +90 541 123 12 34
+        </div><!--CASE2-->
+      </div> <!--COUNTRY-->
+    </div><!--ESTATE1-->
+    <div class="estate2 col-md-3">                                                                <!--SAĞ BÖLÜM-->
+      <div class="country row">
+        <div class="case1 col">
+          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5M12,2A7,7 0 0,1 19,9C19,14.25 12,22 12,22C12,22 5,14.25 5,9A7,7 0 0,1 12,2M12,4A5,5 0 0,0 7,9C7,10 7,12 12,18.71C17,12 17,10 17,9A5,5 0 0,0 12,4Z" />
+        </svg>
+        </div><!--CASE1-->
+        <div class="case2 col">
+          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+        </svg>
+        </div><!--CASE2-->
+        <div class="case3 col">
+          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+        </svg>
+        </div><!--CASE3-->
+        <div class="case4 col">
+          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" />
+        </svg>
+        </div><!--CASE4-->
+        <div class="case5 col">
+          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19,11L20,19H4L5,11H19M14,3H10L8,5V9H4.7A1.65,1.65 0 0,0 3,10.5L2,19.1A1.74,1.74 0 0,0 3.7,21H20.3A1.74,1.74 0 0,0 22,19.1L21,10.5A1.65,1.65 0 0,0 19.3,9H16V5L14,3M10,9V5H14V9" />
+        </svg>
+        </div><!--CASE5-->
+      </div><!--COUNTRY-->
+    </div><!--ESTATE2-->
+  </div><!--CONTENT-->
+</div><!--AREA1-->
+
+
+<nav class="navbar">
+  <div class="container section">
+      <div class="content1 col-7">            
+      <div class="side">
+          <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </a>    
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+              <h2 style="cursor: default;" class="offcanvas-title" id="offcanvasExampleLabel">Kategoriler</h2>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <div class="catego ">
+                <div class="row case">
+                  <div class="text  col-8">Sayfalar</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Sanat & Fotoğrafçılık</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Biyografi & Anılar</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Çocuk Kitapları</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Bilgisayar & Teknoloji</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Yemekler & Şaraplar</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Eğitim & Öğrenim</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Sağlık & Diyet</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Tarih</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Roman</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Spor & Outdoors</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+                <div class="row case">
+                  <div class="text  col-8">Gezi</div>
+                  <div class="icon  col-2"><i class="fa-solid fa-chevron-right"></i></div>
+                </div><!--case-->
+              </div><!--catego-->   
+              <div class="yardim">
+                <div class="sectionya row">
+                  <h2 style="cursor: default;" class="py-2">Yardım & Ayarlar</h2>
+                  <p>Hesabım</p>
+                  <p>Yardım</p>
+                  <p>Kaydol</p>
+                </div><!--section-->
+              </div><!--yardim-->
+              <div class="odeme">
+                <div class="rowe1 py-2 row">
+                  <div class="cole col-12">
+                    <select class="form-select" aria-label="Default select example">
+                      <option value="1">English (United States)</option>
+                      <option value="2">Türkiye</option>
+                      <option value="3">Deutsch</option>
+                    </select>
+                  </div><!--cole-->
+                </div><!--rowe1-->
+                <div class="rowe2 py-2 row">
+                  <div class="cole col-12">
+                    <select style="border-radius: 0;" class="form-select" aria-label="Default select example">
+                      <option value="1">$ USD</option>
+                      <option value="2">₺ TL</option>
+                      <option value="3">€ EURO</option>
+                    </select>
+                  </div><!--cole-->
+                </div><!--rowe2-->
+                <div class="rowe3 row">
+                  <div class="cole1 col-3" title="facebook"><i class="fa-brands fa-facebook-f"></i></div><!--cole1-->
+                  <div class="cole2 col-3" title="gmail"><i class="fa-brands fa-google"></i></div><!--cole2-->
+                  <div class="cole3 col-3" title="twitter"><i class="fa-brands fa-twitter"></i></div><!--cole3-->
+                  <div class="cole4 col-3" title="instagram"><i class="fa-brands fa-instagram"></i></div><!--cole4-->
+                </div><!--rowe3-->
+               
+              </div><!--odeme-->    
+          </div><!--offcanvas-body-->
+          </div>
+      </div><!--side-->
+      <div class="barimg">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170px" height="30px" color="red"   fill= "#f75454">
+              <path fill-rule="evenodd" fill="rgb(25, 17, 11)" d="M166.225,28.691 L165.065,15.398 L160.598,28.691 L158.229,28.691 L153.762,15.398 L152.590,28.691 L148.928,28.691 L150.405,11.052 L155.629,11.052 L159.389,22.124 L163.198,11.052 L168.422,11.052 L169.875,28.691 L166.225,28.691 ZM142.641,28.691 L138.051,20.928 L136.989,20.928 L136.989,28.691 L133.327,28.691 L133.327,11.052 L139.724,11.052 C140.692,11.052 141.546,11.189 142.287,11.461 C143.028,11.734 143.620,12.112 144.063,12.596 C144.507,13.081 144.840,13.636 145.064,14.263 C145.288,14.889 145.400,15.577 145.400,16.326 C145.400,17.506 145.078,18.472 144.436,19.225 C143.793,19.978 142.869,20.484 141.665,20.745 L146.975,28.691 L142.641,28.691 ZM141.896,16.204 C141.896,15.544 141.673,15.028 141.225,14.653 C140.777,14.279 140.086,14.092 139.150,14.092 L136.989,14.092 L136.989,18.303 L139.150,18.303 C140.981,18.303 141.896,17.603 141.896,16.204 ZM125.570,27.831 C124.206,28.567 122.666,28.936 120.949,28.936 C119.224,28.936 117.680,28.567 116.317,27.831 C114.953,27.094 113.881,26.034 113.100,24.651 C112.319,23.267 111.928,21.672 111.928,19.866 C111.928,18.051 112.319,16.454 113.100,15.074 C113.881,13.695 114.953,12.639 116.317,11.907 C117.680,11.174 119.224,10.808 120.949,10.808 C122.674,10.808 124.217,11.174 125.576,11.907 C126.935,12.639 128.005,13.695 128.786,15.074 C129.567,16.454 129.958,18.051 129.958,19.866 C129.958,21.672 129.567,23.267 128.786,24.651 C128.005,26.034 126.933,27.094 125.570,27.831 ZM124.807,15.715 C123.797,14.690 122.512,14.177 120.949,14.177 C119.387,14.177 118.101,14.690 117.092,15.715 C116.083,16.741 115.578,18.124 115.578,19.866 C115.578,21.616 116.083,23.005 117.092,24.034 C118.101,25.064 119.387,25.579 120.949,25.579 C122.512,25.579 123.797,25.064 124.807,24.034 C125.816,23.005 126.320,21.616 126.320,19.866 C126.320,18.124 125.816,16.741 124.807,15.715 ZM66.872,28.691 L61.391,21.196 L60.097,21.196 L60.097,28.691 L56.435,28.691 L56.435,11.052 L60.097,11.052 L60.097,17.986 L61.342,17.986 L66.872,11.052 L71.340,11.052 L64.504,19.487 L71.547,28.691 L66.872,28.691 ZM48.677,27.831 C47.314,28.567 45.774,28.936 44.057,28.936 C42.332,28.936 40.788,28.567 39.425,27.831 C38.061,27.094 36.989,26.034 36.208,24.651 C35.427,23.267 35.036,21.672 35.036,19.866 C35.036,18.051 35.427,16.454 36.208,15.074 C36.989,13.695 38.061,12.639 39.425,11.907 C40.788,11.174 42.332,10.808 44.057,10.808 C45.782,10.808 47.324,11.174 48.684,11.907 C50.043,12.639 51.113,13.695 51.894,15.074 C52.675,16.454 53.066,18.051 53.066,19.866 C53.066,21.672 52.675,23.267 51.894,24.651 C51.113,26.034 50.040,27.094 48.677,27.831 ZM47.915,15.715 C46.905,14.690 45.620,14.177 44.057,14.177 C42.495,14.177 41.209,14.690 40.200,15.715 C39.191,16.741 38.686,18.124 38.686,19.866 C38.686,21.616 39.191,23.005 40.200,24.034 C41.209,25.064 42.495,25.579 44.057,25.579 C45.620,25.579 46.905,25.064 47.915,24.034 C48.924,23.005 49.428,21.616 49.428,19.866 C49.428,18.124 48.924,16.741 47.915,15.715 ZM28.487,27.831 C27.124,28.567 25.584,28.936 23.867,28.936 C22.141,28.936 20.597,28.567 19.234,27.831 C17.871,27.094 16.799,26.034 16.018,24.651 C15.236,23.267 14.846,21.672 14.846,19.866 C14.846,18.051 15.236,16.454 16.018,15.074 C16.799,13.695 17.871,12.639 19.234,11.907 C20.597,11.174 22.141,10.808 23.867,10.808 C25.592,10.808 27.134,11.174 28.493,11.907 C29.852,12.639 30.922,13.695 31.704,15.074 C32.485,16.454 32.875,18.051 32.875,19.866 C32.875,21.672 32.485,23.267 31.704,24.651 C30.922,26.034 29.850,27.094 28.487,27.831 ZM27.724,15.715 C26.715,14.690 25.429,14.177 23.867,14.177 C22.304,14.177 21.018,14.690 20.009,15.715 C19.000,16.741 18.496,18.124 18.496,19.866 C18.496,21.616 19.000,23.005 20.009,24.034 C21.018,25.064 22.304,25.579 23.867,25.579 C25.429,25.579 26.715,25.064 27.724,24.034 C28.733,23.005 29.238,21.616 29.238,19.866 C29.238,18.124 28.733,16.741 27.724,15.715 ZM11.672,27.367 C10.736,28.250 9.361,28.691 7.546,28.691 L0.283,28.691 L0.283,11.052 L5.996,11.052 C7.875,11.052 9.314,11.478 10.311,12.328 C11.308,13.178 11.806,14.365 11.806,15.886 C11.806,16.676 11.633,17.374 11.287,17.980 C10.941,18.586 10.431,19.052 9.755,19.377 C11.969,19.988 13.076,21.445 13.076,23.748 C13.076,25.278 12.608,26.484 11.672,27.367 ZM7.827,14.647 C7.420,14.277 6.821,14.092 6.032,14.092 L3.811,14.092 L3.811,18.242 L6.191,18.242 C6.940,18.242 7.501,18.047 7.875,17.656 C8.250,17.266 8.437,16.753 8.437,16.118 C8.437,15.508 8.233,15.018 7.827,14.647 ZM8.876,21.709 C8.445,21.278 7.749,21.062 6.789,21.062 L3.811,21.062 L3.811,25.554 L6.862,25.554 C7.782,25.554 8.455,25.347 8.883,24.932 C9.310,24.517 9.523,23.988 9.523,23.345 C9.523,22.686 9.308,22.140 8.876,21.709 Z"></path>
+              <path class="fill-primary" fill-rule="evenodd" d="M105.996,23.499 C105.995,26.752 103.950,29.265 100.748,29.950 C100.713,29.958 100.681,29.983 100.647,30.000 C100.588,30.000 100.529,30.000 100.471,30.000 C100.467,28.585 100.460,27.171 100.466,25.756 C100.467,25.675 100.550,25.565 100.626,25.518 C101.352,25.068 101.714,24.425 101.711,23.571 C101.707,22.020 101.710,20.469 101.710,18.892 C103.133,18.892 104.546,18.892 105.996,18.892 C105.996,18.989 105.996,19.093 105.996,19.196 C105.996,20.630 105.997,22.065 105.996,23.499 ZM101.715,17.089 C101.715,15.990 101.683,14.917 101.724,13.847 C101.767,12.679 102.761,11.806 103.931,11.838 C105.060,11.869 105.978,12.794 105.993,13.940 C106.005,14.954 105.995,15.969 105.995,16.983 C105.995,17.011 105.987,17.040 105.980,17.089 C104.569,17.089 103.157,17.089 101.715,17.089 ZM96.421,29.234 C94.322,27.983 93.199,26.136 93.155,23.703 C93.108,21.138 93.145,18.571 93.146,16.005 C93.146,15.957 93.153,15.910 93.159,15.841 C94.572,15.841 95.976,15.841 97.426,15.841 C97.426,15.948 97.426,16.060 97.426,16.172 C97.426,18.602 97.430,21.031 97.423,23.461 C97.421,24.364 97.757,25.066 98.548,25.540 C98.629,25.589 98.688,25.740 98.689,25.844 C98.699,27.122 98.695,28.401 98.696,29.679 C98.696,29.786 98.703,29.893 98.707,30.000 C98.648,30.000 98.590,30.000 98.531,30.000 C97.799,29.823 97.075,29.624 96.421,29.234 ZM93.145,14.043 C93.145,13.935 93.145,13.823 93.145,13.711 C93.145,11.318 93.137,8.926 93.149,6.534 C93.154,5.625 92.818,4.928 92.023,4.460 C91.961,4.424 91.894,4.332 91.894,4.265 C91.886,2.850 91.888,1.436 91.888,0.000 C93.423,0.232 94.703,0.889 95.731,2.009 C96.833,3.209 97.413,4.630 97.421,6.261 C97.433,8.791 97.426,11.319 97.427,13.849 C97.427,13.906 97.421,13.964 97.416,14.043 C96.005,14.043 94.599,14.043 93.145,14.043 ZM89.588,4.782 C89.034,5.128 88.866,5.768 88.868,6.431 C88.875,8.061 88.870,9.692 88.869,11.322 C88.869,12.143 88.869,12.963 88.867,13.783 C88.867,13.869 88.857,13.954 88.851,14.051 C87.434,14.051 86.035,14.051 84.587,14.051 C84.587,13.958 84.587,13.866 84.587,13.774 C84.588,11.294 84.579,8.814 84.590,6.334 C84.605,3.158 86.853,0.543 90.000,0.018 C90.028,0.013 90.058,0.017 90.125,0.017 C90.125,0.639 90.125,1.243 90.125,1.848 C90.125,2.405 90.109,2.962 90.130,3.518 C90.149,4.032 90.126,4.447 89.588,4.782 ZM84.585,15.837 C86.015,15.837 87.420,15.837 88.868,15.837 C88.868,15.951 88.868,16.065 88.868,16.179 C88.868,18.608 88.849,21.039 88.873,23.468 C88.908,27.007 86.358,29.493 83.589,29.955 C83.552,29.961 83.518,29.985 83.482,30.000 C83.424,30.000 83.365,30.000 83.306,30.000 C83.310,28.634 83.319,27.268 83.313,25.902 C83.311,25.691 83.376,25.580 83.559,25.467 C84.268,25.031 84.587,24.371 84.587,23.549 C84.587,21.099 84.586,18.650 84.585,16.201 C84.585,16.085 84.585,15.970 84.585,15.837 ZM81.366,30.000 C80.875,29.844 80.360,29.740 79.897,29.524 C77.435,28.380 76.120,26.440 76.027,23.732 C75.974,22.192 76.017,20.649 76.016,19.107 C76.016,19.040 76.016,18.973 76.016,18.886 C77.447,18.886 78.859,18.886 80.303,18.886 C80.303,19.000 80.303,19.104 80.303,19.209 C80.303,20.663 80.308,22.117 80.302,23.571 C80.298,24.427 80.666,25.065 81.387,25.518 C81.463,25.566 81.547,25.675 81.547,25.756 C81.553,27.171 81.546,28.585 81.542,30.000 C81.484,30.000 81.425,30.000 81.366,30.000 ZM76.017,17.097 C76.017,16.540 76.017,15.997 76.017,15.453 C76.017,14.965 76.012,14.478 76.017,13.990 C76.030,12.831 76.911,11.892 78.032,11.838 C79.203,11.781 80.217,12.619 80.282,13.797 C80.341,14.885 80.294,15.978 80.294,17.097 C78.857,17.097 77.452,17.097 76.017,17.097 Z"></path>
+              </svg>            
+      </div><!--barimg-->
+   <div class="barlis d-block d-none d-xxl-block">
+          <ul class="navbar-list">
+              <li class="nav-item">
+                  <div class="yasindown1 ">
+                    <button class="yasinbtn1" style="color:#F75454;">Anasayfa</button>
+                    <div class="yasindown-content1">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <div class="yasindown1">
+                    <button class="yasinbtn1">Alışveriş</button>
+                    <div class="yasindown-content1">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <div class="yasindown1">
+                    <button class="yasinbtn1">Blog</button>
+                    <div class="yasindown-content1">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <div class="yasindown1">
+                    <button class="yasinbtn1">Diğer</button>
+                    <div class="yasindown-content1">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                    </div>
+                </li>
+        
+          </ul>    
+      </div>
+      </div><!--content1-->
+      <div class="content2 col-3">
+      <form class="d-flex form">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">    
+    </form>
+      </div>
+  </div><!--section-->    
+</nav><!--navbar-->
+
+
+<div class="area3 container-fluid">
+  <div class="basCaro container owl-carousel owl-theme">
+    <div class="item container ">
+      <div class="row estate">
+    <div class="case1 col-md-6 col-sm-12">
+      <div class="vest1 row">
+        <div class="sack col">
+          <p>BOOKWORM EDİTÖRLERİNDEN</p>
+            </div><!--sack-->
+              </div><!--vest1-->
+      <div class="vest2 row">
+        <div class="sack col">
+          <h2>ÖNE ÇIKAN KİTAPLAR <br> <span>ŞUBAT</span> </h2>
+            </div><!--sack-->    
+              </div><!--vest2-->
+      <div class="vest3 mt-3 row">
+        <div class="sack">
+          <a href="#">DAHA FAZLA</a>
+            </div><!--sack-->
+              </div><!--vest3--> 
+    </div><!--case1-->
+        <div class="case2 col-md-6 col-sm-12">
+          <img src="800x420/img1.png" alt="800x420/img1.png">
+        </div><!--case2-->
+      </div><!--estate-->
+    </div><!--item-->
+        <div class="item container ">
+      <div class="row estate">
+    <div class="case1 col-md-6 col-sm-12">
+      <div class="vest1 row">
+        <div class="sack col">
+          <p>BOOKWORM EDİTÖRLERİNDEN</p>
+            </div><!--sack-->
+              </div><!--vest1-->
+      <div class="vest2 row">
+        <div class="sack col">
+          <h2>ÖNE ÇIKAN KİTAPLAR <br> <span>MART</span> </h2>
+            </div><!--sack-->    
+              </div><!--vest2-->
+      <div class="vest3 mt-3 row">
+        <div class="sack">
+          <a href="#">DAHA FAZLA</a>
+            </div><!--sack-->
+              </div><!--vest3--> 
+    </div><!--case1-->
+        <div class="case2 col-md-6 col-sm-12">
+          <img src="800x420/img1.png" alt="800x420/img1.png">
+        </div><!--case2-->
+      </div><!--estate-->
+    </div><!--item-->
+            <div class="item container ">
+      <div class="row estate">
+    <div class="case1 col-md-6 col-sm-12">
+      <div class="vest1 row">
+        <div class="sack col">
+          <p>BOOKWORM EDİTÖRLERİNDEN</p>
+            </div><!--sack-->
+              </div><!--vest1-->
+      <div class="vest2 row">
+        <div class="sack col">
+          <h2>ÖNE ÇIKAN KİTAPLAR <br> <span>NİSAN</span> </h2>
+            </div><!--sack-->    
+              </div><!--vest2-->
+      <div class="vest3 mt-3 row">
+        <div class="sack">
+          <a href="#">DAHA FAZLA</a>
+            </div><!--sack-->
+              </div><!--vest3--> 
+    </div><!--case1-->
+        <div class="case2 col-md-6 col-sm-12">
+          <img src="800x420/img1.png" alt="800x420/img1.png">
+        </div><!--case2-->
+      </div><!--estate-->
+    </div><!--item-->
+  </div><!--bascaro-->
+</div><!--area3-->
+
+
+<div class="area4 container">
+  <div class="layarea4">
+  <div class="section1 row">
+    <div class="estate1 align-self-center col-6 " ><h2>Öne Çıkan Kategoriler</h2></div><!--ESTATE1-->
+    <div class="estate2 align-self-center col-4 ">
+      Tümünü Gör <svg style="width:13px;height:13px" viewBox="0 0 24 24"><path fill="currentColor" d="M5.5,4.14L4.5,5.86L15,12L4.5,18.14L5.5,19.86L19,12L5.5,4.14Z" /></svg>
+    </div><!--ESTATE2-->
+  </div><!--SECTİON1-->
+  <div class="section2 row">
+                                    <div class="card card1 my-1 col-lg-2 col-sm-12" >
+                                      <div class="content container">
+                                        <div class="estate1 row">
+                                          <div class="country col">
+                                            <svg style="width:45;height:45;color:#a40dfc" viewBox="0 0 24 24">
+                                            <path fill="currentColor" d="M21,17H7V3H21M21,1H7A2,2 0 0,0 5,3V17A2,2 0 0,0 7,19H21A2,2 0 0,0 23,17V3A2,2 0 0,0 21,1M3,5H1V21A2,2 0 0,0 3,23H19V21H3M15.96,10.29L13.21,13.83L11.25,11.47L8.5,15H19.5L15.96,10.29Z" /></svg>
+                                          </div><!--COUNTRY-->
+                                        </div><!--ESTATE1-->
+                                        <div class="estate2 row align-items-center">
+                                          <div class="country col" > Sanat & Fotoğrafçılık</div><!--COUNTRY-->
+                                        </div><!--ESTATE2-->
+                                        <div class="estate3 row">
+                                          <div class="country col">İncele</div><!--COUNTRY-->
+                                        </div><!--ESTATE3-->
+                                      </div><!--CONTENT-->
+                                    </div><!--CARD1-->
+    <div class="card card2 my-1 col-lg-2 col-sm-6" >
+      <div class="content container">
+        <div class="estate1 row">
+          <div class="country col">
+            <svg style="width:45;height:45;color:#f79807;" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M8.1,13.34L3.91,9.16C2.35,7.59 2.35,5.06 3.91,3.5L10.93,10.5L8.1,13.34M13.41,13L20.29,19.88L18.88,21.29L12,14.41L5.12,21.29L3.71,19.88L13.36,10.22L13.16,10C12.38,9.23 12.38,7.97 13.16,7.19L17.5,2.82L18.43,3.74L15.19,7L16.15,7.94L19.39,4.69L20.31,5.61L17.06,8.85L18,9.81L21.26,6.56L22.18,7.5L17.81,11.84C17.03,12.62 15.77,12.62 15,11.84L14.78,11.64L13.41,13Z" />
+          </svg>
+          </div><!--COUNTRY-->
+        </div><!--ESTATE1-->
+        <div class="estate2 row align-items-center">
+          <div class="country col" > Yemek & İçecek</div><!--COUNTRY-->
+        </div><!--ESTATE2-->
+        <div class="estate3 row">
+          <div class="country col">İncele</div><!--COUNTRY-->
+        </div><!--ESTATE3-->
+      </div><!--CONTENT-->
+    </div><!--CARD2-->
+                                            <div class="card card3 my-1 col-lg-2 col-sm-6">
+                                              <div class="content container">
+                                                <div class="estate1 row">
+                                                  <div class="country col">
+                                                    <svg style="width:45;height:45;color:#f02f17;" viewBox="0 0 24 24">
+                                                      <path fill="currentColor" d="M22.14 14.84L22.12 14.85C22.35 15.13 22.55 15.44 22.7 15.77L22.79 15.96C23.5 17.65 23 19.6 21.69 20.82C20.5 21.91 18.84 22.2 17.3 22C15.84 21.82 14.5 20.9 13.73 19.63C13.5 19.24 13.3 18.8 13.2 18.35C13.07 18 13.03 17.62 13 17.25C12.91 15.65 13.55 13.95 14.76 12.95C14.21 14.16 14.34 15.67 15.15 16.72L15.26 16.85C15.4 16.97 15.57 17 15.73 16.94C15.88 16.88 16 16.73 16 16.57L15.93 16.33C15.05 14 15.79 11.3 17.66 9.77C18.17 9.35 18.8 8.97 19.46 8.8C18.78 10.16 19 11.94 20.09 13C20.55 13.5 21.11 13.79 21.58 14.23L22.14 14.84M19.86 19.5L19.85 19.47C20.3 19.08 20.55 18.41 20.53 17.81L20.5 17.5C20.3 16.5 19.43 16.16 18.87 15.43C18.7 15.21 18.55 14.93 18.44 14.65C18.22 15.15 18.2 15.62 18.29 16.16C18.39 16.73 18.61 17.22 18.5 17.81C18.34 18.46 17.83 19.11 16.94 19.32C17.44 19.81 18.25 20.2 19.06 19.92C19.32 19.85 19.65 19.66 19.86 19.5M9 21V18H2L7 13H4L9 8H6L11 3L16 8H13L14.82 9.82C12.55 11.06 11 13.59 11 16.5C11 18.19 11.5 19.75 12.4 21H9Z" />
+                                                  </svg>
+                                                  </div><!--COUNTRY-->
+                                                </div><!--ESTATE1-->
+                                                <div class="estate2 row align-items-center">
+                                                  <div class="country col" > Romantizm</div><!--COUNTRY-->
+                                                </div><!--ESTATE2-->
+                                                <div class="estate3 row">
+                                                  <div class="country col">İncele</div><!--COUNTRY-->
+                                                </div><!--ESTATE3-->
+                                              </div><!--CONTENT-->
+                                            </div><!--CARD3-->
+    <div class="card card4 my-1 col-lg-2 col-sm-6" >
+      <div class="content container">
+        <div class="estate1 row">
+          <div class="country col">
+            <svg style="width:45;height:45;color:#00ceef;" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M7.5,4A5.5,5.5 0 0,0 2,9.5C2,10 2.09,10.5 2.22,11H6.3L7.57,7.63C7.87,6.83 9.05,6.75 9.43,7.63L11.5,13L12.09,11.58C12.22,11.25 12.57,11 13,11H21.78C21.91,10.5 22,10 22,9.5A5.5,5.5 0 0,0 16.5,4C14.64,4 13,4.93 12,6.34C11,4.93 9.36,4 7.5,4V4M3,12.5A1,1 0 0,0 2,13.5A1,1 0 0,0 3,14.5H5.44L11,20C12,20.9 12,20.9 13,20L18.56,14.5H21A1,1 0 0,0 22,13.5A1,1 0 0,0 21,12.5H13.4L12.47,14.8C12.07,15.81 10.92,15.67 10.55,14.83L8.5,9.5L7.54,11.83C7.39,12.21 7.05,12.5 6.6,12.5H3Z" />
+          </svg>
+          </div><!--COUNTRY-->
+        </div><!--ESTATE1-->
+        <div class="estate2 row align-items-center">
+          <div class="country col" > Sağlık</div><!--COUNTRY-->
+        </div><!--ESTATE2-->
+        <div class="estate3 row">
+          <div class="country col">İncele</div><!--COUNTRY-->
+        </div><!--ESTATE3-->
+      </div><!--CONTENT-->
+    </div><!--CARD4-->
+                                          <div class="card card5 my-1 col-lg-2 col-sm-6">
+                                            <div class="content container">
+                                              <div class="estate1 row">
+                                                <div class="country col">
+                                                  <svg style="width:45;height:45;color: #ff999e;" viewBox="0 0 24 24">
+                                                    <path fill="currentColor" d="M18 2A2 2 0 0 1 20 4V20A2 2 0 0 1 18 22H6A2 2 0 0 1 4 20V4A2 2 0 0 1 6 2H18M18 4H13V9L10.5 6.7L8 9V4H6V20H18M13 11A2 2 0 1 1 11 13A2 2 0 0 1 13 11M17 19H9V18C9 16.67 11.67 16 13 16S17 16.67 17 18V19" />
+                                                </svg>
+                                                </div><!--COUNTRY-->
+                                              </div><!--ESTATE1-->
+                                              <div class="estate2 row align-items-center">
+                                                <div class="country col" > Biyografi</div><!--COUNTRY-->
+                                              </div><!--ESTATE2-->
+                                              <div class="estate3 row">
+                                                <div class="country col">İncele</div><!--COUNTRY-->
+                                              </div><!--ESTATE3-->
+                                            </div><!--CONTENT-->
+                                          </div><!--CARD5-->
+  </div><!--SECTİON2-->
+</div><!--LAYERA4-->
+</div><!--AREA4-->
+
+
+<div class="area5 container-fluid">
+  <div class="layera5 container">
+  <div class="boiler1 row justify-content-between">
+    <div class=" vest1 col-5 align-self-center text-capitalize"><h2>çok satan kitaplar</h2></div>
+    <div class=" vest2 col-5 align-self-center text-capitalize">tümünü gör <svg style="width:13px;height:13px" viewBox="0 0 24 24"><path fill="currentColor" d="M5.5,4.14L4.5,5.86L15,12L4.5,18.14L5.5,19.86L19,12L5.5,4.14Z" /></svg></div>
+  </div><!--BOILER1-->
+  <div class="boiler2 row mt-4" style="cursor: pointer;">
+  <div class="section4 owl-carousel owl-theme" style="padding: 0;">
+    <div class="item">       
+<div class="card" >
+  <img src="150x226/img1.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+   <div class="card-body">
+    <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+      <div class="content2 row"><div class="estate col text-capitalize">think like a monk: mind for peace and purpose everyday</div><!--ESTATE--></div><!--CONTENT2-->
+        <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+         <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+      </div><!--CARD_BODY-->
+  <div class="card-foot">
+    <div class="content row justify-content-between">
+      <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+       <div class="estate2 col-4">
+         <div class="row vest">
+          <div class="country1 col-6">
+            <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+         </svg>
+        </div><!--country1-->
+      <div class="country2 col-6">
+        <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+           </svg>
+          </div><!--country2-->
+         </div><!--VEST--> 
+        </div><!--ESTATE2-->
+       </div><!--CONTENT-->
+      </div><!--CARD_FOOT-->
+     </div><!--CARD-->
+    </div><!--ITEM-->
+                                            <div class="item">  
+                                          <div class="card">
+                                            <img src="150x226/img2.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+                                            <div class="card-body">
+                                              <div class="content1 row"><div class="estate col text-uppercase">kındle edıtıon</div><!--ESTATE--></div><!--CONTENT1-->
+                                                <div class="content2 row"><div class="estate col text-capitalize">the last sister (columbia river book 1)</div><!--ESTATE--></div><!--CONTENT2-->
+                                                  <div class="content3 row"><div class="estate col text-capitalize">kelly harms</div><!--ESTATE--></div><!--CONTENT3-->
+                                                  <div class="content4 row"><div class="estate col text-uppercase">₺18.90</div><!--ESTATE--></div><!--CONTENT4-->
+                                            </div><!--CARD_BODY-->
+                                            <div class="card-foot">
+                                              <div class="content row justify-content-between">
+                                                <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                                                <div class="estate2 col-4">
+                                                <div class="row vest">
+                                                    <div class="country1 col-6">
+                                                    <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                                                      <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                                                  </svg>
+                                                  </div><!--country1-->
+                                                <div class="country2 col-6">
+                                                  <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                                                    <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                                                </svg>
+                                                </div><!--country2-->
+                                                </div><!--VEST--> 
+                                              </div><!--ESTATE2-->
+                                              </div><!--CONTENT-->
+                                            </div><!--CARD_FOOT-->
+                                            </div><!--CARD-->
+                                          </div><!--ITEM-->
+<div class="item">         
+<div class="card" style="width: 100%;">
+  <img src="150x226/img3.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+  <div class="card-body">
+    <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+      <div class="content2 row"><div class="estate col text-capitalize">all you can ever know: a memoir </div><!--ESTATE--></div><!--CONTENT2-->
+        <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+         <div class="content4 row"><div class="estate col text-uppercase">₺24.30</div><!--ESTATE--></div><!--CONTENT4-->
+  </div><!--CARD_BODY-->
+  <div class="card-foot">
+    <div class="content row justify-content-between">
+      <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+      <div class="estate2 col-4">
+       <div class="row vest">
+          <div class="country1 col-6">
+          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+        </svg>
+        </div><!--country1-->
+      <div class="country2 col-6">
+        <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+          </svg>
+         </div><!--country2-->
+        </div><!--VEST--> 
+       </div><!--ESTATE2-->
+      </div><!--CONTENT-->
+     </div><!--CARD_FOOT-->
+    </div><!--CARD-->
+   </div>   <!--ITEM-->
+                                    <div class="item">         
+                                      <div class="card" style="width: 100%;">
+                                        <img src="150x226/img4.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+                                        <div class="card-body">
+                                          <div class="content1 row"><div class="estate col text-uppercase">kindle edition</div><!--ESTATE--></div><!--CONTENT1-->
+                                            <div class="content2 row"><div class="estate col text-capitalize">the overdue life of amy byler </div><!--ESTATE--></div><!--CONTENT2-->
+                                              <div class="content3 row"><div class="estate col text-capitalize">kelly harms</div><!--ESTATE--></div><!--CONTENT3-->
+                                              <div class="content4 row"><div class="estate col text-uppercase">₺31.25</div><!--ESTATE--></div><!--CONTENT4-->
+                                        </div><!--CARD_BODY-->
+                                        <div class="card-foot">
+                                          <div class="content row justify-content-between">
+                                            <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                                            <div class="estate2 col-4">
+                                            <div class="row vest">
+                                                <div class="country1 col-6">
+                                                <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                                                  <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                                              </svg>
+                                              </div><!--country1-->
+                                            <div class="country2 col-6">
+                                              <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                                                <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                                                </svg>
+                                              </div><!--country2-->
+                                              </div><!--VEST--> 
+                                            </div><!--ESTATE2-->
+                                            </div><!--CONTENT-->
+                                          </div><!--CARD_FOOT-->
+                                          </div><!--CARD-->
+                                        </div>   <!--ITEM--> 
+       <div class="item">         
+        <div class="card" style="width: 100%;">
+          <img src="150x226/img5.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+          <div class="card-body">
+            <div class="content1 row"><div class="estate col text-uppercase">kindle edition</div><!--ESTATE--></div><!--CONTENT1-->
+              <div class="content2 row"><div class="estate col text-capitalize">the last sister (columbia river book 1) </div><!--ESTATE--></div><!--CONTENT2-->
+                <div class="content3 row"><div class="estate col text-capitalize">kelly harms</div><!--ESTATE--></div><!--CONTENT3-->
+                 <div class="content4 row"><div class="estate col text-uppercase">₺48.20</div><!--ESTATE--></div><!--CONTENT4-->
+          </div><!--CARD_BODY-->
+          <div class="card-foot">
+            <div class="content row justify-content-between">
+              <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+              <div class="estate2 col-4">
+               <div class="row vest">
+                  <div class="country1 col-6">
+                  <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                </svg>
+                </div><!--country1-->
+              <div class="country2 col-6">
+                <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                  </svg>
+                 </div><!--country2-->
+                </div><!--VEST--> 
+               </div><!--ESTATE2-->
+              </div><!--CONTENT-->
+             </div><!--CARD_FOOT-->
+            </div><!--CARD-->
+           </div>   <!--ITEM-->
+<div class="item">         
+   <div class="card" style="width: 100%;">
+      <img src="150x226/img6.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+         <div class="card-body">
+           <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+               <div class="content2 row"><div class="estate col text-capitalize">all you can ever know: a memoir beast </div><!--ESTATE--></div><!--CONTENT2-->
+                 <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                   <div class="content4 row"><div class="estate col text-uppercase">₺16.88</div><!--ESTATE--></div><!--CONTENT4-->
+                      </div><!--CARD_BODY-->
+                      <div class="card-foot">
+                        <div class="content row justify-content-between">
+                          <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                          <div class="estate2 col-4">
+                          <div class="row vest">
+                              <div class="country1 col-6">
+                              <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                            </svg>
+                            </div><!--country1-->
+                          <div class="country2 col-6">
+                            <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                              <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                              </svg>
+                              </div><!--country2-->
+                              </div><!--VEST--> 
+                                    </div><!--ESTATE2-->
+                                    </div><!--CONTENT-->
+                                  </div><!--CARD_FOOT-->
+                                  </div><!--CARD-->
+                                </div>   <!--ITEM-->
+  <div class="item">         
+      <div class="card" style="width: 100%;">
+           <img src="150x226/img7.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+               <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">kindle edition</div><!--ESTATE--></div><!--CONTENT1-->
+                      <div class="content2 row"><div class="estate col text-capitalize">the overdue life of amy byler </div><!--ESTATE--></div><!--CONTENT2-->
+                        <div class="content3 row"><div class="estate col text-capitalize">kely harms</div><!--ESTATE--></div><!--CONTENT3-->
+                         <div class="content4 row"><div class="estate col text-uppercase">₺88.99</div><!--ESTATE--></div><!--CONTENT4-->
+                          </div><!--CARD_BODY-->
+                          <div class="card-foot">
+                            <div class="content row justify-content-between">
+                              <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                              <div class="estate2 col-4">
+                              <div class="row vest">
+                                  <div class="country1 col-6">
+                                  <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                                </svg>
+                                </div><!--country1-->
+                            <div class="country2 col-6">
+                              <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                                </svg>
+                              </div><!--country2-->
+                              </div><!--VEST--> 
+                            </div><!--ESTATE2-->
+                            </div><!--CONTENT-->
+                          </div><!--CARD_FOOT-->
+                          </div><!--CARD-->
+                        </div>   <!--ITEM-->  
+          </div><!--SECTİON4-->
+ </div><!--BOILER2-->
+</div><!--layera5-->
+</div><!--AREA5-->
+
+
+
+
+<div class="area6  container">
+  <div class="layarea6 container">
+    <div class="section1 row">
+      <div class="content text-center"><h2> Öne Çıkan Kitaplar </h2></div><!--content-->
+    </div><!--SECTİON1-->
+    <div class="section2 my-3 row justify-content-center">
+      <div class="pocket col-8">
+        <div class="row pouch">
+        <div class="vest1 col-4">Öne Çıkanlar <br> <span></span></div><!--vest1-->
+        <div class="vest2 col-4">Çok Satanlar</div><!--vest2-->
+        <div class="vest2 col-4">Çok Görüntülenen</div><!--vest2-->
+      </div>
+      </div><!--pocket-->
+    </div><!--SECTİON2-->
+    <div class="section3 my-5 row">
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img1.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">gelecek sonraki</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺29</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img2.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">Amy Byler'ın Gecikmiş Hayatı</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img3.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">Bilebileceğiniz Her Şey: Bir Anı</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img4.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">Kırık İnanç: İnanç Sözünün İçinde...</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img5.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">küçük şeylerden zevk al</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img6.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">ustabaşı</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img7.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">alt mektup</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img8.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">koko gider</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img9.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">uzunca aşağı</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img10.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">tehlikeli bir zihnin itirafları</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img1.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">gelecek sonraki II</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="card" >
+              <img src="120x180/img1.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">gelecek sonraki III</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->    
+    </div><!--SECTİON3-->
+  </div><!--layarea6-->
+</div><!--area6-->
+
+
+
+<div class="area7 container-fluid">
+  <div class="layera5 container">
+  <div class="boiler1 row justify-content-between">
+    <div class=" vest1 col-5 align-self-center text-capitalize"><h2>Haftanın Fırsatları</h2></div>
+    <div class=" vest2 col-5 align-self-center text-capitalize">tümünü gör <svg style="width:13px;height:13px" viewBox="0 0 24 24"><path fill="currentColor" d="M5.5,4.14L4.5,5.86L15,12L4.5,18.14L5.5,19.86L19,12L5.5,4.14Z" /></svg></div>
+        </div><!--BOILER1-->
+             <div class="boiler2 row mt-4" style="cursor: pointer;">
+                <div class="section7 owl-carousel owl-theme" style="padding: 0;">
+<div class="item">
+   <div class="content row">
+        <div class="article1 align-self-center col-4">
+            <img src="200x327/img1.jpg" alt="200x327/img1.jpg">
+        </div><!--article1-->
+        <div class="article2 col-8">
+            <div class="sack1 row">
+                <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                <div class="sack1_alt2 col-12 text-capitalize">Dark in Death: An Eve Dallas Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+            </div><!--sack1-->
+            <div class="sack2 row">
+                <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+            </div><!--sack2-->
+            <div class="sack3 row">
+                <div class="sackyap1 row">
+                        <div class="sack-alt col-12"> <strong>Acele Et!</strong> tükenmek üzere :  </div><!--sackalt-->
+                </div><!--sackyap-->
+                <div class="sackyap2 row">
+                    <div class="vessel1 col-lg-3 col-md-6">
+                        <strong>114</strong> Gün
+                    </div><!--vessel1-->
+                    <div class="vessel2 col-lg-3 col-md-6">
+                        <strong>03</strong> Saat
+                    </div><!--vessel2-->
+                    <div class="vessel3 col-lg-3 col-md-6">
+                        <strong>60</strong> Dakika
+                    </div><!--vessel3-->
+                    <div class="vessel4 col-lg-3 col-md-6">
+                        <strong>25</strong> Saniye
+                    </div><!--vessel4-->
+            </div><!--sackyap2-->
+            </div><!--sack3-->
+            <div class="sack4 row">
+                <div class="sack4-alt1 row d-flex justify-content-between">
+                    <div class="pouch1 col-lg-5 col-md-8 text-capitalize">çoktan satıldı : 15</div><!--pouch1-->
+                    <div class="pouch2 col-lg-5 col-md-8 text-capitalize">mevcut : 3</div><!--pouch2-->
+                </div><!--sack4-alt1-->
+                <div class="sack4-alt2 row">
+                    <div class="bar col-12">
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 75%"></div>
+                          </div><!--progress-->
+                    </div><!--bar-->
+                </div><!--sack4-alt2-->
+            </div><!--sack3-->
+        </div><!--article2-->
+   </div><!--content-->
+</div><!--ITEM-->
+<div class="item">
+    <div class="content row">
+         <div class="article1 align-self-center col-4">
+             <img src="200x327/img2.jpg" alt="200x327/img2.jpg">
+         </div><!--article1-->
+         <div class="article2 col-8">
+             <div class="sack1 row">
+                 <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                 <div class="sack1_alt2 col-12 text-capitalize">Dark in Death: An Eve Dallas Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+             </div><!--sack1-->
+             <div class="sack2 row">
+                 <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                 <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+             </div><!--sack2-->
+             <div class="sack3 row">
+                 <div class="sackyap1 row">
+                         <div class="sack-alt col-12"> <strong>Acele Et!</strong> tükenmek üzere :  </div><!--sackalt-->
+                 </div><!--sackyap-->
+                 <div class="sackyap2 row">
+                     <div class="vessel1 col-lg-3 col-md-6">
+                         <strong>114</strong> Gün
+                     </div><!--vessel1-->
+                     <div class="vessel2 col-lg-3 col-md-6">
+                         <strong>03</strong> Saat
+                     </div><!--vessel2-->
+                     <div class="vessel3 col-lg-3 col-md-6">
+                         <strong>60</strong> Dakika
+                     </div><!--vessel3-->
+                     <div class="vessel4 col-lg-3 col-md-6">
+                         <strong>25</strong> Saniye
+                     </div><!--vessel4-->
+             </div><!--sackyap2-->
+             </div><!--sack3-->
+             <div class="sack4 row">
+                 <div class="sack4-alt1 row d-flex justify-content-between">
+                     <div class="pouch1 col-lg-5 col-md-8 text-capitalize">çoktan satıldı : 15</div><!--pouch1-->
+                     <div class="pouch2 col-lg-5 col-md-8 text-capitalize">mevcut : 3</div><!--pouch2-->
+                 </div><!--sack4-alt1-->
+                 <div class="sack4-alt2 row">
+                     <div class="bar col-12">
+                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                             <div class="progress-bar" style="width: 75%"></div>
+                           </div><!--progress-->
+                     </div><!--bar-->
+                 </div><!--sack4-alt2-->
+             </div><!--sack3-->
+         </div><!--article2-->
+    </div><!--content-->
+ </div><!--ITEM-->
+ <div class="item">
+    <div class="content row">
+         <div class="article1 align-self-center col-4">
+             <img src="200x327/img3.jpg" alt="200x327/img3.jpg">
+         </div><!--article1-->
+         <div class="article2 col-8">
+             <div class="sack1 row">
+                 <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                 <div class="sack1_alt2 col-12 text-capitalize">Dark in Death: An Eve Dallas Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+             </div><!--sack1-->
+             <div class="sack2 row">
+                 <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                 <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+             </div><!--sack2-->
+             <div class="sack3 row">
+                 <div class="sackyap1 row">
+                         <div class="sack-alt col-12"> <strong>Acele Et!</strong> tükenmek üzere :  </div><!--sackalt-->
+                 </div><!--sackyap-->
+                 <div class="sackyap2 row">
+                     <div class="vessel1 col-lg-3 col-md-6">
+                         <strong>114</strong> Gün
+                     </div><!--vessel1-->
+                     <div class="vessel2 col-lg-3 col-md-6">
+                         <strong>03</strong> Saat
+                     </div><!--vessel2-->
+                     <div class="vessel3 col-lg-3 col-md-6">
+                         <strong>60</strong> Dakika
+                     </div><!--vessel3-->
+                     <div class="vessel4 col-lg-3 col-md-6">
+                         <strong>25</strong> Saniye
+                     </div><!--vessel4-->
+             </div><!--sackyap2-->
+             </div><!--sack3-->
+             <div class="sack4 row">
+                 <div class="sack4-alt1 row d-flex justify-content-between">
+                     <div class="pouch1 col-lg-5 col-md-8 text-capitalize">çoktan satıldı : 15</div><!--pouch1-->
+                     <div class="pouch2 col-lg-5 col-md-8 text-capitalize">mevcut : 3</div><!--pouch2-->
+                 </div><!--sack4-alt1-->
+                 <div class="sack4-alt2 row">
+                     <div class="bar col-12">
+                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                             <div class="progress-bar" style="width: 75%"></div>
+                           </div><!--progress-->
+                     </div><!--bar-->
+                 </div><!--sack4-alt2-->
+             </div><!--sack3-->
+         </div><!--article2-->
+    </div><!--content-->
+ </div><!--ITEM-->
+ <div class="item">
+    <div class="content row">
+         <div class="article1 align-self-center col-4">
+             <img src="200x327/img4.jpg" alt="200x327/img4.jpg">
+         </div><!--article1-->
+         <div class="article2 col-8">
+             <div class="sack1 row">
+                 <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                 <div class="sack1_alt2 col-12 text-capitalize">Dark in Death: An Eve Dallas Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+             </div><!--sack1-->
+             <div class="sack2 row">
+                 <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                 <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+             </div><!--sack2-->
+             <div class="sack3 row">
+                 <div class="sackyap1 row">
+                         <div class="sack-alt col-12"> <strong>Acele Et!</strong> tükenmek üzere :  </div><!--sackalt-->
+                 </div><!--sackyap-->
+                 <div class="sackyap2 row">
+                     <div class="vessel1 col-lg-3 col-md-6">
+                         <strong>114</strong> Gün
+                     </div><!--vessel1-->
+                     <div class="vessel2 col-lg-3 col-md-6">
+                         <strong>03</strong> Saat
+                     </div><!--vessel2-->
+                     <div class="vessel3 col-lg-3 col-md-6">
+                         <strong>60</strong> Dakika
+                     </div><!--vessel3-->
+                     <div class="vessel4 col-lg-3 col-md-6">
+                         <strong>25</strong> Saniye
+                     </div><!--vessel4-->
+             </div><!--sackyap2-->
+             </div><!--sack3-->
+             <div class="sack4 row">
+                 <div class="sack4-alt1 row d-flex justify-content-between">
+                     <div class="pouch1 col-lg-5 col-md-8 text-capitalize">çoktan satıldı : 15</div><!--pouch1-->
+                     <div class="pouch2 col-lg-5 col-md-8 text-capitalize">mevcut : 3</div><!--pouch2-->
+                 </div><!--sack4-alt1-->
+                 <div class="sack4-alt2 row">
+                     <div class="bar col-12">
+                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                             <div class="progress-bar" style="width: 75%"></div>
+                           </div><!--progress-->
+                     </div><!--bar-->
+                 </div><!--sack4-alt2-->
+             </div><!--sack3-->
+         </div><!--article2-->
+    </div><!--content-->
+ </div><!--ITEM-->
+ <div class="item">
+    <div class="content row">
+         <div class="article1 align-self-center col-4">
+             <img src="200x327/img5.jpg" alt="200x327/img5.jpg">
+         </div><!--article1-->
+         <div class="article2 col-8">
+             <div class="sack1 row">
+                 <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                 <div class="sack1_alt2 col-12 text-capitalize">Dark in Death: An Eve Dallas Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+             </div><!--sack1-->
+             <div class="sack2 row">
+                 <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                 <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+             </div><!--sack2-->
+             <div class="sack3 row">
+                 <div class="sackyap1 row">
+                         <div class="sack-alt col-12"> <strong>Acele Et!</strong> tükenmek üzere :  </div><!--sackalt-->
+                 </div><!--sackyap-->
+                 <div class="sackyap2 row">
+                     <div class="vessel1 col-lg-3 col-md-6">
+                         <strong>114</strong> Gün
+                     </div><!--vessel1-->
+                     <div class="vessel2 col-lg-3 col-md-6">
+                         <strong>03</strong> Saat
+                     </div><!--vessel2-->
+                     <div class="vessel3 col-lg-3 col-md-6">
+                         <strong>60</strong> Dakika
+                     </div><!--vessel3-->
+                     <div class="vessel4 col-lg-3 col-md-6">
+                         <strong>25</strong> Saniye
+                     </div><!--vessel4-->
+             </div><!--sackyap2-->
+             </div><!--sack3-->
+             <div class="sack4 row">
+                 <div class="sack4-alt1 row d-flex justify-content-between">
+                     <div class="pouch1 col-lg-5 col-md-8 text-capitalize">çoktan satıldı : 15</div><!--pouch1-->
+                     <div class="pouch2 col-lg-5 col-md-8 text-capitalize">mevcut : 3</div><!--pouch2-->
+                 </div><!--sack4-alt1-->
+                 <div class="sack4-alt2 row">
+                     <div class="bar col-12">
+                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                             <div class="progress-bar" style="width: 75%"></div>
+                           </div><!--progress-->
+                     </div><!--bar-->
+                 </div><!--sack4-alt2-->
+             </div><!--sack3-->
+         </div><!--article2-->
+    </div><!--content-->
+ </div><!--ITEM-->
+ <div class="item">
+    <div class="content row">
+         <div class="article1 align-self-center col-4">
+             <img src="200x327/img6.jpg" alt="200x327/img6.jpg">
+         </div><!--article1-->
+         <div class="article2 col-8">
+             <div class="sack1 row">
+                 <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                 <div class="sack1_alt2 col-12 text-capitalize">Dark in Death: An Eve Dallas Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+             </div><!--sack1-->
+             <div class="sack2 row">
+                 <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                 <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+             </div><!--sack2-->
+             <div class="sack3 row">
+                 <div class="sackyap1 row">
+                         <div class="sack-alt col-12"> <strong>Acele Et!</strong> tükenmek üzere :  </div><!--sackalt-->
+                 </div><!--sackyap-->
+                 <div class="sackyap2 row ">
+                     <div class="vessel1 col-lg-3 col-md-6">
+                         <strong>114</strong> Gün
+                     </div><!--vessel1-->
+                     <div class="vessel2 col-lg-3 col-md-6">
+                         <strong>03</strong> Saat
+                     </div><!--vessel2-->
+                     <div class="vessel3 col-lg-3 col-md-6">
+                         <strong>60</strong> Dakika
+                     </div><!--vessel3-->
+                     <div class="vessel4 col-lg-3 col-md-6">
+                         <strong>25</strong> Saniye
+                     </div><!--vessel4-->
+             </div><!--sackyap2-->
+             </div><!--sack3-->
+             <div class="sack4 row">
+                 <div class="sack4-alt1 row d-flex justify-content-between">
+                     <div class="pouch1 col-lg-5 col-md-8 text-capitalize">çoktan satıldı : 15</div><!--pouch1-->
+                     <div class="pouch2 col-lg-5 col-md-8 text-capitalize">mevcut : 3</div><!--pouch2-->
+                 </div><!--sack4-alt1-->
+                 <div class="sack4-alt2 row">
+                     <div class="bar col-12">
+                         <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                             <div class="progress-bar" style="width: 75%"></div>
+                           </div><!--progress-->
+                     </div><!--bar-->
+                 </div><!--sack4-alt2-->
+             </div><!--sack3-->
+         </div><!--article2-->
+    </div><!--content-->
+ </div><!--ITEM-->
+</div><!--SECTİON4-->
+  </div><!--BOILER2-->
+     </div><!--layera5-->
+       </div><!--area7-->
+
+
+
+<div class="area8  container">
+  <div class="layarea8 container">
+    <div class="section2 my-3 row justify-content-between">
+        <div class="pocket1 col-lg-4 col-md-12">Yeni Baskılar</div><!--pocket1-->
+      <div class="pocket  col-lg-4 col-md-12">
+        <div class="row pouch">
+        <div class="vest1 col-3">Tarih <br> <span></span></div><!--vest1-->
+        <div class="vest2 col-3">Matematik</div><!--vest2-->
+        <div class="vest2 col-3">Romantik</div><!--vest2-->
+        <div class="vest2 col-3">Seyahat</div><!--vest2-->
+      </div>
+      </div><!--pocket-->
+    </div><!--SECTİON2-->
+    <div class="section3 my-5 row">
+        <div class="gratop  col-xl-4 col-lg-12">
+            <div class="gratop-content">
+                <img class="img-fluid" src="350x282/img1.png" alt="350x282/img1.png">
+                <h2 class="fhn1">Ekstra Alın</h2>
+                <h2 class="fhn2">Satış -25%</h2>
+                <h2 class="fhn3">1000₺ ÜZERİ SİPARİŞLERDE</h2>
+                <button type="button" class="btn col-6">Keşfet</button>
+            </div><!--gratopcontent-->
+        </div><!--gratop-->
+        <div class="graon col-xl-8 col-lg-12">
+            <div class="row">
+        <div class="vrest col-xl-3 col-lg-4 col-md-6">
+          <div class="card" >
+              <img src="120x180/img1.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">gelecek sonraki</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺29</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-3 col-lg-4 col-md-6">
+          <div class="card" >
+              <img src="120x180/img2.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">Amy Byler'ın Gecikmiş Hayatı</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-3 col-lg-4 col-md-6">
+          <div class="card" >
+              <img src="120x180/img3.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">Bilebileceğiniz Her Şey: Bir Anı</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-3 col-lg-4 col-md-6">
+          <div class="card" >
+              <img src="120x180/img4.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">Kırık İnanç: İnanç Sözünün İçinde...</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-3 col-lg-4 col-md-6">
+          <div class="card" >
+              <img src="120x180/img5.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">küçük şeylerden zevk al</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-3 col-lg-4 col-md-6">
+          <div class="card" >
+              <img src="120x180/img6.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">ustabaşı</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-3 col-lg-4 col-md-6">
+          <div class="card" >
+              <img src="120x180/img7.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">alt mektup</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+        <div class="vrest col-xl-3 col-lg-4 col-md-6">
+          <div class="card" >
+              <img src="120x180/img8.jpg" style="width: 150px; height:226px; margin-left: auto; margin-right: auto;" class="card-img-top">
+              <div class="card-body">
+                  <div class="content1 row"><div class="estate col text-uppercase">paperback</div><!--ESTATE--></div><!--CONTENT1-->
+                  <div class="content2 row"><div class="estate col text-capitalize">koko gider</div><!--ESTATE--></div><!--CONTENT2-->
+                      <div class="content3 row"><div class="estate col text-capitalize">jay shetty</div><!--ESTATE--></div><!--CONTENT3-->
+                      <div class="content4 row"><div class="estate col text-uppercase">₺26.45</div><!--ESTATE--></div><!--CONTENT4-->
+                  </div><!--CARD_BODY-->
+              <div class="card-foot">
+                  <div class="content row justify-content-between">
+                  <div class="estate1 col-8 text-uppercase">kartı ekle <span></span> </div><!--ESTATE1-->
+                  <div class="estate2 col-4">
+                      <div class="row vest">
+                      <div class="country1 col-6">
+                          <svg style="width:20px;height:20px" viewBox="0 0 24 24">
+                          <path fill="currentColor" d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z" />
+                      </svg>
+                      </div><!--country1-->
+                  <div class="country2 col-6">
+                      <svg style="width:20px;height:20px;" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      </div><!--country2-->
+                      </div><!--VEST--> 
+                      </div><!--ESTATE2-->
+                  </div><!--CONTENT-->
+                  </div><!--CARD_FOOT-->
+                  </div><!--CARD-->
+        </div><!--vrest-->
+    </div><!--row-->
+    </div><!--graon-->
+    </div><!--SECTİON3-->
+  </div><!--layarea8-->
+</div><!--area8-->
+
+
+<div class="area9  container-fluid">
+  <div class="layarea9  container">
+  <div class="boiler1 row justify-content-between">
+    <div class=" vest1 col-5 align-self-center text-capitalize"><h2>biyografi kitapları</h2></div>
+    <div class=" vest2 col-5 align-self-center text-capitalize">tümünü gör <svg style="width:13px;height:13px" viewBox="0 0 24 24"><path fill="currentColor" d="M5.5,4.14L4.5,5.86L15,12L4.5,18.14L5.5,19.86L19,12L5.5,4.14Z" /></svg></div>
+        </div><!--BOILER1-->
+             <div class="boiler2 row my-4" style="cursor: pointer;">
+                <div class="section9 owl-carousel owl-theme" style="padding: 0;">
+<div class="item">
+   <div class="content row">
+        <div class="article1 align-self-center col-4">
+            <img src="200x327/img1.jpg" alt="200x327/img1.jpg">
+        </div><!--article1-->
+        <div class="article2 col-8">
+            <div class="sack1 row">
+                <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                <div class="sack1_alt2 col-12 text-capitalize"> Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+            </div><!--sack1-->
+            <div class="sack2 row">
+                <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+            </div><!--sack2-->
+           
+        </div><!--article2-->
+   </div><!--content-->
+</div><!--ITEM-->
+<div class="item">
+    <div class="content row">
+         <div class="article1 align-self-center col-4">
+             <img src="200x327/img2.jpg" alt="200x327/img2.jpg">
+         </div><!--article1-->
+         <div class="article2 col-8">
+             <div class="sack1 row">
+                 <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                 <div class="sack1_alt2 col-12 text-capitalize"> Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+             </div><!--sack1-->
+             <div class="sack2 row">
+                 <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                 <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+             </div><!--sack2-->
+            
+         </div><!--article2-->
+    </div><!--content-->
+ </div><!--ITEM-->
+ <div class="item">
+    <div class="content row">
+         <div class="article1 align-self-center col-4">
+             <img src="200x327/img3.jpg" alt="200x327/img3.jpg">
+         </div><!--article1-->
+         <div class="article2 col-8">
+             <div class="sack1 row">
+                 <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                 <div class="sack1_alt2 col-12 text-capitalize"> Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+             </div><!--sack1-->
+             <div class="sack2 row">
+                 <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                 <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+             </div><!--sack2-->
+            
+         </div><!--article2-->
+    </div><!--content-->
+ </div><!--ITEM-->
+ <div class="item">
+    <div class="content row">
+         <div class="article1 align-self-center col-4">
+             <img src="200x327/img4.jpg" alt="200x327/img4.jpg">
+         </div><!--article1-->
+         <div class="article2 col-8">
+             <div class="sack1 row">
+                 <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                 <div class="sack1_alt2 col-12 text-capitalize"> Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+             </div><!--sack1-->
+             <div class="sack2 row">
+                 <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                 <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+             </div><!--sack2-->
+            
+         </div><!--article2-->
+    </div><!--content-->
+ </div><!--ITEM-->
+ <div class="item">
+    <div class="content row">
+         <div class="article1 align-self-center col-4">
+             <img src="200x327/img5.jpg" alt="200x327/img5.jpg">
+         </div><!--article1-->
+         <div class="article2 col-8">
+             <div class="sack1 row">
+                 <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                 <div class="sack1_alt2 col-12 text-capitalize"> Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+             </div><!--sack1-->
+             <div class="sack2 row">
+                 <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                 <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+             </div><!--sack2-->
+            
+         </div><!--article2-->
+    </div><!--content-->
+ </div><!--ITEM-->
+ <div class="item">
+    <div class="content row">
+         <div class="article1 align-self-center col-4">
+             <img src="200x327/img6.jpg" alt="200x327/img6.jpg">
+         </div><!--article1-->
+         <div class="article2 col-8">
+             <div class="sack1 row">
+                 <div class="sack1_alt1 col-12 text-capitalize">kindle edition</div><!--sack1_alt1-->
+                 <div class="sack1_alt2 col-12 text-capitalize"> Romanı (In Death, Kitap 46)</div><!--sack1_alt2-->
+             </div><!--sack1-->
+             <div class="sack2 row">
+                 <div class="sack2_alt1 col-12 text-capitalize">nora roberts</div><!--sack2_alt1-->
+                 <div class="sack2_alt2 col-12 "> ₺79 <span>₺99</span>  </div><!--sack2_alt2-->
+             </div><!--sack2-->
+            
+         </div><!--article2-->
+    </div><!--content-->
+ </div><!--ITEM-->
+</div><!--SECTİON4-->
+  </div><!--BOILER2-->
+     </div><!--layarea9-->
+       </div><!--area9-->
+
+
+
+<div class="area10  container-fluid">
+  <div class="layera10  container">
+  <div class="boiler1 row justify-content-between">
+    <div class=" vest1 col-5 align-self-center text-capitalize"><h2>Favori Yazarlar</h2></div>
+    <div class=" vest2 col-5 align-self-center text-capitalize">tümünü gör <svg style="width:13px;height:13px" viewBox="0 0 24 24"><path fill="currentColor" d="M5.5,4.14L4.5,5.86L15,12L4.5,18.14L5.5,19.86L19,12L5.5,4.14Z" /></svg></div>
+        </div><!--BOILER1-->
+    <div class="boiler2 row my-4" style="cursor: pointer;">
+                <div class="section10 owl-carousel owl-theme" style="padding: 0;">
+                <div class="item">
+                    <div class="content  row">
+                            <div class="article1 col-12">
+                                <img  src="140x140/img1.jpg" alt="140x140/img1.jpg">
+                            </div><!--article1-->
+                            <div class="article2 col-12">
+                                Barbara o'neil
+                            </div><!--article2-->
+                            <div class="article3 col-12">
+                                25 published books
+                            </div><!--article3-->
+                    </div><!--content-->
+                </div><!--ITEM-->
+                <div class="item">
+                    <div class="content  row">
+                            <div class="article1 col-12">
+                                <img  src="140x140/img2.jpg" alt="140x140/img2.jpg">
+                            </div><!--article1-->
+                            <div class="article2 col-12">
+                                stephen king
+                            </div><!--article2-->
+                            <div class="article3 col-12">
+                                25 published books
+                            </div><!--article3-->
+                    </div><!--content-->
+                </div><!--ITEM-->
+                <div class="item">
+                    <div class="content  row">
+                            <div class="article1 col-12">
+                                <img  src="140x140/img3.jpg" alt="140x140/img3.jpg">
+                            </div><!--article1-->
+                            <div class="article2 col-12">
+                                david walliams
+                            </div><!--article2-->
+                            <div class="article3 col-12">
+                                25 published books
+                            </div><!--article3-->
+                    </div><!--content-->
+                </div><!--ITEM-->
+                <div class="item">
+                    <div class="content  row">
+                            <div class="article1 col-12">
+                                <img  src="140x140/img4.jpg" alt="140x140/img4.jpg">
+                            </div><!--article1-->
+                            <div class="article2 col-12">
+                                joe wicks
+                            </div><!--article2-->
+                            <div class="article3 col-12">
+                                25 published books
+                            </div><!--article3-->
+                    </div><!--content-->
+                </div><!--ITEM-->
+                <div class="item">
+                    <div class="content  row">
+                            <div class="article1 col-12">
+                                <img  src="140x140/img5.jpg" alt="140x140/img5.jpg">
+                            </div><!--article1-->
+                            <div class="article2 col-12">
+                                jessica simpson
+                            </div><!--article2-->
+                            <div class="article3 col-12">
+                                25 published books
+                            </div><!--article3-->
+                    </div><!--content-->
+                </div><!--ITEM-->
+                <div class="item">
+                    <div class="content  row">
+                            <div class="article1 col-12">
+                                <img  src="140x140/img6.jpg" alt="140x140/img6.jpg">
+                            </div><!--article1-->
+                            <div class="article2 col-12">
+                               Senato Gabeira
+                            </div><!--article2-->
+                            <div class="article3 col-12">
+                                25 published books
+                            </div><!--article3-->
+                    </div><!--content-->
+                </div><!--ITEM-->
+                <div class="item">
+                    <div class="content  row">
+                            <div class="article1 col-12">
+                                <img  src="140x140/img7.jpg" alt="140x140/img7.jpg">
+                            </div><!--article1-->
+                            <div class="article2 col-12">
+                                sarah observie
+                            </div><!--article2-->
+                            <div class="article3 col-12">
+                                25 published books
+                            </div><!--article3-->
+                    </div><!--content-->
+                </div><!--ITEM-->
+                <div class="item">
+                    <div class="content  row">
+                            <div class="article1 col-12">
+                                <img  src="140x140/img8.jpg" alt="140x140/img8.jpg">
+                            </div><!--article1-->
+                            <div class="article2 col-12">
+                                jack carry
+                            </div><!--article2-->
+                            <div class="article3 col-12">
+                                25 published books
+                            </div><!--article3-->
+                    </div><!--content-->
+                </div><!--ITEM-->
+</div><!--SECTİON4-->
+  </div><!--BOILER2-->
+     </div><!--layera10-->
+       </div><!--area10-->
+
+
+
+       <div class="area11 container-fluid">
+        <div class="layarea11 container">
+            <div class="section row">
+                <div class="content1  col-lg-4 col-md-12">
+                    <ul>
+                        <li class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170px" height="30px" color="red"   fill= "#f75454">
+                            <path fill-rule="evenodd" fill="rgb(25, 17, 11)" d="M166.225,28.691 L165.065,15.398 L160.598,28.691 L158.229,28.691 L153.762,15.398 L152.590,28.691 L148.928,28.691 L150.405,11.052 L155.629,11.052 L159.389,22.124 L163.198,11.052 L168.422,11.052 L169.875,28.691 L166.225,28.691 ZM142.641,28.691 L138.051,20.928 L136.989,20.928 L136.989,28.691 L133.327,28.691 L133.327,11.052 L139.724,11.052 C140.692,11.052 141.546,11.189 142.287,11.461 C143.028,11.734 143.620,12.112 144.063,12.596 C144.507,13.081 144.840,13.636 145.064,14.263 C145.288,14.889 145.400,15.577 145.400,16.326 C145.400,17.506 145.078,18.472 144.436,19.225 C143.793,19.978 142.869,20.484 141.665,20.745 L146.975,28.691 L142.641,28.691 ZM141.896,16.204 C141.896,15.544 141.673,15.028 141.225,14.653 C140.777,14.279 140.086,14.092 139.150,14.092 L136.989,14.092 L136.989,18.303 L139.150,18.303 C140.981,18.303 141.896,17.603 141.896,16.204 ZM125.570,27.831 C124.206,28.567 122.666,28.936 120.949,28.936 C119.224,28.936 117.680,28.567 116.317,27.831 C114.953,27.094 113.881,26.034 113.100,24.651 C112.319,23.267 111.928,21.672 111.928,19.866 C111.928,18.051 112.319,16.454 113.100,15.074 C113.881,13.695 114.953,12.639 116.317,11.907 C117.680,11.174 119.224,10.808 120.949,10.808 C122.674,10.808 124.217,11.174 125.576,11.907 C126.935,12.639 128.005,13.695 128.786,15.074 C129.567,16.454 129.958,18.051 129.958,19.866 C129.958,21.672 129.567,23.267 128.786,24.651 C128.005,26.034 126.933,27.094 125.570,27.831 ZM124.807,15.715 C123.797,14.690 122.512,14.177 120.949,14.177 C119.387,14.177 118.101,14.690 117.092,15.715 C116.083,16.741 115.578,18.124 115.578,19.866 C115.578,21.616 116.083,23.005 117.092,24.034 C118.101,25.064 119.387,25.579 120.949,25.579 C122.512,25.579 123.797,25.064 124.807,24.034 C125.816,23.005 126.320,21.616 126.320,19.866 C126.320,18.124 125.816,16.741 124.807,15.715 ZM66.872,28.691 L61.391,21.196 L60.097,21.196 L60.097,28.691 L56.435,28.691 L56.435,11.052 L60.097,11.052 L60.097,17.986 L61.342,17.986 L66.872,11.052 L71.340,11.052 L64.504,19.487 L71.547,28.691 L66.872,28.691 ZM48.677,27.831 C47.314,28.567 45.774,28.936 44.057,28.936 C42.332,28.936 40.788,28.567 39.425,27.831 C38.061,27.094 36.989,26.034 36.208,24.651 C35.427,23.267 35.036,21.672 35.036,19.866 C35.036,18.051 35.427,16.454 36.208,15.074 C36.989,13.695 38.061,12.639 39.425,11.907 C40.788,11.174 42.332,10.808 44.057,10.808 C45.782,10.808 47.324,11.174 48.684,11.907 C50.043,12.639 51.113,13.695 51.894,15.074 C52.675,16.454 53.066,18.051 53.066,19.866 C53.066,21.672 52.675,23.267 51.894,24.651 C51.113,26.034 50.040,27.094 48.677,27.831 ZM47.915,15.715 C46.905,14.690 45.620,14.177 44.057,14.177 C42.495,14.177 41.209,14.690 40.200,15.715 C39.191,16.741 38.686,18.124 38.686,19.866 C38.686,21.616 39.191,23.005 40.200,24.034 C41.209,25.064 42.495,25.579 44.057,25.579 C45.620,25.579 46.905,25.064 47.915,24.034 C48.924,23.005 49.428,21.616 49.428,19.866 C49.428,18.124 48.924,16.741 47.915,15.715 ZM28.487,27.831 C27.124,28.567 25.584,28.936 23.867,28.936 C22.141,28.936 20.597,28.567 19.234,27.831 C17.871,27.094 16.799,26.034 16.018,24.651 C15.236,23.267 14.846,21.672 14.846,19.866 C14.846,18.051 15.236,16.454 16.018,15.074 C16.799,13.695 17.871,12.639 19.234,11.907 C20.597,11.174 22.141,10.808 23.867,10.808 C25.592,10.808 27.134,11.174 28.493,11.907 C29.852,12.639 30.922,13.695 31.704,15.074 C32.485,16.454 32.875,18.051 32.875,19.866 C32.875,21.672 32.485,23.267 31.704,24.651 C30.922,26.034 29.850,27.094 28.487,27.831 ZM27.724,15.715 C26.715,14.690 25.429,14.177 23.867,14.177 C22.304,14.177 21.018,14.690 20.009,15.715 C19.000,16.741 18.496,18.124 18.496,19.866 C18.496,21.616 19.000,23.005 20.009,24.034 C21.018,25.064 22.304,25.579 23.867,25.579 C25.429,25.579 26.715,25.064 27.724,24.034 C28.733,23.005 29.238,21.616 29.238,19.866 C29.238,18.124 28.733,16.741 27.724,15.715 ZM11.672,27.367 C10.736,28.250 9.361,28.691 7.546,28.691 L0.283,28.691 L0.283,11.052 L5.996,11.052 C7.875,11.052 9.314,11.478 10.311,12.328 C11.308,13.178 11.806,14.365 11.806,15.886 C11.806,16.676 11.633,17.374 11.287,17.980 C10.941,18.586 10.431,19.052 9.755,19.377 C11.969,19.988 13.076,21.445 13.076,23.748 C13.076,25.278 12.608,26.484 11.672,27.367 ZM7.827,14.647 C7.420,14.277 6.821,14.092 6.032,14.092 L3.811,14.092 L3.811,18.242 L6.191,18.242 C6.940,18.242 7.501,18.047 7.875,17.656 C8.250,17.266 8.437,16.753 8.437,16.118 C8.437,15.508 8.233,15.018 7.827,14.647 ZM8.876,21.709 C8.445,21.278 7.749,21.062 6.789,21.062 L3.811,21.062 L3.811,25.554 L6.862,25.554 C7.782,25.554 8.455,25.347 8.883,24.932 C9.310,24.517 9.523,23.988 9.523,23.345 C9.523,22.686 9.308,22.140 8.876,21.709 Z"></path>
+                            <path class="fill-primary" fill-rule="evenodd" d="M105.996,23.499 C105.995,26.752 103.950,29.265 100.748,29.950 C100.713,29.958 100.681,29.983 100.647,30.000 C100.588,30.000 100.529,30.000 100.471,30.000 C100.467,28.585 100.460,27.171 100.466,25.756 C100.467,25.675 100.550,25.565 100.626,25.518 C101.352,25.068 101.714,24.425 101.711,23.571 C101.707,22.020 101.710,20.469 101.710,18.892 C103.133,18.892 104.546,18.892 105.996,18.892 C105.996,18.989 105.996,19.093 105.996,19.196 C105.996,20.630 105.997,22.065 105.996,23.499 ZM101.715,17.089 C101.715,15.990 101.683,14.917 101.724,13.847 C101.767,12.679 102.761,11.806 103.931,11.838 C105.060,11.869 105.978,12.794 105.993,13.940 C106.005,14.954 105.995,15.969 105.995,16.983 C105.995,17.011 105.987,17.040 105.980,17.089 C104.569,17.089 103.157,17.089 101.715,17.089 ZM96.421,29.234 C94.322,27.983 93.199,26.136 93.155,23.703 C93.108,21.138 93.145,18.571 93.146,16.005 C93.146,15.957 93.153,15.910 93.159,15.841 C94.572,15.841 95.976,15.841 97.426,15.841 C97.426,15.948 97.426,16.060 97.426,16.172 C97.426,18.602 97.430,21.031 97.423,23.461 C97.421,24.364 97.757,25.066 98.548,25.540 C98.629,25.589 98.688,25.740 98.689,25.844 C98.699,27.122 98.695,28.401 98.696,29.679 C98.696,29.786 98.703,29.893 98.707,30.000 C98.648,30.000 98.590,30.000 98.531,30.000 C97.799,29.823 97.075,29.624 96.421,29.234 ZM93.145,14.043 C93.145,13.935 93.145,13.823 93.145,13.711 C93.145,11.318 93.137,8.926 93.149,6.534 C93.154,5.625 92.818,4.928 92.023,4.460 C91.961,4.424 91.894,4.332 91.894,4.265 C91.886,2.850 91.888,1.436 91.888,0.000 C93.423,0.232 94.703,0.889 95.731,2.009 C96.833,3.209 97.413,4.630 97.421,6.261 C97.433,8.791 97.426,11.319 97.427,13.849 C97.427,13.906 97.421,13.964 97.416,14.043 C96.005,14.043 94.599,14.043 93.145,14.043 ZM89.588,4.782 C89.034,5.128 88.866,5.768 88.868,6.431 C88.875,8.061 88.870,9.692 88.869,11.322 C88.869,12.143 88.869,12.963 88.867,13.783 C88.867,13.869 88.857,13.954 88.851,14.051 C87.434,14.051 86.035,14.051 84.587,14.051 C84.587,13.958 84.587,13.866 84.587,13.774 C84.588,11.294 84.579,8.814 84.590,6.334 C84.605,3.158 86.853,0.543 90.000,0.018 C90.028,0.013 90.058,0.017 90.125,0.017 C90.125,0.639 90.125,1.243 90.125,1.848 C90.125,2.405 90.109,2.962 90.130,3.518 C90.149,4.032 90.126,4.447 89.588,4.782 ZM84.585,15.837 C86.015,15.837 87.420,15.837 88.868,15.837 C88.868,15.951 88.868,16.065 88.868,16.179 C88.868,18.608 88.849,21.039 88.873,23.468 C88.908,27.007 86.358,29.493 83.589,29.955 C83.552,29.961 83.518,29.985 83.482,30.000 C83.424,30.000 83.365,30.000 83.306,30.000 C83.310,28.634 83.319,27.268 83.313,25.902 C83.311,25.691 83.376,25.580 83.559,25.467 C84.268,25.031 84.587,24.371 84.587,23.549 C84.587,21.099 84.586,18.650 84.585,16.201 C84.585,16.085 84.585,15.970 84.585,15.837 ZM81.366,30.000 C80.875,29.844 80.360,29.740 79.897,29.524 C77.435,28.380 76.120,26.440 76.027,23.732 C75.974,22.192 76.017,20.649 76.016,19.107 C76.016,19.040 76.016,18.973 76.016,18.886 C77.447,18.886 78.859,18.886 80.303,18.886 C80.303,19.000 80.303,19.104 80.303,19.209 C80.303,20.663 80.308,22.117 80.302,23.571 C80.298,24.427 80.666,25.065 81.387,25.518 C81.463,25.566 81.547,25.675 81.547,25.756 C81.553,27.171 81.546,28.585 81.542,30.000 C81.484,30.000 81.425,30.000 81.366,30.000 ZM76.017,17.097 C76.017,16.540 76.017,15.997 76.017,15.453 C76.017,14.965 76.012,14.478 76.017,13.990 C76.030,12.831 76.911,11.892 78.032,11.838 C79.203,11.781 80.217,12.619 80.282,13.797 C80.341,14.885 80.294,15.978 80.294,17.097 C78.857,17.097 77.452,17.097 76.017,17.097 Z"></path>
+                            </svg>
+                        </li>
+                        <li class="adres">
+                            1418 River Drive, Suite 35 Cottonhall, CA 9622 United States
+                        </li><!--adres-->
+                        <li class="mailtel">
+                            <a href="mailto:bookworm@gmail.com">bookworm@gmail.com</a>
+                            <a href="tel:+02312113674">+0 231 211 3674</a>
+                        </li><!--mailtel-->
+                        <li class="social">
+                            <i class="fa-brands fa-instagram" title="instagram"></i>
+                            <i class="fa-brands fa-facebook-f" title="facebook"></i>
+                            <i class="fa-brands fa-youtube" title="youtube"></i>
+                            <i class="fa-brands fa-twitter" title="twitter"></i>
+                            <i class="fa-regular fa-envelope" title="mail"></i>
+                        </li><!--social-->
+                    </ul>
+                </div><!--content1-->
+                <div class="content2  col-lg-8 col-md-12">
+                    <div class="estate row">
+                        <div class="country1 col-lg-3 col-md-6">
+                            <ul>
+                                <li class="baslik">Keşfet</li>
+                                <li class="alt text-capitalize">hakkımızda</li>
+                                <li class="alt text-capitalize">site haritası</li>
+                                <li class="alt text-capitalize">Yer İmleri</li>
+                                <li class="alt text-capitalize">Giriş yap/Katıl</li>
+                            </ul>
+                        </div><!--country1-->
+                        <div class="country3 col-lg-3 col-md-6">
+                            <ul>
+                                <li class="baslik">Politika</li>
+                                <li class="alt text-capitalize">İade politikasi</li>
+                                <li class="alt text-capitalize">Kullanım Şartları </li>
+                                <li class="alt text-capitalize">Güvenlik </li>
+                                <li class="alt text-capitalize">Mahremiyet</li>
+                            </ul>
+                        </div><!--country3-->
+                        <div class="country2 col-lg-3 col-md-6">
+                            <ul>
+                                <li class="baslik">Müşteri servisi</li>
+                                <li class="alt text-capitalize">Yardım Merkezi</li>
+                                <li class="alt text-capitalize">İadeler</li>
+                                <li class="alt text-capitalize">Ürün Değişimi</li>
+                                <li class="alt text-capitalize">Ulaşılabilirlik</li>
+                                <li class="alt text-capitalize">Bize Ulaşın</li>
+                                <li class="alt text-capitalize">Mağazadan Al</li>
+                            </ul>
+                        </div><!--country2-->
+                        <div class="country4 col-lg-3 col-md-6">
+                            <ul>
+                                <li class="baslik">Kategoriler</li>
+                                <li class="alt text-capitalize">Aksiyon </li>
+                                <li class="alt text-capitalize">Komedi </li>
+                                <li class="alt text-capitalize">dram </li>
+                                <li class="alt text-capitalize">Korku </li>
+                                <li class="alt text-capitalize">Çocuk</li>
+                                <li class="alt text-capitalize">Romantik Komedi</li>
+                            </ul>
+                        </div><!--country4-->
+                    </div><!--estate-->
+                </div><!--content2-->
+            </div><!--section-->
+        </div><!--layarea11-->
+    </div><!--area11-->
+
+    
+<div class="area12 container-fluid">
+    <div class="section container">
+        <div class="estate row justify-content-between">
+            <div class="content1 my-2 align-self-center col-lg-3 col-md-4 col-sm-12">
+              ©2023 Enoch Medya. Her hakkı saklıdır
+            </div><!--content1-->
+            <div class="content2 align-self-center col-lg-7 col-md-8 col-sm-12">
+              <div class="odeme">
+                <div class="rowe1 py-2 row">
+                  <div class="imaz my-2 col-md-6 col-sm-12">
+                    <img src="324x38/img1.png" alt="324x38/img1.png">
+                  </div><!--imaz-->
+                  <div class="cole my-2 col-md-3 col-sm-6">
+                    <select class="form-select" aria-label="Default select example">
+                      <option value="1">English (United States)</option>
+                      <option value="2">Türkiye</option>
+                      <option value="3">Deutsch</option>
+                    </select>
+                  </div><!--cole-->               
+                  <div class="cole my-2 col-md-3 col-sm-6">
+                    <select style="border-radius: 0;" class="form-select" aria-label="Default select example">
+                      <option value="1">$ USD</option>
+                      <option value="2">₺ TL</option>
+                      <option value="3">€ EURO</option>
+                    </select>
+                  </div><!--cole-->
+                </div><!--rowe1-->
+             </div><!--odeme-->    
+            </div><!--content2-->
+        </div><!--estate-->
+    </div><!--section-->
+</div><!--container-fluid-->  
+
+
+</div><!--terimsinyor-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  $('.basCaro').owlCarousel({
+    autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:false,
+    loop:true,
+    nav:false,
+    dots:true,
+    responsive:{
+        0:{
+          nav:false,
+            items:1
+        },
+        600:{
+          nav:false,
+            items:1
+        },
+        1000:{
+          nav:false,
+            items:1
+        }
+    }
+})
+</script>
+<script>
+  $('.section4').owlCarousel({
+   loop:true,
+   autoplay:true,
+   autoplayTimeout:2000,
+   nav:true,
+   dots:true,
+   responsive:{
+       0:{
+           items:1,
+           dots:false,
+           nav:false,
+           margin:20,
+           center:true
+       },
+       400:{
+           items:1,
+           dots:false,
+           nav:false,
+           margin:10,
+       },
+       600:{
+           items:2,
+           dots:false,
+           nav:false,
+           margin:10,
+       },
+       992:{
+           items:4,
+           nav:false,
+           dots:false
+       },
+       1200:{
+           items:5,
+           nav:false,
+           dots:false
+       }
+   }
+})
+</script>
+<script>
+  $('.section7').owlCarousel({
+   loop:true,
+   autoplay:true,
+   autoplayTimeout:2000,
+   nav:true,
+   dots:true,
+   responsive:{
+       0:{
+           items:1,
+           dots:true,
+           nav:false,
+           margin:20,
+           center:true
+       },
+       400:{
+           items:1,
+           dots:true,
+           nav:false,
+           margin:10,
+       },
+       1200:{
+           items:2,
+           nav:false,
+           dots:true
+       }
+   }
+})
+</script>
+<script>
+  $('.section9').owlCarousel({
+   loop:true,
+   autoplay:true,
+   autoplayTimeout:2000,
+   nav:false,
+   dots:true,
+   responsive:{
+       0:{
+           items:1,
+           dots:true,
+           nav:false,
+           margin:20,
+           center:true
+       },
+       600:{
+           items:1,
+           dots:true,
+           nav:false,
+           margin:10,
+       },
+       700:{
+           items:2,
+           dots:true,
+           nav:false,
+           margin:10,
+       },
+       1200:{
+           items:3,
+           nav:true,
+           dots:true
+       }
+   }
+})
+</script>
+<script>
+  $('.section10').owlCarousel({
+   loop:false,
+   autoplay:true,
+   autoplayTimeout:2000,
+   nav:true,
+   dots:false,
+   responsive:{
+       0:{
+           items:1,
+           dots:false,
+           nav:false,
+           margin:20,
+           center:true
+       },
+       600:{
+           items:2,
+           dots:false,
+           nav:false,
+           margin:10,
+       },
+       800:{
+           items:3,
+           dots:false,
+           nav:false,
+           margin:10,
+       },
+       1200:{
+           items:5,
+           nav:true,
+           dots:false
+       }
+   }
+})
+</script>
+  </body>
+    </html>
